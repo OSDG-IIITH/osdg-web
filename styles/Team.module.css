@@ -66,3 +66,22 @@
 	transform: scale(1.1);
 	color: darkgray;
 }
+
+.teamDepartment {
+	margin: 10em 10em auto auto;
+}
+
+@media screen and (min-width: 992px) {
+	.deptNameLeft { order: 1; }
+	.deptNameRight { order: 2; }
+	.deptMembersRight { order: 2; }
+	.deptMembersLeft { order: 1; }
+
+	.deptNameLeft h1 { text-align: right; }
+	.deptNameRight h1 { text-align: left; }
+}
+
+@media screen and (max-width: 992px) {
+	.deptNameLeft h1 { text-align: center; }
+	.deptNameRight h1 { text-align: center; }
+}
