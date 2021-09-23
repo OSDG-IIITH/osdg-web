@@ -29,6 +29,13 @@ const TeamMemberCard = ({ memberData }) => {
 
 const Team = () => {
 
+	const departments = [
+		"coordinators",
+		"design",
+		"outreach",
+		"tech"
+	];
+
 	const coordinators = [
 		{
 			name: 'Dhruv Kapur',
@@ -219,30 +226,21 @@ const Team = () => {
 					<img src="Images/TeamGraphic.svg" alt="" className="d-block d-md-none img-fluid w-100" style={{ transform: "scaleY(-1) translateY(1px) rotateZ(0.15deg)" }} />
 					<h1>Team</h1>
 				</div>
-				<h1 className="text-center mt-5 mb-4">Coordinators</h1>
-				<div className="d-flex flex-wrap px-5 justify-content-center mt-3 align-items-end">
-					{coordinators.sort((a, b) => {
-						return a.name < b.name ? 1 : -1;
-					}).map((m, i) => <TeamMemberCard memberData={m} key={i} />)}
-				</div>
-				<h1 className="text-center mt-5 mb-4">Design</h1>
-				<div className="d-flex flex-wrap px-5 justify-content-center mt-3 align-items-end">
-					{design.sort((a, b) => {
-						return a.name < b.name ? -1 : 1;
-					}).map((m, i) => <TeamMemberCard memberData={m} key={i} />)}
-				</div>
-				<h1 className="text-center mt-5 mb-4">Outreach</h1>
-				<div className="d-flex flex-wrap px-5 justify-content-center mt-3 align-items-end">
-					{outreach.sort((a, b) => {
-						return a.name < b.name ? -1 : 1;
-					}).map((m, i) => <TeamMemberCard memberData={m} key={i} />)}
-				</div>
-				<h1 className="text-center mt-5 mb-4">Tech</h1>
-				<div className="d-flex flex-wrap px-1 px-md-5 justify-content-center mt-3 align-items-end">
-					{tech.sort((a, b) => {
-						return a.name < b.name ? -1 : 1;
-					}).map((m, i) => <TeamMemberCard memberData={m} key={i} />)}
-				</div>
+
+				{
+					departments.map((deptName) => {
+						return (<>
+							<h1 className="text-center mt-5 mb-4">{deptName.charAt(0).toUpperCase() + deptName.slice(1)}</h1>
+							<div className="d-flex flex-wrap px-5 justify-content-center mt-3 align-items-end">
+								{
+									eval(deptName).sort((a, b) => {
+									return a.name < b.name ? -1 : 1;
+								}).map((m, i) => <TeamMemberCard memberData={m} key={i} />)}
+							</div>
+						</>);
+					})
+				}
+
 			</div>
 		</>
 	);
