@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap');
+
 .topDiv {
 	position: relative;
 	color: black;
@@ -69,6 +71,10 @@
 
 .teamDepartment {
 	margin: 10em 10em auto auto;
+}
+
+.teamDepartmentName {
+	font-family: 'Hind', sans-serif;
 }
 
 @media screen and (min-width: 992px) {
