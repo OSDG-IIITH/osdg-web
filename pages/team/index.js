@@ -231,15 +231,15 @@ const Team = () => {
 					departments.map((deptName, index) => {
 						return (
 							<div className={`${styles.teamDepartment} row align-items-center mx-5 px-0`} key={index}>
-								<div className={`${ (index % 2 == 0)? styles.deptNameLeft: styles.deptNameRight } col-lg-4`}>
+								<div className={`${(index % 2 == 0) ? styles.deptNameLeft : styles.deptNameRight} col-lg-4`}>
 									<h1 className="mt-5 mb-4">{deptName.charAt(0).toUpperCase() + deptName.slice(1)}</h1>
 								</div>
-								<div className={`${ (index % 2 == 0)? styles.deptMembersRight: styles.deptMembersLeft } col-lg-8`}>
+								<div className={`${(index % 2 == 0) ? styles.deptMembersRight : styles.deptMembersLeft} col-lg-8`}>
 									<div className="d-flex flex-wrap px-5 justify-content-center mt-3 align-items-end">
 										{
 											eval(deptName).sort((a, b) => {
-											return a.name < b.name ? -1 : 1;
-										}).map((m, i) => <TeamMemberCard memberData={m} key={i} />)}
+												return a.name < b.name ? -1 : 1;
+											}).map((m, i) => <TeamMemberCard memberData={m} key={i} />)}
 									</div>
 								</div>
 							</div>
