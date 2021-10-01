@@ -230,7 +230,7 @@ const Team = () => {
 				{
 					departments.map((deptName, index) => {
 						return (
-							<div className={`${styles.teamDepartment} row align-items-center mx-5 px-0`}>
+							<div className={`${styles.teamDepartment} row align-items-center mx-5 px-0`} key={index}>
 								<div className={`${ (index % 2 == 0)? styles.deptNameLeft: styles.deptNameRight } col-lg-4`}>
 									<h1 className="mt-5 mb-4">{deptName.charAt(0).toUpperCase() + deptName.slice(1)}</h1>
 								</div>
