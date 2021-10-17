@@ -24,7 +24,7 @@ const Events = () => {
             contacts: ["osdg@students.iiit.ac.in", "manan.goel@research.iiit.ac.in"]
         },
         {
-            image: "https://scontent.fdel52-1.fna.fbcdn.net/v/t1.6435-9/211279973_4115224728587158_3360084271440984972_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=825194&_nc_ohc=FXYYDnOEOpMAX9FSoBl&_nc_ht=scontent.fdel52-1.fna&oh=2097068f77e17d0875b7559fe37c346e&oe=616BC792",
+            image: "https://scontent.fdel52-1.fna.fbcdn.net/v/t1.6435-9/200875247_2965735953698878_3383427803708527748_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=jGt7C41FzLkAX93uv_J&_nc_ht=scontent.fdel52-1.fna&oh=7874aed47ca8d06338363302112e4743&oe=619130AC",
             title: "SummerUp",
             description: "A month long hackathon with a chance to be win funding to launch a new start up.",
             longDesc: ["There’s 104 days of summer vacation, and the lockdown has just messed it up. So E-Cell IIIT-H, in collaboration with OSDG IIIT-H, has come up with a solution, our 40 - day event called “SummerUp”!",
