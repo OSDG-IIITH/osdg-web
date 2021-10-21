@@ -94,7 +94,7 @@ const QBHacks = () => {
                     <h1 className="font-weight-bold display-1">QBHacks</h1>
                     <h4 className="text-start ms-3 font-weight-light">Powered by
                         <span>
-                            <a href="https://www.questbook.app/" target="_blank">
+                            <a href="https://www.questbook.app/" target="_blank" rel="noreferrer">
                                 <img className="rounded ms-3" width="30px" src="https://bookface-images.s3.amazonaws.com/logos/b34603290af8de5f68dd919b112bcb5e3e8d78ef.png" />
                             </a>
                         </span>
@@ -102,8 +102,8 @@ const QBHacks = () => {
                     <div className="my-3" />
                     <h2 className="">3<sup>rd</sup> to 21<sup>st</sup> November 2021</h2>
                     <div className="d-flex flex-column flex-md-row justify-content-center">
-                        <a className={`btn ${styles.btnDiscord} btn-lg m-2`} href="https://discord.gg/wYzGSCVWgf" target="_blank"><span><img className="me-2" src="https://hackon.tech/_nuxt/img/discord.2a0169a.svg" />Discord Server</span></a>
-                        <a className={`btn ${styles.btnRegister} btn-lg m-2`} href="https://creatoros.typeform.com/to/HLr33teC?utm_source=xxxxx&utm_medium=xxxxx&utm_term=xxxxx" target="_blank"><span><img className="me-2" src="https://tripetto.com/images/alternatives/typeform.png" width="35" />Register Now</span></a>
+                        <a className={`btn ${styles.btnDiscord} btn-lg m-2`} href="https://discord.gg/wYzGSCVWgf" target="_blank" rel="noreferrer"><span><img className="me-2" src="https://hackon.tech/_nuxt/img/discord.2a0169a.svg" />Discord Server</span></a>
+                        <a className={`btn ${styles.btnRegister} btn-lg m-2`} href="https://creatoros.typeform.com/to/HLr33teC?utm_source=xxxxx&utm_medium=xxxxx&utm_term=xxxxx" target="_blank" rel="noreferrer"><span><img className="me-2" src="https://tripetto.com/images/alternatives/typeform.png" width="35" />Register Now</span></a>
                     </div>
                 </div>
             </div>
@@ -154,7 +154,7 @@ const QBHacks = () => {
             <div className={`${styles.divFAQ} mt-5 py-5 px-3 px-md-5`}>
                 <h1 className="text-center display-2 mb-5">Frequently Asked questions</h1>
                 <div className="d-flex flex-wrap justify-content-center">
-                    <FAQCard question="How do I register?" answer={<>Use the below link to register for the hackathon: <a href="https://creatoros.typeform.com/to/HLr33teC?utm_source=xxxxx&utm_medium=xxxxx&utm_term=xxxxx" target="_blank">Registration Form</a></>} />
+                    <FAQCard question="How do I register?" answer={<>Use the below link to register for the hackathon: <a href="https://creatoros.typeform.com/to/HLr33teC?utm_source=xxxxx&utm_medium=xxxxx&utm_term=xxxxx" target="_blank" rel="noreferrer">Registration Form</a></>} />
                     <FAQCard question="Is there any registration fee?" answer={<>Learning is free on Questbook and so is the participation fee for the Hackathon. All we expect from the participants is the hunger and enthusiam to learn web3 technologies and this Hackathon will show you myriads of such opportunities.</>} />
                     <FAQCard question="Who can participate in this event?" answer={<>Any student from any college or university across the globe can participate. We are also inviting a few beginner level learners from Questbook partnered Blockchain clubs to participate. </>} />
                     <FAQCard question="Is this a team event or individual event?" answer={<>Each participant has to register individually on the link provided above. However, during the last week of -’Ideate and execute’, learners will collaborate and form teams to participate in the hackathon.<br />
