@@ -91,7 +91,7 @@ const QBHacks = () => {
             </Head>
             <div className={`${styles.divLanding} d-flex flex-row`} ref={vantaRef}>
                 <div className="d-flex flex-column align-items-center mt-3 col-12">
-                    <h1 className="font-weight-bold display-1">QBHacks</h1>
+                    <h1 className="display-1">QBHacks</h1>
                     <h4 className="text-start ms-3 font-weight-light">Powered by
                         <span>
                             <a href="https://www.questbook.app/" target="_blank" rel="noreferrer">
@@ -100,7 +100,7 @@ const QBHacks = () => {
                         </span>
                     </h4>
                     <div className="my-3" />
-                    <h2 className="">3<sup>rd</sup> to 21<sup>st</sup> November 2021</h2>
+                    <h2 className="h3">3<sup>rd</sup> to 21<sup>st</sup> November 2021</h2>
                     <div className="d-flex flex-column flex-md-row justify-content-center">
                         <a className={`btn ${styles.btnDiscord} btn-lg m-2`} href="https://discord.gg/wYzGSCVWgf" target="_blank" rel="noreferrer"><span><img className="me-2" src="https://hackon.tech/_nuxt/img/discord.2a0169a.svg" />Discord Server</span></a>
                         <a className={`btn ${styles.btnRegister} btn-lg m-2`} href="https://creatoros.typeform.com/to/HLr33teC?utm_source=xxxxx&utm_medium=xxxxx&utm_term=xxxxx" target="_blank" rel="noreferrer"><span><img className="me-2" src="https://tripetto.com/images/alternatives/typeform.png" width="35" />Register Now</span></a>

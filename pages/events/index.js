@@ -7,7 +7,7 @@ import { faCalendar, faClock } from '@fortawesome/free-regular-svg-icons';
 
 const Events = () => {
 
-    const [selectedEvent, setSelectedEvent] = useState(2);
+    const [selectedEvent, setSelectedEvent] = useState(3);
 
     const eventList = [
         {
