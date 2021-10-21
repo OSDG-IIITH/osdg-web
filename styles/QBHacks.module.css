@@ -1,0 +1,86 @@
+.divLanding {
+    height: 100vh;
+    background-color: #0F0B1C;
+    padding-top: 6rem;
+    color: white !important;
+    overflow-x: hidden;
+}
+
+.divLanding h1 {
+    font-size: 15vw;
+}
+
+.divLanding h4 {
+    word-spacing: 10px;
+}
+
+.btnDiscord {
+    background-color: #7289DA;
+    color: white;
+    transition: all ease-in-out 500ms;
+}
+
+.btnRegister {
+    background-color: white;
+}
+
+.btnDiscord:hover {
+    color: white;
+    box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.1);
+}
+
+.divIntro {
+    background-color: #0F0B1C;
+    color: white;
+}
+
+.divPrizes {
+    background-color: none;
+}
+
+.divTimeline {
+    background-color: #0F0B1C;
+    color: white;
+}
+
+.divFormat {
+    background-color: none;
+}
+
+.divFAQ {
+    background-color: #0F0B1C;
+    color: white;
+}
+
+.prizeCard {
+    background-color: #0F0B1C;
+    color: white;
+    transition: all ease-in-out 200ms;
+}
+
+.prizeCard:hover {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.eventTime {
+    background-color: #1D8FE9
+}
+
+.eventDesc {
+    background-color: #2E303E;
+    width: 100%;
+}
+
+.formatDesc a {
+    color: #1D8FE9;
+    text-decoration: underline;
+}
+
+.faqCard {
+    background-color: #2E303E;
+}
+
+.faqCard a {
+    color: #1D8FE9;
+    text-decoration: underline;
+}

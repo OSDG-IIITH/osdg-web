@@ -51,19 +51,35 @@ const Events = () => {
             contacts: ["osdg@students.iiit.ac.in"]
         },
         {
+            image: "https://bookface-images.s3.amazonaws.com/logos/b34603290af8de5f68dd919b112bcb5e3e8d78ef.png",
+            title: "QBHacks",
+            description: "Learn the latest blockchain standards today and stand a chance to earn crypto on the way!",
+            longDesc: ["QBHacks is an event organized by Open Source Developer Group (OSDG), IIIT Hyderabad, in partnership with Questbook. The hackathon is spread over 4 weeks, with participation from students from various colleges across the globe.",
+                "Participants learn different Web3 concepts, get mentorship from industry experts, get an opportunity to network with some of the brightest crypto aspirants and will get an opportunity to build the next Aave or Axie Infinity or Topshots or DogeCoin 😜 !"],
+            date: "Nov 2021",
+            day: "3rd - 21st Nov, 2021",
+            time: "All Day",
+            links: [{ text: 'QBHacks Official Page', url: "/qbhacks" },
+            { text: 'Questbook.app', url: "https://questbook.app" },
+            { text: 'Registraion Form', url: "https://creatoros.typeform.com/to/HLr33teC?utm_source=xxxxx&utm_medium=xxxxx&utm_term=xxxxx" }],
+            contacts: ["help@questbook.app", "osdg@students.iiit.ac.in"]
+
+        },
+        {
             image: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
             title: "Intro to Git",
-            description: "Covering the basics of Git and GitHub and getting prepped for HacktoberFest.",
+            description: "Covering the basics of Git and GitHub and helping you take your first step in your Open Source journey.",
             longDesc: ["Collaboration lies at the heart of Open Source. But with hundreds of different people working on the same project, at different times, from different places, don't you think it becomes difficult to coordinate their approaches. Even worse if what one implemented conflicts something someone else wrote. Clearly, we need a way to resolve this.",
                 "Git is the answer. It is the cornerstone of Open Source development. Git provides a clean and simple way collaborate with others while allowing huge teams to work coherently on a single project, while also allowing tracking of the status of the project from beginning to end. Git goes hand in hand with GitHub, a free online public repository storage system powered by Git, to make your projects more accessible",
-                "In this seminar we'll be looking at how Version Control with Git works and how to use it in conjunction with GitHub. You'll also be making your first Pull Request to a repository and start on the way to completing the HacktoberFest 2021 challenge and winning youself some amazing swag!"
+                "In this seminar we'll be looking at how Version Control with Git works and how to use it in conjunction with GitHub. You'll also be making your first Pull Request to a repository on your way to your amazing Open Source Journey."
             ],
-            date: "Oct 2021",
+            date: "Nov 2021",
             day: "TBD",
             time: "TBD",
             links: [],
             contacts: ["osdg@students.iiit.ac.in"]
         },
+
         {
             image: "https://media.discordapp.net/attachments/868064937132568586/888107155679498260/Untitled-1.png?width=701&height=701",
             title: "Open Tech Summit",

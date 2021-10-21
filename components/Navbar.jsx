@@ -15,6 +15,7 @@ const Navbar = () => {
                         <Link href="/projects"><a className="nav-link ms-3 active">Projects</a></Link>
                         <Link href="/events"><a className="nav-link ms-3 active">Events</a></Link>
                         <Link href="/team"><a className="nav-link ms-3 active">Team</a></Link>
+                        <Link href="/qbhacks"><a className="nav-link ms-3 active">QBHacks</a></Link>
                         <Link href="/#contact-form-scroll-point"><button className=" btn-custom ms-3 px-3 pt-1">Contact Us</button></Link>
                     </div>
                 </div>

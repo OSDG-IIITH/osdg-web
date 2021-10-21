@@ -33,7 +33,7 @@ const EventCarousel = ({ eventList, setSelectedEvent }) => {
     }, [])
 
     const flickityOptions = {
-        initialIndex: 2,
+        initialIndex: 3,
         wrapAround: true,
         pageDots: true,
         draggable: false
