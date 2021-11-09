@@ -80,7 +80,7 @@ const Home = ({ postData }) => {
           </div>
         </div>
       </div>
-      <div id="contact-form-scroll-point" className="d-flex flex-row">
+      {/* <div id="contact-form-scroll-point" className="d-flex flex-row">
         <div className="d-none d-md-flex col-4 flex-column justify-content-center align-items-center contact-decorator">
           <img src="Images/ContactGraphic.svg" alt="" className='img-fluid' width="250" />
         </div>
@@ -107,7 +107,7 @@ const Home = ({ postData }) => {
               <button type="submit" className="btn-custom px-3">Submit</button>}
           </form>
         </div>
-      </div>
+      </div> */}
       <ToastContainer />
     </>
   );

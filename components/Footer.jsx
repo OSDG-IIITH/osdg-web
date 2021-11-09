@@ -24,12 +24,10 @@ const Footer = () => {
                 <div className='col-2 d-flex my-3 text-end order-sm-3 d-none d-sm-block'>
                     <p className='m-0'>Reach Us</p>
                     <a className='footer-text my-1 d-block' href="mailto:osdg@students.iiit.ac.in">osdg@students.iiit.ac.in</a>
-                    <a className='footer-text my-1 d-block' href="mailto:osdg.iiithyd@gmail.com">osdg.iiithyd@gmail.com</a>
                 </div>
                 <div className="d-block d-sm-none text-center pb-3">
                     <p className="">Reach Us</p>
                     <a className='footer-text my-1 d-block' href="mailto:osdg@students.iiit.ac.in">osdg@students.iiit.ac.in</a>
-                    <a className='footer-text my-1 d-block' href="mailto:osdg.iiithyd@gmail.com">osdg.iiithyd@gmail.com</a>
                 </div>
             </div>
         </footer >

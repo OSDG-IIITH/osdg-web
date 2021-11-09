@@ -72,7 +72,8 @@ const QBHacks = () => {
                 backgroundColor: 0x0F0B1C,
                 color: 0x6dbeff,
                 showDots: false,
-                points: 20.0,
+                points: 20,
+                maxDistance: window ? Math.pow(window.screen.width, 0.45) : 20,
                 touchControls: false,
                 mouseControls: false,
                 gyroControls: false,
@@ -91,7 +92,7 @@ const QBHacks = () => {
             </Head>
             <div className={`${styles.divLanding} d-flex flex-row`} ref={vantaRef}>
                 <div className="d-flex flex-column align-items-center mt-3 col-12">
-                    <h1 className="display-1">QBHacks</h1>
+                    <h1 className="display-1 mt-5 mt-md-4 mt-lg-3 mt-xl-2">QBHacks</h1>
                     <h4 className="text-start ms-3 font-weight-light">Powered by
                         <span>
                             <a href="https://www.questbook.app/" target="_blank" rel="noreferrer">
@@ -100,10 +101,10 @@ const QBHacks = () => {
                         </span>
                     </h4>
                     <div className="my-3" />
-                    <h2 className="h3">3<sup>rd</sup> to 21<sup>st</sup> November 2021</h2>
+                    <h2 className="h3">1<sup>st</sup> to 12<sup>th</sup> December 2021</h2>
                     <div className="d-flex flex-column flex-md-row justify-content-center">
                         <a className={`btn ${styles.btnDiscord} btn-lg m-2`} href="https://discord.gg/wYzGSCVWgf" target="_blank" rel="noreferrer"><span><img className="me-2" src="https://hackon.tech/_nuxt/img/discord.2a0169a.svg" />Discord Server</span></a>
-                        <a className={`btn ${styles.btnRegister} btn-lg m-2`} href="https://creatoros.typeform.com/to/HLr33teC?utm_source=xxxxx&utm_medium=xxxxx&utm_term=xxxxx" target="_blank" rel="noreferrer"><span><img className="me-2" src="https://tripetto.com/images/alternatives/typeform.png" width="35" />Register Now</span></a>
+                        <a className={`btn ${styles.btnRegister} btn-lg m-2`} href="https://form.typeform.com/to/HLr33teC" target="_blank" rel="noreferrer"><span><img className="me-2" src="https://tripetto.com/images/alternatives/typeform.png" width="35" />Register Now</span></a>
                     </div>
                 </div>
             </div>
@@ -134,21 +135,24 @@ const QBHacks = () => {
                 <div className="d-flex flex-column justify-content-around mt-5">
                     <p className="text-muted">*All the timings mentioned are in the IST Timezone</p>
                     <EventCard time="20:00" date="20th Oct" desc="Registration Begins" />
-                    <EventCard time="20:00" date="30th Oct" desc="Registration Closes" />
-                    <EventCard time="00:00" date="20th Nov" desc="Submission Deadline" />
-                    <EventCard time="Evening" date="20th Nov" desc="Round 2 Presentations" />
-                    <EventCard time="Morning" date="21st Nov" desc="Round 2 Presentations" />
-                    <EventCard time="Evening" date="21st Nov" desc="Winners Announcement" />
+                    <EventCard time="17:00" date="15th Nov" desc="Registration Ends" />
+                    <EventCard time="17:00" date="1st Dec" desc="Forming Teams" />
+                    <EventCard time="17:00" date="1st Dec" desc="Start working on Projects" />
+                    <EventCard time="21:00" date="10th Dec" desc="Project Submission Deadline" />
+                    <EventCard time="12:00" date="11th Dec" desc="Shortlisting by Judges and Announcement" />
+                    <EventCard time="17:00" date="11th Dec" desc="Pitching to Judges" />
+                    <EventCard time="09:00" date="12th Dec" desc="Pitching to Judges" />
+                    <EventCard time="12:00" date="12th Dec" desc="Winner Announcement" />
                 </div>
             </div>
             <div className={`${styles.divFormat} my-5 p-5`}>
                 <h1 className="text-center display-2">Event Format</h1>
                 <div className="d-flex flex-column mt-3">
-                    <FormatDesc title="Learning Web3 Basics" duration="21st Oct - 6th Nov" desc={<>Learn from resources provided on <a href="https://questbook.app">Questbook.app</a>. Participate in daily live sessions and community conversations on the quests on the <a href="https://discord.gg/wYzGSCVWgf">Discord server.</a></>} />
-                    <FormatDesc title="Practice problems" duration="7th Nov - 13th Nov" desc={<>Time to hone your skills by practicing a few coding problems and sample projects.</>} />
-                    <FormatDesc title="Ideate & Execute" duration="14th Nov - 18th Nov" desc={<>Form your team(ideally 3-6 member team), ideate your project, get mentorship from the Questbook team & coaches, discuss with the community and start building your prototype.</>} />
-                    <FormatDesc title="Presentation" duration="19th Nov - 21st Nov" desc={<>Submit your demo and presentation by 19th Nov. 10 Shortlisted projects will be given 30 mins each to present and answer judges questions. </>} />
-                    <FormatDesc title="Aftermath" duration="Post 21st Nov" desc={<>Hackathon ends on 21st Nov but the learning on Questbook never will. Motivated learners can continue their projects, get mentors, community support and if progressing significantly, even some funding from the investors!</>} />
+                    <FormatDesc title="Learning Web3 Basics" duration="22nd Nov - 26th Nov" desc={<>Learn from resources provided on <a href="https://questbook.app">Questbook.app</a>. Participate in daily live sessions and community conversations on the quests on the <a href="https://discord.gg/wYzGSCVWgf">Discord server.</a></>} />
+                    <FormatDesc title="Practice problems" duration="27th Nov - 30th Nov" desc={<>Time to hone your skills by practicing a few coding problems and sample projects.</>} />
+                    <FormatDesc title="Ideate & Execute" duration="1st Dec - 10th Dec" desc={<>Form your team(ideally 3-6 member team), ideate your project, get mentorship from the Questbook team & coaches, discuss with the community and start building your prototype. A member of the Questbook team will be available for Office Hours everyday, from 6PM to 1AM, to help clarify any doubts.</>} />
+                    <FormatDesc title="Presentation" duration="10th Dec - 12th Dec" desc={<>Submit your demo and presentation by 19th Nov. 10 Shortlisted projects will be given 30 mins each to present and answer judges questions. </>} />
+                    <FormatDesc title="Aftermath" duration="Post 12th Dec" desc={<>Hackathon ends on 21st Nov but the learning on Questbook never will. Motivated learners can continue their projects, get mentors, community support and if progressing significantly, even some funding from the investors!</>} />
                 </div>
             </div>
             <div className={`${styles.divFAQ} mt-5 py-5 px-3 px-md-5`}>
