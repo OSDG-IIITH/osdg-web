@@ -38,18 +38,25 @@ const Team = () => {
 
 	const coordinators = [
 		{
-			name: 'Dhruv Kapur',
-			img: 'Images/Team/DhruvKapur.png',
-			web: 'https://web.iiit.ac.in/~dhruv.kapur',
-			github: 'https://github.com/dkapur17',
-			linkedin: 'https://linkedin.com/in/dhruv-kapur-215010156/'
+			name: 'Vamshi Krishna',
+			img: 'Images/Team/VamshiKrishna.png',
+			web: 'https://victorknox.github.io/',
+			github: 'https://github.com/victorknox',
+			linkedin: 'https://www.linkedin.com/in/vamshi-krishna-bonagiri-ba221b1bb/'
 		},
 		{
-			name: 'Kshitijaa Jaglan',
-			img: 'Images/Team/KshitijaaJaglan.png',
-			web: 'https://deutranium.github.io/about/',
-			github: 'https://github.com/deutranium/',
-			linkedin: 'https://www.linkedin.com/in/kshitijaa-jaglan/',
+			name: "Pratyaksh Gautam",
+			img: 'Images/Team/PratyakshGautam.png',
+			web: null,
+			github: 'https://github.com/hi-im-buggy',
+			linkedin: null
+		},
+		{
+			name: 'Shashwat Singh',
+			img: 'Images/Team/ShashwatSingh.png',
+			web: null,
+			github: 'https://github.com/shashwat1002',
+			linkedin: null
 		},
 	];
 
@@ -145,13 +152,6 @@ const Team = () => {
 			linkedin: 'https://www.linkedin.com/in/yash-mehan-14800b159/'
 		},
 		{
-			name: 'Vamshi Krishna',
-			img: 'Images/Team/VamshiKrishna.png',
-			web: 'https://victorknox.github.io/',
-			github: 'https://github.com/victorknox',
-			linkedin: 'https://www.linkedin.com/in/vamshi-krishna-bonagiri-ba221b1bb/'
-		},
-		{
 			name: 'Sanchit Arora',
 			img: 'Images/Team/SanchitArora.png',
 			web: null,
@@ -173,13 +173,6 @@ const Team = () => {
 			linkedin: 'https://www.linkedin.com/in/gautam-ghai-079439207'
 		},
 		{
-			name: 'Shashwat Singh',
-			img: 'Images/Team/ShashwatSingh.png',
-			web: null,
-			github: 'https://github.com/shashwat1002',
-			linkedin: null
-		},
-		{
 			name: 'Gurkirat Singh',
 			img: 'Images/Team/GurkiratSingh.png',
 			web: null,
@@ -199,13 +192,6 @@ const Team = () => {
 			web: null,
 			github: 'https://github.com/SwethaVipparla',
 			linkedin: 'https://www.linkedin.com/in/swethavipparla/'
-		},
-		{
-			name: "Pratyaksh Gautam",
-			img: 'Images/Team/PratyakshGautam.png',
-			web: null,
-			github: 'https://github.com/hi-im-buggy',
-			linkedin: null
 		},
 		{
 			name: "Kannav Mehta",
