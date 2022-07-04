@@ -146,7 +146,7 @@ export async function getStaticProps(context) {
     console.log(e);
     postData = {
       url: 'https://www.instagram.com/osdg.iiith',
-      thumbnailUrl: 'Images/SquareLogo.png',
+      thumbnailUrl: 'Images/Recruit.jpg',
       caption: "Head on over to our instagram to see our posts.",
       likes: "Like",
       comments: "Comment",
