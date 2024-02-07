@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="flex justify-between items-center p-4 bg-[#2E303E] text-white">
       <Image src={brandLogo} alt="OSDG" className="w-20" />
-      <div className="w-1/3 flex justify-evenly">
+      <div className="w-1/2 md:w-1/3 flex justify-evenly">
         <Link className={linkClass} href="/">
           Home
         </Link>

@@ -26,7 +26,7 @@ export default function Home() {
           ))}
         </div>
         <div className="basis-4/12">
-          <h1 className="text-7xl font-extrabold leading-tight">
+          <h1 className="text-7xl font-extrabold leading-tight pr-12 md:pr-0">
             Open Source Developers Group
           </h1>
           <p className="text-xl pt-12">
@@ -34,7 +34,7 @@ export default function Home() {
             new things, which is especially fun when we do it together!
           </p>
         </div>
-        <div className="basis-7/12 flex items-center justify-center">
+        <div className="hidden basis-7/12 md:flex items-center justify-center">
           <Image src={introGraphic} alt="intro graphic" />
         </div>
       </div>
@@ -42,10 +42,10 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center py-32">
         <h2 className="text-5xl font-bold">About Us</h2>
         <div className="flex items-center justify-evenly">
-          <div className="basis-2/5 flex justify-center items-center">
+          <div className="hidden basis-2/5 md:flex justify-center items-center">
             <Image src={aboutGraphic} alt="about graphic" />
           </div>
-          <div className="basis-3/5 pr-64 text-xl flex flex-col justify-center items-center">
+          <div className="basis-3/5 md:pr-64 text-xl flex flex-col justify-center items-center">
             <p className="my-8">
               The Open Source Developers Group at IIIT Hyderabad is dedicated to
               helping student developers improve their skills and contribute to
