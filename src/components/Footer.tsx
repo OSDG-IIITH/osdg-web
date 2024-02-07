@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
   return (
-    <div className="flex justify-around px-32 py-12 bg-slate-700 text-white">
+    <footer className="flex justify-around px-32 py-12 bg-slate-700 text-white">
       <div className="text-xs h-auto">
         <Image src={brandLogo} alt="OSDG" className="w-32 mb-6" />
         <p>&copy; 2024</p>
@@ -29,6 +29,6 @@ export default function Footer() {
         <p className="text-l font-bold">Reach Us</p>
         <a  className="text-xs" href="mailto:osdg@students.iiit.ac.in">osdg@students.iiit.ac.in</a>
       </div>
-    </div>
+    </footer>
   );
 }
