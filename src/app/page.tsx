@@ -39,8 +39,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center py-12">
-        <h2 className="text-4xl font-bold">About Us</h2>
+      <div className="flex flex-col justify-center items-center py-32">
+        <h2 className="text-5xl font-bold">About Us</h2>
         <div className="flex items-center justify-evenly">
           <div className="basis-2/5 flex justify-center items-center">
             <Image src={aboutGraphic} alt="about graphic" />
