@@ -1,23 +1,10 @@
 import Image from "next/image";
 import introGraphic from "@/assets/IntroGraphic.svg";
 import aboutGraphic from "@/assets/AboutGraphic.svg";
-import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
-import {
-  faFacebook,
-  faGithub,
-  faLinkedin,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { socials } from "@/utils/socials";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Home() {
-  const socials: [string, IconDefinition][] = [
-    ["https://www.facebook.com/groups/185567594878116", faFacebook],
-    ["https://github.com/OSDG-IIITH", faGithub],
-    ["https://www.linkedin.com/company/74330374", faLinkedin],
-    ["https://www.instagram.com/osdg.iiith", faInstagram],
-  ];
-
   return (
     <>
       <div
@@ -34,7 +21,7 @@ export default function Home() {
               key={idx}
               className="py-8 opacity-60 hover:opacity-100 w-8 h-8"
             >
-              <FontAwesomeIcon icon={icon}/>
+              <FontAwesomeIcon icon={icon} />
             </a>
           ))}
         </div>
