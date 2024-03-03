@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Home() {
   return (
-    <>
+    <main className="overflow-hidden text-center md:text-left">
       <div
         className="text-white min-h-screen flex items-center justify-between"
         style={{
@@ -14,7 +14,7 @@ export default function Home() {
             "radial-gradient(circle at 0vw 100vh, #304154 0%, #1c1e26 20%)",
         }}
       >
-        <div className="basis-1/12 flex flex-col items-center justify-center">
+        <div className="basis-1/12 hidden md:flex flex-col items-center justify-center">
           {socials.map(([link, icon], idx) => (
             <a
               href={link}
@@ -25,11 +25,11 @@ export default function Home() {
             </a>
           ))}
         </div>
-        <div className="basis-4/12">
-          <h1 className="text-7xl font-extrabold leading-tight pr-12 md:pr-0">
+        <div className="md:basis-4/12 flex flex-col justify-center items-center">
+          <h1 className="text-7xl font-extrabold leading-tight">
             Open Source Developers Group
           </h1>
-          <p className="text-xl pt-12">
+          <p className="text-xl pt-12 p-1">
             Hi! We&apos;re OSDG. We like to make stuff, break stuff, and learn
             new things, which is especially fun when we do it together!
           </p>
@@ -64,6 +64,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </>
+    </main>
   );
 }
