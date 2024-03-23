@@ -1,13 +1,35 @@
 [
     {
+        "projectName": "OSDG Web",
+        "maintainers": [
+            "Mohit Singh",
+            "Arihant Tripathy",
+            "Aryan Maskara"
+        ],
+        "languages": [
+            "JavaScript",
+            "CSS"
+        ],
+        "description": "OSDG Web is a project undertaken to enhance the OSDG Website by adding various features in it.",
+        "image": "",
+        "link": "https://github.com/OSDG-IIITH/osdg-web"
+    },
+    {
         "projectName": "CabMiloge",
         "maintainers": [
             "Shaunak",
             "Vyakhya",
             "Anushka Sharma"
         ],
-        "description": "CabMiloge is a platform designed to facilitate carpooling among college students. It addresses the challenge of finding travel companions when commuting to and from the college campus. Users can specify their travel details, including pickup and drop-off locations, and the system intelligently matches them with compatible travel partners based on their routes and preferred travel times. The platform employs a Random Forest algorithm to optimize the matching process, ensuring a seamless and convenient experience for users.",
-        "image": ""
+        "languages": [
+            "HTML",
+            "Python",
+            "JavaScript",
+            "CSS"
+        ],
+        "description": "CabMiloge is a platform designed to facilitate carpooling among college students. It addresses the challenge of finding travel companions when commuting to and from the college campus.",
+        "image": "",
+        "link": "https://github.com/OSDG-IIITH/CabMiloge"
     },
     {
         "projectName": "ReviewIIIT",
@@ -16,29 +38,41 @@
             "Agyeya Negi",
             "Shlok Sand"
         ],
-        "description": "ReviewIIIT is a course and faculty review platform specifically designed for students. It aims to provide a transparent and comprehensive resource for students to access detailed reviews about courses and professors. Unlike the existing system of course review forms managed by the institute, ReviewIIIT offers a public and student-driven platform, fostering an open exchange of insights and experiences. This project empowers students to make informed decisions regarding their academic journey.",
-        "image": ""
+        "langauges": [
+
+        ],
+        "description": "ReviewIIIT is a course and faculty review platform specifically designed for students. It aims to provide a transparent and comprehensive resource for students to access detailed reviews about courses and professors.",
+        "image": "",
+        "link": "https://github.com/OSDG-IIITH/Review-IIIT"
     },
     {
-        "projectName": "Lockout website",
+        "projectName": "Lockout",
         "maintainers": [
             "Aryan Maskara",
             "Arihant Tripathy",
             "Ami Buch"
         ],
-        "description": "The Lockout website is a collaborative project undertaken in partnership with the Prog Club at IIIT Hyderabad. Building upon the existing Lockout Discord bot, this endeavor aims to expand the platform's capabilities and create a dedicated website. The website will serve as a centralized hub for various contest-like scenarios, events, and competitions organized by different clubs on campus. It will provide a streamlined experience for participants, facilitating seamless registration, tracking, and management of these activities.",
-        "image": ""
+        "langauges": [
+
+        ],
+        "description": "The Lockout website is a collaborative project undertaken in partnership with the Prog Club at IIIT Hyderabad.",
+        "image": "",
+        "link": "https://github.com/OSDG-IIITH/Lockout-Website"
     },
     {
-        "projectName": "Mess portal",
+        "projectName": "Intranet IIIT",
         "maintainers": [
             "Sai Praneeth",
             "Gopal Kataria",
             "Rinish",
             "Abhiram"
         ],
-        "description": "The mess portal is being completely redesigned from the ground up. The new portal will feature a modern and intuitive interface, providing students with a seamless experience for managing their mess-related activities. The platform will offer a range of functionalities, including menu browsing, feedback submission, and meal plan management. By leveraging the latest web technologies, the project aims to enhance the overall user experience and optimize the mess-related processes for students.",
-        "image": ""
+        "langauges": [
+
+        ],
+        "description": "The Intranet is being completely redesigned from the ground up.",
+        "image": "",
+        "link": "https://github.com/OSDG-IIITH/Intranet-IIIT"
     },
     {
         "projectName": "RMS",
@@ -48,7 +82,11 @@
             "Varun",
             "Kritin"
         ],
-        "description": "The Recruitment Management System (RMS-IIIT) is a comprehensive platform designed to streamline the recruitment processes of various student bodies and clubs on the IIIT Hyderabad campus. By providing a user-friendly interface, RMS-IIIT simplifies application procedures for both recruiters and applicants, enhancing overall efficiency. Key features include intuitive application tracking, application status monitoring, and a centralized recruitment management system tailored to the specific needs of the institute's student organizations.",
-        "image": ""
+        "langauges": [
+
+        ],
+        "description": "The Recruitment Management System is a comprehensive platform designed to streamline the recruitment processes of various student bodies and clubs.",
+        "image": "",
+        "link": "https://github.com/OSDG-IIITH/Recruitment-Management-System"
     }
 ]
