@@ -132,15 +132,30 @@ export default function Projects({ searchParams }) {
                         ? maintainer.pfpURL
                         : `https://robohash.org/${maintainer.name}.png?set=set5`
                     }
-                    className="object-cover h-16 w-16 bg-red-300 rounded-full m-3"
+                    className="object-cover h-12 w-12 bg-red-300 rounded-full m-3"
                   />
                 )
               )}
             </div>
+            <div>
+              <div className="flex justify-center items-center gap-3 p-10">
+                {carouselProjectData.map((project, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className={`h-2 w-2 rounded-full bg-white cursor-pointer ${
+                        index === carouselIndex ? "opacity-100" : "opacity-50"
+                      }`}
+                      onClick={() => setCarouselIndex(index)}
+                    ></div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="flex gap-5 place-items-center flex-wrap w-[80vw] align-middle justify-center mb-10 select-none">
+      <div className="hidden md:flex gap-5 place-items-center flex-wrap w-[80vw] align-middle justify-center mb-10 select-none">
         {carouselProjectData.map((project, index) => {
           return (
             <div
@@ -208,8 +223,8 @@ export default function Projects({ searchParams }) {
         </div>
       </div>
       <div>
-        <div className="flex flex-wrap mb-5 mx-5">
-          <TransitionGroup className="flex flex-wrap mb-5 mx-5 w-[95vw]">
+        <div className="flex flex-wrap mb-5">
+          <TransitionGroup className="flex flex-wrap mb-5 mx-5 lg:px-5 w-full">
             {filteredProjects.map((project, index) => {
               return (
                 <CSSTransition key={index} timeout={500} classNames="item">
