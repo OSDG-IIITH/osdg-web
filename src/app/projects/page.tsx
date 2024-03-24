@@ -222,8 +222,8 @@ export default function Projects({ searchParams }: { searchParams: any }) {
           </div>
         </div>
       </div>
-      <div>
-        <div className="flex flex-wrap mb-5">
+      <div className="w-full">
+        <div className="flex flex-wrap mb-5 w-full">
           <TransitionGroup className="flex flex-wrap mb-5 mx-5 lg:px-5 w-full">
             {filteredProjects.map((project, index) => {
               return (
