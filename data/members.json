@@ -1,194 +1,178 @@
 [
-    {
-        "name": "Aaryan Ajay Sharma",
-        "role": "Organizing Team Member",
-        "imageURL": "https://robohash.org/Aaryan_Ajay_Sharma",
-        "profileURL": "https://clubs.iiit.ac.in/profile/aaryan.s",
-        "emailID": "aaryan.s@research.iiit.ac.in",
-        "batch": "LE2K22 CSD"
-    },
-    {
-        "name": "Aikya Oruganti",
-        "role": "Design Team Member",
-        "imageURL": "https://robohash.org/Aikya_Oruganti",
-        "profileURL": "https://clubs.iiit.ac.in/profile/aikya.oruganti",
-        "emailID": "aikya.oruganti@students.iiit.ac.in",
-        "batch": "UG2K23 ECE"
-    },
-    {
-        "name": "Abhiram Tilak Potula",
-        "role": "Organizing Team Member",
-        "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3D9xuxrWFJ6b5jXfB7JXnJSJ_doxx.png&w=1080&q=75",
-        "profileURL": "https://clubs.iiit.ac.in/profile/abhiram.potula",
-        "emailID": "abhiram.potula@research.iiit.ac.in",
-        "batch": "UG2K22 CND"
-    },
-    {
-        "name": "Moida Praneeth Jain",
-        "role": "Organizing Team Member",
-        "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DLLVSWMnWb4K5ZyrN2cXoGY_pfp.jpg&w=1080&q=75",
-        "profileURL": "https://clubs.iiit.ac.in/profile/moida.praneeth",
-        "emailID": "moida.praneeth@students.iiit.ac.in",
-        "batch": "UG2K22 CSE"
-    },
-    {
-        "name": "Ami Ashish Buch",
-        "role": "Tech/Events Team Member",
-        "imageURL": "https://robohash.org/Ami_Ashish_Buch",
-        "profileURL": "https://clubs.iiit.ac.in/profile/ami.buch",
-        "emailID": "ami.buch@students.iiit.ac.in",
-        "batch": "UG2K23 CSE"
-    },
-    {
-        "name": "Agyeya Singh Negi",
-        "role": "Tech/Events Team Member",
-        "imageURL": "https://robohash.org/Agyeya_Singh_Negi",
-        "profileURL": "https://clubs.iiit.ac.in/profile/agyeya.negi",
-        "emailID": "agyeya.negi@students.iiit.ac.in",
-        "batch": "UG2K23 CSE"
-    },
-    {
-        "name": "Ankith Raghupathi Pai",
-        "role": "Organizing Team Member",
-        "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DHmXyXP64MG4f7YX7tLZ5ka_me.png&w=1080&q=75",
-        "profileURL": "https://clubs.iiit.ac.in/profile/ankith.pai",
-        "emailID": "ankith.pai@research.iiit.ac.in",
-        "batch": "UG2K22 CND"
-    },
-    {
-        "name": "Arihant Tripathy",
-        "role": "Tech/Events Team Member",
-        "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DdVTEmvribGSMpBtSVucaNe_me.JPG&w=1080&q=75",
-        "profileURL": "https://clubs.iiit.ac.in/profile/arihant.tripathy",
-        "emailID": "arihant.tripathy@research.iiit.ac.in",
-        "batch": "UG2K23 CSD"
-    },
-    {
-        "name": "Anushka Sharma",
-        "role": "Tech/Events Team Member",
-        "imageURL": "https://robohash.org/Anushka_Sharma",
-        "profileURL": "https://clubs.iiit.ac.in/profile/anushka.sharma",
-        "emailID": "anushka.sharma@research.iiit.ac.in",
-        "batch": "UG2K23 CND"
-    },
-    {
-        "name": "Aryan Maskara",
-        "role": "Tech/Events Team Member",
-        "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DiMxY5FYjkga6z8DJs2FQ44_pfp.jpeg&w=1080&q=75",
-        "profileURL": "https://clubs.iiit.ac.in/profile/aryan.maskara",
-        "emailID": "aryan.maskara@research.iiit.ac.in",
-        "batch": "UG2K23 CSD"
-    },
-    {
-        "name": "Bhav Beri",
-        "role": "Organizing Team Member",
-        "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DVAMzZaAoNDSYWgKVThya2u_bhav.beri.jpg&w=1080&q=75",
-        "profileURL": "https://clubs.iiit.ac.in/profile/bhav.beri",
-        "emailID": "bhav.beri@research.iiit.ac.in",
-        "batch": "UG2K21 CSD"
-    },
-    {
-        "name": "Debangan Mishra",
-        "role": "Organizing Team Member",
-        "imageURL": "https://robohash.org/Debangan_Mishra",
-        "profileURL": "https://clubs.iiit.ac.in/profile/debangan.mishra",
-        "emailID": "debangan.mishra@students.iiit.ac.in",
-        "batch": "UG2K22 CSE"
-    },
-    {
-        "name": "Maddireddy Kritin",
-        "role": "Tech/Events Team Member",
-        "imageURL": "https://robohash.org/Maddireddy_Kritin",
-        "profileURL": "https://clubs.iiit.ac.in/profile/kritin.maddireddy",
-        "emailID": "kritin.maddireddy@students.iiit.ac.in",
-        "batch": "UG2K22 CSE"
-    },
-    {
-        "name": "Gopal Kataria",
-        "role": "Tech/Events Team Member",
-        "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DGChiQ8Z5DhD2xS4SqDcFq3_1000022609.jpg&w=1080&q=75",
-        "profileURL": "https://clubs.iiit.ac.in/profile/gopal.kataria",
-        "emailID": "gopal.kataria@research.iiit.ac.in",
-        "batch": "UG2K23 ECD"
-    },
-    {
-        "name": "Mohit Kumar Singh",
-        "role": "Tech/Events Team Member",
-        "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DB3nQMjjyFLbsq9AMgZSoNq_Me.jpg&w=1080&q=75",
-        "profileURL": "https://clubs.iiit.ac.in/profile/mohit.singh",
-        "emailID": "mohit.singh@research.iiit.ac.in",
-        "batch": "UG2K23 CSD"
-    },
-    {
-        "name": "Rinish Sam I",
-        "role": "Tech/Events Team Member",
-        "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DRxh8Ldzt6njioTZNgaLiZf_profile.jpeg&w=1080&q=75",
-        "profileURL": "https://clubs.iiit.ac.in/profile/rinishsam.i",
-        "emailID": "rinishsam.i@students.iiit.ac.in",
-        "batch": "MTECH2K23 CSE"
-    },
-    {
-        "name": "Bommana Sai Praneeth",
-        "role": "Design Team Member",
-        "imageURL": "https://robohash.org/Bommana_Sai_Praneeth",
-        "profileURL": "https://clubs.iiit.ac.in/profile/sai.praneeth",
-        "emailID": "sai.praneeth@students.iiit.ac.in",
-        "batch": "UG2K22 CSE"
-    },
-    {
-        "name": "Shlok Amit Sand",
-        "role": "Corporate/Outreach Team Member",
-        "imageURL": "https://robohash.org/Shlok_Amit_Sand",
-        "profileURL": "https://clubs.iiit.ac.in/profile/shlok.sand",
-        "emailID": "shlok.sand@research.iiit.ac.in",
-        "batch": "UG2K23 CSD"
-    },
-    {
-        "name": "Shaunak Biswas",
-        "role": "Design Team Member",
-        "imageURL": "https://robohash.org/Shaunak_Biswas",
-        "profileURL": "https://clubs.iiit.ac.in/profile/shaunak.biswas",
-        "emailID": "shaunak.biswas@research.iiit.ac.in",
-        "batch": "UG2K22 CSD"
-    },
-    {
-        "name": "Srija Mukhopadhyay",
-        "role": "Organizing Team Member",
-        "imageURL": "https://robohash.org/Srija_Mukhopadhyay",
-        "profileURL": "https://clubs.iiit.ac.in/profile/srija.mukhopadhyay",
-        "emailID": "srija.mukhopadhyay@research.iiit.ac.in",
-        "batch": "UG2K21 CLD"
-    },
-    {
-        "name": "Udith Krishna M Nair",
-        "role": "Tech/Events Team Member",
-        "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DajL4tQooUryDjGEgpSnWAZ_20231101_150836.jpg&w=1080&q=75",
-        "profileURL": "https://clubs.iiit.ac.in/profile/udithkrishna.nair",
-        "emailID": "udithkrishna.nair@research.iiit.ac.in",
-        "batch": "UG2K23 CSD"
-    },
-    {
-        "name": "Varun Edachali",
-        "role": "Tech/Events Team Member",
-        "imageURL": "https://robohash.org/Varun_Edachali",
-        "profileURL": "https://clubs.iiit.ac.in/profile/varun.edachali",
-        "emailID": "varun.edachali@students.iiit.ac.in",
-        "batch": "UG2K22 CSE"
-    },
-    {
-        "name": "Vyakhya Gupta",
-        "role": "Corporate/Outreach Team Member",
-        "imageURL": "https://robohash.org/Vyakhya_Gupta",
-        "profileURL": "https://clubs.iiit.ac.in/profile/vyakhya.gupta",
-        "emailID": "vyakhya.gupta@students.iiit.ac.in",
-        "batch": "UG2K22 CSE"
-    },
-    {
-        "name": "Yajat Rahul Rangnekar",
-        "role": "Corporate/Outreach Team Member",
-        "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DFGVWanTfnRuyadWzEbNsnv_ProfileImage.png&w=1080&q=75",
-        "profileURL": "https://clubs.iiit.ac.in/profile/yajat.rangnekar",
-        "emailID": "yajat.rangnekar@research.iiit.ac.in",
-        "batch": "UG2K23 CLD"
-    }
+  {
+    "name": "Abhiram Tilak Potula",
+    "role": "Organizing Team Member",
+    "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3D9xuxrWFJ6b5jXfB7JXnJSJ_doxx.png&w=1080&q=75",
+    "profileURL": "https://clubs.iiit.ac.in/profile/abhiram.potula",
+    "emailID": "abhiram.potula@research.iiit.ac.in",
+    "batch": "UG2K22 CND"
+  },
+  {
+    "name": "Moida Praneeth Jain",
+    "role": "Organizing Team Member",
+    "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DLLVSWMnWb4K5ZyrN2cXoGY_pfp.jpg&w=1080&q=75",
+    "profileURL": "https://clubs.iiit.ac.in/profile/moida.praneeth",
+    "emailID": "moida.praneeth@students.iiit.ac.in",
+    "batch": "UG2K22 CSE"
+  },
+  {
+    "name": "Agyeya Singh Negi",
+    "role": "Tech/Events Team Member",
+    "imageURL": "https://robohash.org/Agyeya Singh Negi",
+    "profileURL": "https://clubs.iiit.ac.in/profile/agyeya.negi",
+    "emailID": "agyeya.negi@students.iiit.ac.in",
+    "batch": "UG2K23 CSE"
+  },
+  {
+    "name": "Ami Ashish Buch",
+    "role": "Tech/Events Team Member",
+    "imageURL": "https://robohash.org/Ami Ashish Buch",
+    "profileURL": "https://clubs.iiit.ac.in/profile/ami.buch",
+    "emailID": "ami.buch@students.iiit.ac.in",
+    "batch": "UG2K23 CSE"
+  },
+  {
+    "name": "Aikya Oruganti",
+    "role": "Design Team Member",
+    "imageURL": "https://robohash.org/Aikya Oruganti",
+    "profileURL": "https://clubs.iiit.ac.in/profile/aikya.oruganti",
+    "emailID": "aikya.oruganti@students.iiit.ac.in",
+    "batch": "UG2K23 ECE"
+  },
+  {
+    "name": "Anushka Sharma",
+    "role": "Tech/Events Team Member",
+    "imageURL": "https://robohash.org/Anushka Sharma",
+    "profileURL": "https://clubs.iiit.ac.in/profile/anushka.sharma",
+    "emailID": "anushka.sharma@research.iiit.ac.in",
+    "batch": "UG2K23 CND"
+  },
+  {
+    "name": "Ankith Raghupathi Pai",
+    "role": "Organizing Team Member",
+    "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DHmXyXP64MG4f7YX7tLZ5ka_me.png&w=1080&q=75",
+    "profileURL": "https://clubs.iiit.ac.in/profile/ankith.pai",
+    "emailID": "ankith.pai@research.iiit.ac.in",
+    "batch": "UG2K22 CND"
+  },
+  {
+    "name": "Aryan Maskara",
+    "role": "Tech/Events Team Member",
+    "imageURL": "https://robohash.org/Aryan Maskara",
+    "profileURL": "https://clubs.iiit.ac.in/profile/aryan.maskara",
+    "emailID": "aryan.maskara@research.iiit.ac.in",
+    "batch": "UG2K23 CSD"
+  },
+  {
+    "name": "Bhav Beri",
+    "role": "Advisor",
+    "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DVAMzZaAoNDSYWgKVThya2u_bhav.beri.jpg&w=1080&q=75",
+    "profileURL": "https://clubs.iiit.ac.in/profile/bhav.beri",
+    "emailID": "bhav.beri@research.iiit.ac.in",
+    "batch": "UG2K21 CSD"
+  },
+  {
+    "name": "Arihant Tripathy",
+    "role": "Tech/Events Team Member",
+    "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DdVTEmvribGSMpBtSVucaNe_me.JPG&w=1080&q=75",
+    "profileURL": "https://clubs.iiit.ac.in/profile/arihant.tripathy",
+    "emailID": "arihant.tripathy@research.iiit.ac.in",
+    "batch": "UG2K23 CSD"
+  },
+  {
+    "name": "Gopal Kataria",
+    "role": "Tech/Events Team Member",
+    "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DGChiQ8Z5DhD2xS4SqDcFq3_1000022609.jpg&w=1080&q=75",
+    "profileURL": "https://clubs.iiit.ac.in/profile/gopal.kataria",
+    "emailID": "gopal.kataria@research.iiit.ac.in",
+    "batch": "UG2K23 ECD"
+  },
+  {
+    "name": "Maddireddy Kritin",
+    "role": "Tech/Events Team Member",
+    "imageURL": "https://robohash.org/Maddireddy Kritin",
+    "profileURL": "https://clubs.iiit.ac.in/profile/kritin.maddireddy",
+    "emailID": "kritin.maddireddy@students.iiit.ac.in",
+    "batch": "UG2K22 CSE"
+  },
+  {
+    "name": "Mohit Kumar Singh",
+    "role": "Tech/Events Team Member",
+    "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DB3nQMjjyFLbsq9AMgZSoNq_Me.jpg&w=1080&q=75",
+    "profileURL": "https://clubs.iiit.ac.in/profile/mohit.singh",
+    "emailID": "mohit.singh@research.iiit.ac.in",
+    "batch": "UG2K23 CSD"
+  },
+  {
+    "name": "Rinish Sam I",
+    "role": "Tech/Events Team Member",
+    "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DRxh8Ldzt6njioTZNgaLiZf_profile.jpeg&w=1080&q=75",
+    "profileURL": "https://clubs.iiit.ac.in/profile/rinishsam.i",
+    "emailID": "rinishsam.i@students.iiit.ac.in",
+    "batch": "MTECH2K23 CSE"
+  },
+  {
+    "name": "Bommana Sai Praneeth",
+    "role": "Design Team Member",
+    "imageURL": "https://robohash.org/Bommana Sai Praneeth",
+    "profileURL": "https://clubs.iiit.ac.in/profile/sai.praneeth",
+    "emailID": "sai.praneeth@students.iiit.ac.in",
+    "batch": "UG2K22 CSE"
+  },
+  {
+    "name": "Shaunak Biswas",
+    "role": "Design Team Member",
+    "imageURL": "https://robohash.org/Shaunak Biswas",
+    "profileURL": "https://clubs.iiit.ac.in/profile/shaunak.biswas",
+    "emailID": "shaunak.biswas@research.iiit.ac.in",
+    "batch": "UG2K22 CSD"
+  },
+  {
+    "name": "Shlok Amit Sand",
+    "role": "Corporate/Outreach Team Member",
+    "imageURL": "https://robohash.org/Shlok Amit Sand",
+    "profileURL": "https://clubs.iiit.ac.in/profile/shlok.sand",
+    "emailID": "shlok.sand@research.iiit.ac.in",
+    "batch": "UG2K23 CSD"
+  },
+  {
+    "name": "Srija Mukhopadhyay",
+    "role": "Advisor",
+    "imageURL": "https://robohash.org/Srija Mukhopadhyay",
+    "profileURL": "https://clubs.iiit.ac.in/profile/srija.mukhopadhyay",
+    "emailID": "srija.mukhopadhyay@research.iiit.ac.in",
+    "batch": "UG2K21 CLD"
+  },
+  {
+    "name": "Udith Krishna M Nair",
+    "role": "Tech/Events Team Member",
+    "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DajL4tQooUryDjGEgpSnWAZ_20231101_150836.jpg&w=1080&q=75",
+    "profileURL": "https://clubs.iiit.ac.in/profile/udithkrishna.nair",
+    "emailID": "udithkrishna.nair@research.iiit.ac.in",
+    "batch": "UG2K23 CSD"
+  },
+  {
+    "name": "Varun Edachali",
+    "role": "Tech/Events Team Member",
+    "imageURL": "https://robohash.org/Varun Edachali",
+    "profileURL": "https://clubs.iiit.ac.in/profile/varun.edachali",
+    "emailID": "varun.edachali@students.iiit.ac.in",
+    "batch": "UG2K22 CSE"
+  },
+  {
+    "name": "Vyakhya Gupta",
+    "role": "Corporate/Outreach Team Member",
+    "imageURL": "https://robohash.org/Vyakhya Gupta",
+    "profileURL": "https://clubs.iiit.ac.in/profile/vyakhya.gupta",
+    "emailID": "vyakhya.gupta@students.iiit.ac.in",
+    "batch": "UG2K22 CSE"
+  },
+  {
+    "name": "Yajat Rahul Rangnekar",
+    "role": "Corporate/Outreach Team Member",
+    "imageURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DFGVWanTfnRuyadWzEbNsnv_ProfileImage.png&w=1080&q=75",
+    "profileURL": "https://clubs.iiit.ac.in/profile/yajat.rangnekar",
+    "emailID": "yajat.rangnekar@research.iiit.ac.in",
+    "batch": "UG2K23 CLD"
+  }
 ]
