@@ -14,7 +14,7 @@ members = [
     {
         'name': script['children'][1][3]['children'].title(),
         'role': script['children'][3][0][3]['children'][0][3]['children'],
-        'imageURL': 'https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3D' + script['children'][0][3]['image'] + '&w=1080&q=75' if (script['children'][0][3]['image'] and 'undefined' not in script['children'][0][3]['image']) else f"https://robohash.org/{script['children'][1][3]['children'].title()}",
+        'imageURL': 'https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3D' + script['children'][0][3]['image'] + '&w=1080&q=75' if (script['children'][0][3]['image'] and 'undefined' not in script['children'][0][3]['image']) else f"https://robohash.org/{script['children'][1][3]['children'].title().replace(' ', '_')}",
         'profileURL': 'https://clubs.iiit.ac.in' + script['href']
     } for script in scripts
 ]
