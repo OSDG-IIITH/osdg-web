@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "/styles/projects.css";
 import projectsData from "@/data/projects.json";
-import carouselProjectData from "@/data/carouselProjects.json";
+import carouselProjectNames from "@/data/carouselProjects.json";
 import membersData from "@/data/members.json";
 import brandLogo from "@/assets/BrandLogo.png";
 import Image from "next/image";
@@ -16,6 +16,10 @@ export default function Projects({ searchParams }: { searchParams: any }) {
     activeTab === "All"
       ? projectsData
       : projectsData.filter((project) => project.category === activeTab);
+
+  const carouselProjectData = projectsData.filter(({ projectName }) =>
+    carouselProjectNames.includes(projectName)
+  );
 
   useEffect(() => {
     const interval = setInterval(() => {
