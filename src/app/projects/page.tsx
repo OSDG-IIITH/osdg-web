@@ -70,13 +70,16 @@ export default function Projects({ searchParams }: { searchParams: any }) {
               <div className="flex gap-2 mx-10 flex-wrap select-none">
                 {carouselProjectData[carouselIndex].maintainers.map(
                   (maintainer, index) => (
-                    <img
+                    <Image
+                      width="80"
+                      height="80"
                       key={index}
                       src={
                         maintainer.pfpURL
                           ? maintainer.pfpURL
                           : `https://robohash.org/${maintainer.name}.png?set=set5`
                       }
+                      alt={maintainer.name}
                       className="object-cover h-16 w-16 bg-red-300 rounded-full m-3"
                     />
                   )
@@ -127,13 +130,16 @@ export default function Projects({ searchParams }: { searchParams: any }) {
             <div className="flex gap-2 mx-10 mb-10 mt-5 flex-wrap justify-center">
               {carouselProjectData[carouselIndex].maintainers.map(
                 (maintainer, index) => (
-                  <img
+                  <Image
+                    width="80"
+                    height="80"
                     key={index}
                     src={
                       maintainer.pfpURL
                         ? maintainer.pfpURL
                         : `https://robohash.org/${maintainer.name}.png?set=set5`
                     }
+                    alt={maintainer.name}
                     className="object-cover h-12 w-12 bg-red-300 rounded-full m-3"
                   />
                 )
@@ -235,12 +241,15 @@ export default function Projects({ searchParams }: { searchParams: any }) {
                     className="w-full md:w-[44.5%] lg:w-[29.1%] xl:w-[21.5%] bg-[#2a284b] rounded-xl m-5 flex flex-col justify-between"
                   >
                     <div className="flex items-center p-2 w-full">
-                      <img
+                      <Image
                         src={
                           project.image
                             ? project.image
                             : "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3D572YeG2MbymmpyV5b8MQJh_osdg.png&w=384&q=75"
                         }
+                        width="80"
+                        height="80"
+                        alt={project.projectName}
                         className="object-cover h-24 w-24 rounded-xl shrink-0 m-2.5"
                       />
                       <div className="flex flex-col justify-center ml-5 shrink">
@@ -282,6 +291,8 @@ export default function Projects({ searchParams }: { searchParams: any }) {
                     {project.category === "OSDG" && (
                       <div className="flex gap-2 m-5 justify-start items-center w-5/6 leading-5">
                         <Image
+                          width="80"
+                          height="80"
                           src={brandLogo}
                           alt="OSDG"
                           className="object-contain h-14 w-20 rounded-full shrink-0 select-none"
@@ -293,12 +304,15 @@ export default function Projects({ searchParams }: { searchParams: any }) {
                     )}
                     {project.category === "Individual" && (
                       <div className="flex gap-2 m-5 justify-start items-center w-2/3 leading-5">
-                        <img
+                        <Image
+                          width="80"
+                          height="80"
                           src={
                             project.maintainers[0]["pfpURL"]
                               ? project.maintainers[0]["pfpURL"]
                               : `https://robohash.org/${project.maintainers[0]}.png?set=set5`
                           }
+                          alt={project.projectName}
                           className="object-cover h-14 w-14 rounded-full shrink-0 select-none"
                         />
                         <div className="text-l font-semibold text-white">
