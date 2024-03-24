@@ -307,15 +307,15 @@ export default function Projects({ searchParams }: { searchParams: any }) {
                           width="80"
                           height="80"
                           src={
-                            project.maintainers[0]["pfpURL"]
-                              ? project.maintainers[0]["pfpURL"]
-                              : `https://robohash.org/${project.maintainers[0]}.png?set=set5`
+                            membersData.find(
+                              ({ name }) => name === project.maintainers[0]
+                            )!.imageURL
                           }
-                          alt={project.projectName}
+                          alt={project.maintainers[0]}
                           className="object-cover h-14 w-14 rounded-full shrink-0 select-none"
                         />
                         <div className="text-l font-semibold text-white">
-                          {project.maintainers[0]["name"]}
+                          {project.maintainers[0]}
                         </div>
                       </div>
                     )}
