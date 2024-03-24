@@ -1,13 +1,6 @@
 import type { Metadata } from "next";
 import fs from "fs";
 import path from "path";
-import {
-  ReactElement,
-  JSXElementConstructor,
-  ReactNode,
-  PromiseLikeOfReactNode,
-  Key,
-} from "react";
 import Image from "next/image";
 
 const teamMembers = JSON.parse(
