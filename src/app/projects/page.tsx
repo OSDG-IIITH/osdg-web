@@ -5,7 +5,7 @@ import "/styles/projects.css";
 import projectsData from "../../../data/projects.json";
 import carouselProjectData from "../../../data/carouselProjects.json";
 
-export default function Projects({ searchParams }) {
+export default function Projects({ searchParams }: { searchParams: any }) {
   const [activeTab, setActiveTab] = useState(searchParams.activeTab || "All");
   const [carouselIndex, setCarouselIndex] = useState(0);
 
