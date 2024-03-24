@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import fs from "fs";
-import path from "path";
 import Image from "next/image";
-
-const teamMembers = JSON.parse(
-  fs.readFileSync(path.resolve("./data/members.json"), "utf-8")
-);
+import teamMembers from "@/data/members.json";
 
 export const metadata: Metadata = {
   title: "Team",

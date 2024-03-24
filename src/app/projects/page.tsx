@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "/styles/projects.css";
-import projectsData from "../../../data/projects.json";
-import carouselProjectData from "../../../data/carouselProjects.json";
+import projectsData from "@/data/projects.json";
+import carouselProjectData from "@/data/carouselProjects.json";
 import brandLogo from "@/assets/BrandLogo.png";
 import Image from "next/image";
 
