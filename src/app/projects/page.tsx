@@ -4,6 +4,8 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "/styles/projects.css";
 import projectsData from "../../../data/projects.json";
 import carouselProjectData from "../../../data/carouselProjects.json";
+import brandLogo from "@/assets/BrandLogo.png";
+import Image from "next/image";
 
 export default function Projects({ searchParams }: { searchParams: any }) {
   const [activeTab, setActiveTab] = useState(searchParams.activeTab || "All");
@@ -28,7 +30,7 @@ export default function Projects({ searchParams }: { searchParams: any }) {
       <div className="bg-[#211248] text-white lg:h-[60vh] px-5 lg:p-10 m-10 lg:m-20 rounded-3xl w-screen flex flex-col justify-center max-w-[80vw]">
         <div className="flex flex-col lg:flex-row items-center justify-start h-full align-middle">
           <div
-            className="hidden mx-5 lg:flex lg:items-center h-[90%] w-[30%] bg-gradient-to-br from-[#02b5ff] to-[#5c1aeb] rounded-3xl relative shrink-0"
+            className="hidden mx-5 lg:flex lg:items-center h-[90%] w-[30%] rounded-3xl relative shrink-0"
             style={{
               backgroundImage: `url(${
                 carouselProjectData[carouselIndex].image
@@ -155,7 +157,7 @@ export default function Projects({ searchParams }: { searchParams: any }) {
           </div>
         </div>
       </div>
-      <div className="hidden md:flex gap-5 place-items-center flex-wrap w-[80vw] align-middle justify-center mb-10 select-none">
+      <div className="hidden lg:flex gap-5 place-items-center flex-wrap w-[80vw] align-middle justify-center mb-10 select-none">
         {carouselProjectData.map((project, index) => {
           return (
             <div
@@ -239,7 +241,7 @@ export default function Projects({ searchParams }: { searchParams: any }) {
                             ? project.image
                             : "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3D572YeG2MbymmpyV5b8MQJh_osdg.png&w=384&q=75"
                         }
-                        className="object-cover h-24 w-24 bg-black rounded-xl shrink-0 m-2.5"
+                        className="object-cover h-24 w-24 rounded-xl shrink-0 m-2.5"
                       />
                       <div className="flex flex-col justify-center ml-5 shrink">
                         <h2 className="text-2xl font-semibold text-white mt-3 mb-2">
@@ -278,12 +280,13 @@ export default function Projects({ searchParams }: { searchParams: any }) {
                       {project.description}
                     </div>
                     {project.category === "OSDG" && (
-                      <div className="flex gap-2 m-5 justify-start items-center w-2/3 leading-5">
-                        <img
-                          src="https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3D572YeG2MbymmpyV5b8MQJh_osdg.png&w=384&q=75"
-                          className="object-cover h-14 w-14 bg-red-300 rounded-full shrink-0 select-none"
+                      <div className="flex gap-2 m-5 justify-start items-center w-5/6 leading-5">
+                        <Image
+                          src={brandLogo}
+                          alt="OSDG"
+                          className="object-contain h-14 w-20 rounded-full shrink-0 select-none"
                         />
-                        <div className="text-l font-semibold text-white">
+                        <div className="text-l font-semibold text-white w-full">
                           Open Source Developers Group
                         </div>
                       </div>
@@ -296,7 +299,7 @@ export default function Projects({ searchParams }: { searchParams: any }) {
                               ? project.maintainers[0]["pfpURL"]
                               : `https://robohash.org/${project.maintainers[0]}.png?set=set5`
                           }
-                          className="object-cover h-14 w-14 bg-red-300 rounded-full shrink-0 select-none"
+                          className="object-cover h-14 w-14 rounded-full shrink-0 select-none"
                         />
                         <div className="text-l font-semibold text-white">
                           {project.maintainers[0]["name"]}
