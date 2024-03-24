@@ -28,7 +28,7 @@ export default function Projects({ searchParams }: { searchParams: any }) {
       );
     }, 10000);
     return () => clearInterval(interval);
-  }, []);
+  });
 
   return (
     <main className="bg-[#11101f] min-h-[100vh] flex flex-col justify-center items-center">
