@@ -2,26 +2,30 @@
     {
         "projectName": "OSDG Web",
         "maintainers": [
-            "Mohit Singh",
             "Arihant Tripathy",
-            "Aryan Maskara"
+            "Aryan Maskara",
+            "Mohit Singh"
         ],
-        "languages": [
-            "JavaScript",
-            "CSS"
+        "technologies": [
+            "HTML",
+            "TailwindCSS",
+            "TypeScript",
+            "React",
+            "Next.js"
         ],
         "description": "OSDG Web is a project undertaken to enhance the OSDG Website by adding various features in it.",
         "image": "",
-        "link": "https://github.com/OSDG-IIITH/osdg-web"
+        "link": "https://github.com/OSDG-IIITH/osdg-web",
+        "category": "OSDG"
     },
     {
         "projectName": "CabMiloge",
         "maintainers": [
+            "Anushka Sharma",
             "Shaunak",
-            "Vyakhya",
-            "Anushka Sharma"
+            "Vyakhya"
         ],
-        "languages": [
+        "technologies": [
             "HTML",
             "Python",
             "JavaScript",
@@ -29,64 +33,78 @@
         ],
         "description": "CabMiloge is a platform designed to facilitate carpooling among college students. It addresses the challenge of finding travel companions when commuting to and from the college campus.",
         "image": "",
-        "link": "https://github.com/OSDG-IIITH/CabMiloge"
+        "link": "https://github.com/OSDG-IIITH/CabMiloge",
+        "category": "OSDG"
     },
     {
         "projectName": "ReviewIIIT",
         "maintainers": [
-            "Praneeth Jain",
             "Agyeya Negi",
+            "Praneeth Jain",
             "Shlok Sand"
         ],
-        "langauges": [
-
-        ],
+        "technologies": [],
         "description": "ReviewIIIT is a course and faculty review platform specifically designed for students. It aims to provide a transparent and comprehensive resource for students to access detailed reviews about courses and professors.",
         "image": "",
-        "link": "https://github.com/OSDG-IIITH/Review-IIIT"
+        "link": "https://github.com/OSDG-IIITH/Review-IIIT",
+        "category": "OSDG"
     },
     {
         "projectName": "Lockout",
         "maintainers": [
-            "Aryan Maskara",
+            "Ami Buch",
             "Arihant Tripathy",
-            "Ami Buch"
+            "Aryan Maskara"
         ],
-        "langauges": [
-
-        ],
+        "technologies": [],
         "description": "The Lockout website is a collaborative project undertaken in partnership with the Prog Club at IIIT Hyderabad.",
         "image": "",
-        "link": "https://github.com/OSDG-IIITH/Lockout-Website"
+        "link": "https://github.com/OSDG-IIITH/Lockout-Website",
+        "category": "OSDG"
     },
     {
         "projectName": "Intranet IIIT",
         "maintainers": [
-            "Sai Praneeth",
+            "Abhiram",
             "Gopal Kataria",
             "Rinish",
-            "Abhiram"
+            "Sai Praneeth"
         ],
-        "langauges": [
-
-        ],
+        "technologies": [],
         "description": "The Intranet is being completely redesigned from the ground up.",
         "image": "",
-        "link": "https://github.com/OSDG-IIITH/Intranet-IIIT"
+        "link": "https://github.com/OSDG-IIITH/Intranet-IIIT",
+        "category": "OSDG"
     },
     {
         "projectName": "RMS",
         "maintainers": [
-            "Yajat",
+            "Kritin",
             "Mohit Singh",
             "Varun",
-            "Kritin"
+            "Yajat"
         ],
-        "langauges": [
-
-        ],
+        "technologies": [],
         "description": "The Recruitment Management System is a comprehensive platform designed to streamline the recruitment processes of various student bodies and clubs.",
         "image": "",
-        "link": "https://github.com/OSDG-IIITH/Recruitment-Management-System"
+        "link": "https://github.com/OSDG-IIITH/Recruitment-Management-System",
+        "category": "OSDG"
+    },
+    {
+        "projectName": "Grades Calculator IIITH",
+        "maintainers": [
+            "Arihant Tripathy"
+        ],
+        "technologies": [
+            "HTML",
+            "TailwindCSS",
+            "TypeScript",
+            "React",
+            "Next.js"
+        ],
+        "description": "This is a web app to calculate the final marks for each course of students of IIIT Hyderabad.",
+        "image": "",
+        "link": "https://grades-calculator-iiith.vercel.app/",
+        "category": "Individual"
     }
 ]
