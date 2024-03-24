@@ -104,7 +104,7 @@ export default function Projects({ searchParams }) {
             </div>
             <div className="flex items-center mx-5 mb-5">
               <a href={carouselProjectData[carouselIndex].link}>
-                <div className="bg-[#5e18eb] max-w-[40vw] font-semibold rounded-3xl p-5 flex justify-center items-center select-none cursor-pointer">
+                <div className="bg-[#5e18eb] max-w-[40vw] font-semibold rounded-3xl p-5 flex justify-center items-center select-none cursor-pointer shrink-0">
                   View Project
                 </div>
               </a>
