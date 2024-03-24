@@ -13,7 +13,7 @@
             "React",
             "Next.js"
         ],
-        "description": "OSDG Web is a project undertaken to enhance the OSDG Website by adding various features in it.",
+        "description": "OSDG Web is a project undertaken to completely revamp the OSDG Website by adding various features in it.",
         "image": "",
         "link": "https://github.com/OSDG-IIITH/osdg-web",
         "category": "OSDG"
@@ -31,7 +31,7 @@
             "JavaScript",
             "CSS"
         ],
-        "description": "CabMiloge is a platform designed to facilitate carpooling among college students. It addresses the challenge of finding travel companions when commuting to and from the college campus.",
+        "description": "This is a platform designed to facilitate carpooling among college students. It helps in finding travel companions when commuting to and from the college campus.",
         "image": "",
         "link": "https://github.com/OSDG-IIITH/CabMiloge",
         "category": "OSDG"
@@ -44,7 +44,7 @@
             "Shlok Sand"
         ],
         "technologies": [],
-        "description": "ReviewIIIT is a course and faculty review platform specifically designed for students. It aims to provide a transparent and comprehensive resource for students to access detailed reviews about courses and professors.",
+        "description": "ReviewIIIT is a course and faculty review platform. It aims to provide a transparent and comprehensive resource for students to access detailed reviews about courses and professors.",
         "image": "",
         "link": "https://github.com/OSDG-IIITH/Review-IIIT",
         "category": "OSDG"
@@ -85,7 +85,7 @@
             "Yajat"
         ],
         "technologies": [],
-        "description": "The Recruitment Management System is a comprehensive platform designed to streamline the recruitment processes of various student bodies and clubs.",
+        "description": "This is a comprehensive platform designed to streamline the recruitment processes of various student bodies and clubs.",
         "image": "",
         "link": "https://github.com/OSDG-IIITH/Recruitment-Management-System",
         "category": "OSDG"
