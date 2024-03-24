@@ -28,16 +28,16 @@ const MembersLeft = ({
   teamRole: string;
 }) => {
   return (
-    <div className="w-full md:flex md:flex-row justify-around py-10 md:py-20 align-middle">
+    <div className="w-full md:flex md:flex-row justify-around py-10 md:py-20 align-middle items-center">
       <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-b-3xl m-10 inline-flex md:hidden flex-col items-center justify-center h-32 w-5/6">
         <h2 className="uppercase font-extrabold text-6xl">{heading}</h2>
         <h3 className="uppercase font-bold text-xl">{subHeading}</h3>
       </div>
-      <div className="hidden bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full m-10 md:inline-flex flex-col items-center justify-center h-64 w-64">
+      <div className="hidden bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full m-10 md:inline-flex flex-col items-center justify-center h-64 w-64 shrink-0">
         <h2 className="uppercase font-extrabold text-6xl">{heading}</h2>
         <h3 className="uppercase font-bold text-xl">{subHeading}</h3>
       </div>
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 place-items-center">
+      <div className="flex justify-center lg:justify-start w-full lg:w-[65%] flex-wrap p-10 mr-10">
         {teamMembers
           .filter(({ role }: { role: string }) => role === teamRole)
           .map(
@@ -53,7 +53,7 @@ const MembersLeft = ({
               name: string;
             }) => (
               <div key={emailID}>
-                <div className="h-48 w-48 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl relative">
+                <div className="h-48 w-48 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl relative m-5">
                   <Image
                     width="200"
                     height="200"
@@ -96,12 +96,12 @@ const MembersRight = ({
   teamRole: string;
 }) => {
   return (
-    <div className="w-full md:flex md:flex-row justify-around py-20 align-middle">
-      <div className="bg-gradient-to-r from-emerald-500 to-teal-400 rounded-b-3xl m-10 inline-flex md:hidden flex-col items-center justify-center h-32 w-5/6">
+    <div className="w-full md:flex md:flex-row justify-around py-20 align-middle items-center">
+      <div className="bg-gradient-to-r from-emerald-500 to-teal-400 rounded-b-3xl m-10 inline-flex md:hidden flex-col items-center justify-center h-32 w-5/6 shrink-0">
         <h2 className="uppercase font-extrabold text-6xl">{heading}</h2>
         <h3 className="uppercase font-bold text-xl">{subHeading}</h3>
       </div>
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 place-items-center">
+      <div className="flex justify-center lg:justify-end w-full lg:w-[65%] flex-wrap p-10 mr-10">
         {teamMembers
           .filter(({ role }: { role: string }) => role === teamRole)
           .map(
@@ -117,7 +117,7 @@ const MembersRight = ({
               name: string;
             }) => (
               <div key={emailID}>
-                <div className="h-48 w-48 bg-gradient-to-r from-emerald-500 to-teal-400 rounded-3xl relative">
+                <div className="h-48 w-48 bg-gradient-to-r from-emerald-500 to-teal-400 rounded-3xl relative m-5">
                   {imageURL && (
                     <Image
                       width="200"
@@ -147,7 +147,7 @@ const MembersRight = ({
             )
           )}
       </div>
-      <div className="hidden bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full m-10 md:inline-flex flex-col items-center justify-center h-64 w-64">
+      <div className="hidden bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full m-10 md:inline-flex flex-col items-center justify-center h-64 w-64 shrink-0">
         <h2 className="uppercase font-extrabold text-6xl">{heading}</h2>
         <h3 className="uppercase font-bold text-xl">{subHeading}</h3>
       </div>
