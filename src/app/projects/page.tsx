@@ -4,6 +4,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "/styles/projects.css";
 import projectsData from "@/data/projects.json";
 import carouselProjectData from "@/data/carouselProjects.json";
+import membersData from "@/data/members.json";
 import brandLogo from "@/assets/BrandLogo.png";
 import Image from "next/image";
 
@@ -52,14 +53,14 @@ export default function Projects({ searchParams }: { searchParams: any }) {
               Maintained by&nbsp;
               {carouselProjectData[carouselIndex].maintainers
                 .slice(0, -1)
-                .map((maintainer) => maintainer.name)
+                .map((maintainer) => maintainer)
                 .join(", ")}
               {carouselProjectData[carouselIndex].maintainers.length > 1
                 ? " and " +
                   carouselProjectData[carouselIndex].maintainers[
                     carouselProjectData[carouselIndex].maintainers.length - 1
-                  ].name
-                : carouselProjectData[carouselIndex].maintainers[0].name}
+                  ]
+                : carouselProjectData[carouselIndex].maintainers[0]}
             </div>
             <div className="flex items-center">
               <a href={carouselProjectData[carouselIndex].link}>
@@ -75,11 +76,10 @@ export default function Projects({ searchParams }: { searchParams: any }) {
                       height="80"
                       key={index}
                       src={
-                        maintainer.pfpURL
-                          ? maintainer.pfpURL
-                          : `https://robohash.org/${maintainer.name}.png?set=set5`
+                        membersData.find(({ name }) => name === maintainer)!
+                          .imageURL
                       }
-                      alt={maintainer.name}
+                      alt={maintainer}
                       className="object-cover h-16 w-16 bg-red-300 rounded-full m-3"
                     />
                   )
@@ -118,14 +118,14 @@ export default function Projects({ searchParams }: { searchParams: any }) {
               Maintained by&nbsp;
               {carouselProjectData[carouselIndex].maintainers
                 .slice(0, -1)
-                .map((maintainer) => maintainer.name)
+                .map((maintainer) => maintainer)
                 .join(", ")}
               {carouselProjectData[carouselIndex].maintainers.length > 1
                 ? " and " +
                   carouselProjectData[carouselIndex].maintainers[
                     carouselProjectData[carouselIndex].maintainers.length - 1
-                  ].name
-                : carouselProjectData[carouselIndex].maintainers[0].name}
+                  ]
+                : carouselProjectData[carouselIndex].maintainers[0]}
             </div>
             <div className="flex gap-2 mx-10 mb-10 mt-5 flex-wrap justify-center">
               {carouselProjectData[carouselIndex].maintainers.map(
@@ -135,11 +135,10 @@ export default function Projects({ searchParams }: { searchParams: any }) {
                     height="80"
                     key={index}
                     src={
-                      maintainer.pfpURL
-                        ? maintainer.pfpURL
-                        : `https://robohash.org/${maintainer.name}.png?set=set5`
+                      membersData.find(({ name }) => name === maintainer)!
+                        .imageURL
                     }
-                    alt={maintainer.name}
+                    alt={maintainer}
                     className="object-cover h-12 w-12 bg-red-300 rounded-full m-3"
                   />
                 )
@@ -150,7 +149,7 @@ export default function Projects({ searchParams }: { searchParams: any }) {
                 {carouselProjectData.map((project, index) => {
                   return (
                     <div
-                      key={index}
+                      key={project.projectName}
                       className={`h-2 w-2 rounded-full bg-white cursor-pointer ${
                         index === carouselIndex ? "opacity-100" : "opacity-50"
                       }`}

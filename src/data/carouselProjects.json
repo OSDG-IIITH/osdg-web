@@ -1,20 +1,7 @@
 [
   {
     "projectName": "OSDG Web",
-    "maintainers": [
-      {
-        "name": "Arihant Tripathy",
-        "pfpURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DdVTEmvribGSMpBtSVucaNe_me.JPG&w=1080&q=75"
-      },
-      {
-        "name": "Aryan Maskara",
-        "pfpURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DiMxY5FYjkga6z8DJs2FQ44_pfp.jpeg&w=1080&q=75"
-      },
-      {
-        "name": "Mohit Kumar Singh",
-        "pfpURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DB3nQMjjyFLbsq9AMgZSoNq_Me.jpg&w=1080&q=75"
-      }
-    ],
+    "maintainers": ["Arihant Tripathy", "Aryan Maskara", "Mohit Kumar Singh"],
     "technologies": ["HTML", "TailwindCSS", "TypeScript", "React", "Next.js"],
     "description": "OSDG Web is a project undertaken to completely revamp the OSDG Website by adding various features in it.",
     "image": "",
@@ -23,20 +10,7 @@
   },
   {
     "projectName": "CabMiloge",
-    "maintainers": [
-      {
-        "name": "Anushka Sharma",
-        "pfpURL": "https://robohash.org/Anushka_Sharma"
-      },
-      {
-        "name": "Shaunak Biswas",
-        "pfpURL": "https://robohash.org/Shaunak_Biswas"
-      },
-      {
-        "name": "Vyakhya Gupta",
-        "pfpURL": "https://robohash.org/Vyakhya_Gupta"
-      }
-    ],
+    "maintainers": ["Anushka Sharma", "Shaunak Biswas", "Vyakhya Gupta"],
     "technologies": ["HTML", "Python", "JavaScript", "CSS"],
     "description": "This is a platform designed to facilitate carpooling among college students. It helps in finding travel companions when commuting to and from the college campus.",
     "image": "",
@@ -46,18 +20,9 @@
   {
     "projectName": "ReviewIIIT",
     "maintainers": [
-      {
-        "name": "Agyeya Singh Negi",
-        "pfpURL": "https://robohash.org/Agyeya_Singh_Negi"
-      },
-      {
-        "name": "Moida Praneeth Jain",
-        "pfpURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DLLVSWMnWb4K5ZyrN2cXoGY_pfp.jpg&w=1080&q=75"
-      },
-      {
-        "name": "Shlok Amit Sand",
-        "pfpURL": "https://robohash.org/Shlok_Amit_Sand"
-      }
+      "Agyeya Singh Negi",
+      "Moida Praneeth Jain",
+      "Shlok Amit Sand"
     ],
     "technologies": [],
     "description": "ReviewIIIT is a course and faculty review platform. It aims to provide a transparent and comprehensive resource for students to access detailed reviews about courses and professors.",
@@ -67,20 +32,7 @@
   },
   {
     "projectName": "Lockout",
-    "maintainers": [
-      {
-        "name": "Ami Ashish Buch",
-        "pfpURL": "https://robohash.org/Ami_Ashish_Buch"
-      },
-      {
-        "name": "Arihant Tripathy",
-        "pfpURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DdVTEmvribGSMpBtSVucaNe_me.JPG&w=1080&q=75"
-      },
-      {
-        "name": "Aryan Maskara",
-        "pfpURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DiMxY5FYjkga6z8DJs2FQ44_pfp.jpeg&w=1080&q=75"
-      }
-    ],
+    "maintainers": ["Ami Ashish Buch", "Arihant Tripathy", "Aryan Maskara"],
     "technologies": [],
     "description": "The Lockout website is a collaborative project undertaken in partnership with the Prog Club at IIIT Hyderabad.",
     "image": "",
@@ -90,22 +42,10 @@
   {
     "projectName": "Intranet IIIT",
     "maintainers": [
-      {
-        "name": "Abhiram Tilak Potula",
-        "pfpURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3D9xuxrWFJ6b5jXfB7JXnJSJ_doxx.png&w=1080&q=75"
-      },
-      {
-        "name": "Gopal Kataria",
-        "pfpURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DGChiQ8Z5DhD2xS4SqDcFq3_1000022609.jpg&w=1080&q=75"
-      },
-      {
-        "name": "Rinish Sam I",
-        "pfpURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DRxh8Ldzt6njioTZNgaLiZf_profile.jpeg&w=1080&q=75"
-      },
-      {
-        "name": "Bommana Sai Praneeth",
-        "pfpURL": "https://robohash.org/Bommana_Sai_Praneeth"
-      }
+      "Abhiram Tilak Potula",
+      "Gopal Kataria",
+      "Rinish Sam I",
+      "Bommana Sai Praneeth"
     ],
     "technologies": [],
     "description": "The Intranet is being completely redesigned from the ground up.",
@@ -116,22 +56,10 @@
   {
     "projectName": "RMS",
     "maintainers": [
-      {
-        "name": "Maddireddy Kritin",
-        "pfpURL": "https://robohash.org/Maddireddy_Kritin"
-      },
-      {
-        "name": "Mohit Kumar Singh",
-        "pfpURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DB3nQMjjyFLbsq9AMgZSoNq_Me.jpg&w=1080&q=75"
-      },
-      {
-        "name": "Varun Edachali",
-        "pfpURL": "https://robohash.org/Varun_Edachali"
-      },
-      {
-        "name": "Yajat Rahul Rangnekar",
-        "pfpURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DFGVWanTfnRuyadWzEbNsnv_ProfileImage.png&w=1080&q=75"
-      }
+      "Maddireddy Kritin",
+      "Mohit Kumar Singh",
+      "Varun Edachali",
+      "Yajat Rahul Rangnekar"
     ],
     "technologies": [],
     "description": "This is a comprehensive platform designed to streamline the recruitment processes of various student bodies and clubs.",
@@ -141,12 +69,7 @@
   },
   {
     "projectName": "Grades Calculator IIITH",
-    "maintainers": [
-      {
-        "name": "Arihant Tripathy",
-        "pfpURL": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DdVTEmvribGSMpBtSVucaNe_me.JPG&w=1080&q=75"
-      }
-    ],
+    "maintainers": ["Arihant Tripathy"],
     "technologies": ["HTML", "TailwindCSS", "TypeScript", "React", "Next.js"],
     "description": "This is a web app to calculate the final marks for each course of students of IIIT Hyderabad.",
     "image": "",
