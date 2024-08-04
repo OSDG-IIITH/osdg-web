@@ -1,4 +1,12 @@
 {
+    "2024-07-31_intro_to_dual_booting": {
+        "name": "Linux Fest: Intro to Dual Booting",
+        "date": "2024-07-31",
+        "event": "https://clubs.iiit.ac.in/events/66894261f68d746c8d0fcce6",
+        "blacklist": [
+            "poster.png"
+        ]
+    },
     "2024-04-13_open-source-saturday": {
         "name": "Open Source Saturday",
         "date": "2024-04-13",
