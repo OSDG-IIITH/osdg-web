@@ -1,4 +1,14 @@
 {
+    "2024-08-18_intro-to-bash-linux": {
+        "name": "Intro to Bash/Linux usage",
+        "date": "2024-08-18",
+        "event": "https://clubs.iiit.ac.in/events/66ad09bc1fe7ef45de0bae38",
+        "blacklist": [
+            "poster.png",
+            "pic_3.jpg",
+            "pic_4.jpg"
+        ]
+    },
     "2024-07-31_intro_to_dual_booting": {
         "name": "Linux Fest: Intro to Dual Booting",
         "date": "2024-07-31",
