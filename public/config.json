@@ -1,4 +1,13 @@
 {
+    "2024-08-24_fossunited-osdg-meetup": {
+        "name": "FOSSUnited X OSDG Meetup",
+        "date": "2024-08-24",
+        "event": "https://clubs.iiit.ac.in/events/66a77103a84ba848d77d2798",
+        "blacklist": [
+            "poster.png",
+            "poster2.jpeg"
+        ]
+    },
     "2024-08-18_intro-to-bash-linux": {
         "name": "Intro to Bash/Linux usage",
         "date": "2024-08-18",
