@@ -1,4 +1,15 @@
 {
+    "2024-09-10_intro-to-open-source": {
+        "name": "Intro to Open Source",
+        "date": "2024-09-10",
+        "event": "https://clubs.iiit.ac.in/events/66d05dfe58eb143aa74e249c",
+        "blacklist": [
+            "poster.png",
+            "pic_1.jpg",
+            "pic_2.jpg",
+            "pic_3.jpg"
+        ]
+    },
     "2024-08-24_fossunited-osdg-meetup": {
         "name": "FOSSUnited X OSDG Meetup",
         "date": "2024-08-24",
