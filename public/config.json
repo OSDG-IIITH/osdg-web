@@ -1,4 +1,12 @@
 {
+    "2024-10-08_intro-to-git-github": {
+        "name": "Intro to git+GitHub",
+        "date": "2024-10-08",
+        "event": "https://clubs.iiit.ac.in/events/66f5ace6e5136c6e18c6ab3a",
+        "blacklist": [
+            "poster.png"
+        ]
+    },
     "2024-09-10_intro-to-open-source": {
         "name": "Intro to Open Source",
         "date": "2024-09-10",
