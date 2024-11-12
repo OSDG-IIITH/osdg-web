@@ -1,4 +1,14 @@
 {
+    "2024-11-11_intro-to-gsoc": {
+        "name": "Intro to GSoC",
+        "date": "2024-11-11",
+        "event": "https://clubs.iiit.ac.in/events/67278abe13defc93f43a6b32",
+        "blacklist": [
+            "pic_2.jpeg",
+            "pic_4.jpeg",
+            "poster.png"
+        ]
+    },
     "2024-10-08_intro-to-git-github": {
         "name": "Intro to git+GitHub",
         "date": "2024-10-08",
