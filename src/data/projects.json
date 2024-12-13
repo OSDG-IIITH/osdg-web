@@ -30,9 +30,7 @@
     "projectName": "ReviewIIIT",
     "maintainers": [
       "Ankith Raghupathi Pai",
-      "Agyeya Singh Negi",
-      "Abhiram Tilak Potula",
-      "Shlok Amit Sand"
+      "Agyeya Singh Negi"
     ],
     "technologies": [],
     "description": "ReviewIIIT is a course and faculty review platform. It aims to provide a transparent and comprehensive resource for students to access detailed reviews about courses and professors.",
@@ -42,7 +40,7 @@
   },
   {
     "projectName": "Lockout",
-    "maintainers": ["Ami Ashish Buch", "Arihant Tripathy", "Aryan Maskara"],
+    "maintainers": ["Arihant Tripathy", "Aryan Maskara"],
     "technologies": [],
     "description": "The Lockout website is a collaborative project undertaken in partnership with the Prog Club at IIIT Hyderabad.",
     "image": "",
