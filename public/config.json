@@ -1,4 +1,13 @@
 {
+    "2025-01-18_open-source-saturday": {
+        "name": "Open Source Saturday",
+        "date": "2025-01-18",
+        "event": "https://clubs.iiit.ac.in/events/677fcf39ebf89933ae58c0da",
+        "blacklist": [
+            "pic_4.jpeg",
+            "poster.png"
+        ]
+    },
     "2024-11-11_intro-to-gsoc": {
         "name": "Intro to GSoC",
         "date": "2024-11-11",
