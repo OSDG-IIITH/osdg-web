@@ -1,4 +1,20 @@
 {
+    "2025-02-14_codegolf": {
+        "name": "CodeGolf",
+        "date": "2025-02-14",
+        "event": "https://clubs.iiit.ac.in/events/67b630e8529a613be526efbc",
+        "blacklist": [
+            "pic_2.jpeg",
+            "pic_4.jpeg",
+            "pic_5.jpeg",
+            "pic_6.jpeg",
+            "pic_7.jpeg",
+            "pic_8.jpeg",
+            "pic_9.jpeg",
+            "pic_12.jpeg",
+            "poster.png"
+        ]
+    },
     "2025-01-18_open-source-saturday": {
         "name": "Open Source Saturday",
         "date": "2025-01-18",
