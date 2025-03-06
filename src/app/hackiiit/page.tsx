@@ -379,7 +379,7 @@ export default function HackIIIT() {
                             whileTap={{ scale: 0.95 }}
                         >
                             <a
-                                href="#register"
+                                href="https://forms.office.com/r/nj8LbyVg5W"
                                 className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold rounded-lg transition-all"
                             >
                                 Register Now
