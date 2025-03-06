@@ -285,7 +285,7 @@ const ParticipationCard = ({ isSolo }: { isSolo: boolean }) => {
                             </div>
                         )}
                     </div>
-                    <p className="text-sm mt-4">Note: At least one person must be available offline.</p>
+                    <p className="text-sm mt-4">Note: {isSolo ? "Solo particpants must be available offline." : "At least one person from a team must be available offline."}</p>
                 </div>
             </div>
         </motion.div>
@@ -533,9 +533,9 @@ export default function HackIIIT() {
                             {/* Timeline items */}
                             <div className="space-y-0">
                                 <TimelineItem
-                                    time="March 15, 2PM – 3PM"
+                                    time="March 15, 2PM - 3PM"
                                     title="Introductions"
-                                    description="Meet the organizers, sponsors, and fellow participants. Get ready for an exciting hackathon experience!"
+                                    description="Meet the organizers and fellow participants. Get ready for an exciting hackathon experience!"
                                     isLeft={true}
                                 />
 
@@ -549,7 +549,7 @@ export default function HackIIIT() {
                                 <TimelineItem
                                     time="March 15, 4PM"
                                     title="Hackathon Begins"
-                                    description="Start coding! Teams begin working on their projects. Mentors will be available to help with questions and guidance."
+                                    description="Start coding! Teams begin working on their projects."
                                     isLeft={true}
                                 />
 
@@ -563,14 +563,14 @@ export default function HackIIIT() {
                                 <TimelineItem
                                     time="March 16, 4PM"
                                     title="Hackathon Concludes"
-                                    description="Final code submissions and presentations of completed projects. Prepare to showcase your work to judges and peers."
+                                    description="Final code submissions, to wrap things up."
                                     isLeft={true}
                                 />
 
                                 <TimelineItem
                                     time="March 16, 4PM - 6PM"
                                     title="Closing Notes & Networking"
-                                    description="Winners announcement, feedback session, and opportunities to connect with sponsors and fellow participants. Celebrate your achievements!"
+                                    description="Feedback session, and opportunities to connect with fellow participants. Celebrate your achievements!"
                                     isLeft={false}
                                 />
                             </div>
