@@ -655,7 +655,7 @@ export default function HackIIIT() {
             </section> */}
 
             {/* Food Section */}
-            <section className="py-16 bg-white text-gray-800">
+            {/* <section className="py-16 bg-white text-gray-800">
                 <div className="container mx-auto px-4">
                     <AnimatedSection>
                         <h2 className="text-4xl font-bold text-center mb-4">Food & Refreshments</h2>
@@ -675,7 +675,7 @@ export default function HackIIIT() {
                                 </div>
                                 <h3 className="text-xl font-bold text-center mb-4">Complimentary Refreshments</h3>
                                 <p className="text-gray-600 text-center">
-                                    All participants who submit their plan of action will receive complimentary refreshments including energy drinks, soft drinks, chips, and biscuits from Vindya Canteen.
+                                    All participants who submit their plan of action will receive complimentary refreshments (like energy/soft drinks, chips, and biscuits) from Vindya Canteen.
                                 </p>
                             </motion.div>
                         </AnimatedSection>
@@ -692,13 +692,13 @@ export default function HackIIIT() {
                                 </div>
                                 <h3 className="text-xl font-bold text-center mb-4">Food Stalls</h3>
                                 <p className="text-gray-600 text-center">
-                                    Food stalls will be set up outside the Himalaya block. Pizza Hut and Amul ice creams will be available. Participants pay directly to vendors for purchases.
+                                    Food stalls will be set up outside the Himalaya block, offering Pizza Hut and Amul ice creams. Get ready for some delicious treats!
                                 </p>
                             </motion.div>
                         </AnimatedSection>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Sponsors Section */}
             {/* <section className="py-20 bg-[#11101f] text-white">
