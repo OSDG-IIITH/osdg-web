@@ -8,7 +8,7 @@ import { faCalendar, faClock, faMapMarkerAlt, faTrophy, faLaptopCode, faUsers, f
 import hackathonGraphic from "@/assets/IntroGraphic.svg";
 
 // Animation component for sections
-const AnimatedSection = ({ children, delay = 0.2 }) => {
+const AnimatedSection = ({ children, delay = 0.2 }: { children: React.ReactNode; delay?: number }) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, amount: 0.3 });
     const controls = useAnimation();
@@ -42,7 +42,6 @@ const useOneTimeAnimation = (amount = 0.3) => {
 };
 
 const CountdownTimer = () => {
-    const hackathonDate = new Date("March 15, 2025 15:00:00 GMT+0530");
     const [timeLeft, setTimeLeft] = useState({
         days: 0,
         hours: 0,
@@ -51,6 +50,7 @@ const CountdownTimer = () => {
     });
 
     useEffect(() => {
+        const hackathonDate = new Date("March 15, 2025 14:00:00 GMT+0530");
         const timer = setInterval(() => {
             const now = new Date();
             const difference = hackathonDate.getTime() - now.getTime();
@@ -97,7 +97,7 @@ const CountdownTimer = () => {
 };
 
 // Track Illustration Component
-const TrackIllustration = ({ isRegular }) => {
+const TrackIllustration = ({ isRegular }: { isRegular: boolean }) => {
     const { ref, isInView } = useOneTimeAnimation();
 
     return (
@@ -193,7 +193,17 @@ const TrackIllustration = ({ isRegular }) => {
 };
 
 // Timeline Item Component with Animation
-const TimelineItem = ({ time, title, description, isLeft }) => {
+const TimelineItem = ({
+    time,
+    title,
+    description,
+    isLeft
+}: {
+    time: string;
+    title: string;
+    description: string;
+    isLeft: boolean;
+}) => {
     const { ref, isInView } = useOneTimeAnimation();
 
     return (
@@ -222,7 +232,7 @@ const TimelineItem = ({ time, title, description, isLeft }) => {
 };
 
 // Prize Item Component
-const PrizeItem = ({ position, amount }) => (
+const PrizeItem = ({ position, amount }: { position: string; amount: string; }) => (
     <motion.div
         whileHover={{ scale: 1.03 }}
         className="flex justify-between items-center border-b border-blue-200 py-3"
@@ -233,7 +243,7 @@ const PrizeItem = ({ position, amount }) => (
 );
 
 // Participation Card Component
-const ParticipationCard = ({ isSolo }) => {
+const ParticipationCard = ({ isSolo }: { isSolo: boolean }) => {
     const { ref, isInView } = useOneTimeAnimation();
 
     return (
@@ -243,7 +253,7 @@ const ParticipationCard = ({ isSolo }) => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6 }}
             whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 300 }}
+            // transition={{ type: "spring", stiffness: 300 }}
             className="bg-white rounded-xl shadow-xl overflow-hidden h-full flex flex-col"
         >
             <div className={`h-2 ${isSolo ? 'bg-indigo-600' : 'bg-purple-600'}`}></div>
@@ -283,7 +293,7 @@ const ParticipationCard = ({ isSolo }) => {
 };
 
 // Sponsor Card Component
-const SponsorCard = ({ name, logo, description, tier }) => {
+const SponsorCard = ({ name, logo, description, tier }: { name: string; logo?: string; description: string; tier: string }) => {
     const { ref, isInView } = useOneTimeAnimation();
 
     return (
@@ -334,7 +344,7 @@ export default function HackIIIT() {
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">HackIIIT</span> 2025
                         </h1>
                         <p className="text-xl md:pr-10 text-gray-300">
-                            OSDG's annual 24-hour hackathon for building impactful Free and Open-Source Software projects.
+                            OSDG&apos;s annual 24-hour hackathon for building impactful Free and Open-Source Software projects.
                         </p>
 
                         <div className="flex flex-wrap gap-4 mt-8 justify-center md:justify-start">
@@ -350,7 +360,7 @@ export default function HackIIIT() {
                                 className="flex items-center bg-blue-900 bg-opacity-30 px-3 py-2 rounded-full"
                             >
                                 <FontAwesomeIcon icon={faClock} className="mr-2 text-blue-400" />
-                                <span>3:00 PM Onwards</span>
+                                <span>2:00 PM Onwards</span>
                             </motion.div>
                             <motion.div
                                 whileHover={{ scale: 1.1 }}
@@ -383,7 +393,7 @@ export default function HackIIIT() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="md:w-1/2 flex justify-center"
                     >
-                        <Image src={hackathonGraphic} alt="HackIIIT '25" className="max-w-full" />
+                        <Image src={hackathonGraphic} alt="HackIIIT &apos;'25" className="max-w-full" />
                     </motion.div>
                 </div>
             </div>
@@ -399,7 +409,7 @@ export default function HackIIIT() {
                     <div className="max-w-3xl mx-auto">
                         <AnimatedSection delay={0.3}>
                             <p className="text-lg mb-6 text-justify mx-auto max-w-2xl">
-                                HackIIIT is OSDG's annual 24-hour hackathon dedicated to building and working on cool and impactful Free and Open-Source Software (FOSS) projects. It's an opportunity for innovators to come together, collaborate, and transform ideas into reality.
+                                HackIIIT is OSDG&apos;s annual 24-hour hackathon dedicated to building and working on cool and impactful Free and Open-Source Software (FOSS) projects. It&apos;s an opportunity for innovators to come together, collaborate, and transform ideas into reality.
                             </p>
                         </AnimatedSection>
 
@@ -429,7 +439,7 @@ export default function HackIIIT() {
             </section>
 
             {/* Tracks Section */}
-            <section className="py-20 bg-[#11101f] text-white">
+            {/* <section className="py-20 bg-[#11101f] text-white">
                 <div className="container mx-auto px-4">
                     <AnimatedSection>
                         <h2 className="text-4xl font-bold text-center mb-4">Event Tracks</h2>
@@ -498,7 +508,7 @@ export default function HackIIIT() {
                         </div>
                     </AnimatedSection>
                 </div>
-            </section>
+            </section> */}
 
             {/* Timeline Section */}
             <section className="py-20 bg-white text-gray-800 relative overflow-hidden">
@@ -570,7 +580,7 @@ export default function HackIIIT() {
             </section>
 
             {/* Prizes Section */}
-            <section className="py-20 bg-[#11101f] text-white">
+            {/* <section className="py-20 bg-[#11101f] text-white">
                 <div className="container mx-auto px-4">
                     <AnimatedSection>
                         <h2 className="text-4xl font-bold text-center mb-4">Prizes & Rewards</h2>
@@ -642,7 +652,7 @@ export default function HackIIIT() {
                         </div>
                     </AnimatedSection>
                 </div>
-            </section>
+            </section> */}
 
             {/* Food Section */}
             <section className="py-16 bg-white text-gray-800">
@@ -691,7 +701,7 @@ export default function HackIIIT() {
             </section>
 
             {/* Sponsors Section */}
-            <section className="py-20 bg-[#11101f] text-white">
+            {/* <section className="py-20 bg-[#11101f] text-white">
                 <div className="container mx-auto px-4">
                     <AnimatedSection>
                         <h2 className="text-4xl font-bold text-center mb-4">Our Sponsors</h2>
@@ -734,42 +744,7 @@ export default function HackIIIT() {
                         </div>
                     </AnimatedSection>
                 </div>
-            </section>
-
-            {/* Registration Section */}
-            <section id="register" className="py-20 bg-white text-gray-800">
-                <div className="container mx-auto px-4">
-                    <AnimatedSection>
-                        <h2 className="text-4xl font-bold text-center mb-4">Ready to Hack?</h2>
-                        <div className="w-24 h-1 bg-blue-600 mx-auto mb-12"></div>
-                    </AnimatedSection>
-
-                    <AnimatedSection delay={0.3}>
-                        <div className="max-w-3xl mx-auto text-center">
-                            <p className="text-xl mb-8">
-                                Join us for an exciting 24 hours of innovation, learning, and fun at IIIT Hyderabad!
-                            </p>
-
-                            <motion.div
-                                className="inline-block"
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                            >
-                                <a
-                                    href="#"
-                                    className="px-10 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-lg font-bold rounded-lg shadow-lg transition-all inline-block"
-                                >
-                                    Register for HackIIIT '25
-                                </a>
-                            </motion.div>
-
-                            <p className="mt-6 text-gray-600">
-                                Registration closes on March 10, 2025 or when all spots are filled
-                            </p>
-                        </div>
-                    </AnimatedSection>
-                </div>
-            </section>
+            </section> */}
 
             {/* Add styles for animations */}
             <style jsx global>{`

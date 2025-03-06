@@ -19,7 +19,7 @@ export default function Footer() {
         />
         </div>
         <p className="text-slate-300 text-sm mt-2 font-light tracking-wide">
-        Fostering open source communities since 2016
+        Fostering open source communities
         </p>
       </div>
 
@@ -48,10 +48,7 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-end text-right">
           <div className="text-slate-200">
             <h3 className="text-lg font-semibold mb-2">Open Source Developers Group</h3>
-            <address className="not-italic text-sm text-slate-300 leading-relaxed">
-              International Institute of Information<br />
-              Technology, Hyderabad
-            </address>
+            <address className="not-italic text-sm text-slate-300 whitespace-nowrap">IIIT Hyderabad</address>
           </div>
           <div className="mt-6 pt-4 border-t border-slate-600 w-full text-center md:text-right">
             <p className="text-xs text-slate-400">&copy; {new Date().getFullYear()} OSDG. All rights reserved.</p>
