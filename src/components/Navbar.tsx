@@ -32,10 +32,11 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex md:items-center md:space-x-4">
+            <Link className={linkClass} href="/">Home</Link>
             <Link className={linkClass} href="/projects">Projects</Link>
             <Link className={linkClass} href="/events">Events</Link>
             <Link className={linkClass} href="/team">Team</Link>
-            <Link className={`${linkClass} bg-indigo-600/70 hover:bg-indigo-500 px-4 py-2 rounded-lg hover:after:w-0`} href="/hackiiit">HackIIIT</Link>
+            {/* <Link className={`${linkClass} bg-indigo-600/70 hover:bg-indigo-500 px-4 py-2 rounded-lg hover:after:w-0`} href="/hackiiit">HackIIIT</Link> */}
           </div>
 
           {/* Mobile menu button */}
@@ -68,7 +69,7 @@ export default function Navbar() {
             <Link href="/projects" className="block px-3 py-2 text-base font-medium rounded-md hover:bg-[#3E4050] transition duration-300">Projects</Link>
             <Link href="/events" className="block px-3 py-2 text-base font-medium rounded-md hover:bg-[#3E4050] transition duration-300">Events</Link>
             <Link href="/team" className="block px-3 py-2 text-base font-medium rounded-md hover:bg-[#3E4050] transition duration-300">Team</Link>
-            <Link href="/hackiiit" className="block px-3 py-2 text-base font-medium bg-indigo-600/80 rounded-md hover:bg-indigo-500 transition duration-300">HackIIIT</Link>
+            {/* <Link href="/hackiiit" className="block px-3 py-2 text-base font-medium bg-indigo-600/80 rounded-md hover:bg-indigo-500 transition duration-300">HackIIIT</Link> */}
           </div>
         </div>
       )}
