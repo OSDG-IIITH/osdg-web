@@ -212,9 +212,13 @@ const TimelineItem = ({
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col md:flex-row items-center mb-12"
+            className="flex flex-col md:flex-row items-center text-center md:text-left last:mb-0 mb-12"
         >
-            <div className={`md:w-1/2 ${isLeft ? 'md:pr-8 md:text-right' : 'md:order-last md:pl-8'}`}>
+            <div
+                className={`w-full md:w-1/2 px-4 ${
+                    isLeft ? "md:pr-8 md:self-end" : "md:pl-8 md:self-start md:order-last"
+                }`}
+            >
                 <motion.div
                     whileHover={{ y: -5 }}
                     transition={{ type: "spring", stiffness: 300 }}
@@ -330,41 +334,42 @@ export default function HackIIIT() {
     return (
         <main className="overflow-hidden text-center md:text-left">
             {/* Hero Section */}
-            <div
-                className="text-white min-h-screen flex flex-col items-center justify-center py-16 bg-[#11101f]"
-            >
-                <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div className="text-white min-h-screen flex flex-col items-center justify-center py-16 bg-[#11101f] px-6 sm:px-8">
+                <div className="container mx-auto flex flex-col md:flex-row items-center w-full">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="md:w-1/2 mb-10 md:mb-0"
+                        className="md:w-1/2 w-full mb-10 md:mb-0 max-w-lg"
                     >
-                        <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4">
-                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">HackIIIT</span> 2025
+                        <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight mb-4">
+                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                                HackIIIT
+                            </span>
+                            2025
                         </h1>
-                        <p className="text-xl md:pr-10 text-gray-300">
+                        <p className="text-lg sm:text-xl text-gray-300 max-w-lg mx-auto md:mx-0">
                             OSDG&apos;s annual 24-hour hackathon for building impactful Free and Open-Source Software projects.
                         </p>
 
-                        <div className="flex flex-wrap gap-4 mt-8 justify-center md:justify-start">
+                        <div className="flex flex-wrap gap-3 mt-6 justify-center md:justify-start">
                             <motion.div
                                 whileHover={{ scale: 1.1 }}
-                                className="flex items-center bg-blue-900 bg-opacity-30 px-3 py-2 rounded-full"
+                                className="flex items-center bg-blue-900 bg-opacity-30 px-3 py-2 rounded-full text-sm sm:text-base"
                             >
                                 <FontAwesomeIcon icon={faCalendar} className="mr-2 text-blue-400" />
                                 <span>March 15-16, 2025</span>
                             </motion.div>
                             <motion.div
                                 whileHover={{ scale: 1.1 }}
-                                className="flex items-center bg-blue-900 bg-opacity-30 px-3 py-2 rounded-full"
+                                className="flex items-center bg-blue-900 bg-opacity-30 px-3 py-2 rounded-full text-sm sm:text-base"
                             >
                                 <FontAwesomeIcon icon={faClock} className="mr-2 text-blue-400" />
                                 <span>2:00 PM Onwards</span>
                             </motion.div>
                             <motion.div
                                 whileHover={{ scale: 1.1 }}
-                                className="flex items-center bg-blue-900 bg-opacity-30 px-3 py-2 rounded-full"
+                                className="flex items-center bg-blue-900 bg-opacity-30 px-3 py-2 rounded-full text-sm sm:text-base"
                             >
                                 <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-blue-400" />
                                 <span>IIIT Hyderabad Campus</span>
@@ -373,14 +378,10 @@ export default function HackIIIT() {
 
                         <CountdownTimer />
 
-                        <motion.div
-                            className="mt-8"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
+                        <motion.div className="mt-6" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                             <a
                                 href="https://forms.office.com/r/nj8LbyVg5W"
-                                className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold rounded-lg transition-all"
+                                className="inline-block px-6 sm:px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold rounded-lg transition-all text-sm sm:text-base"
                             >
                                 Register Now
                             </a>
@@ -391,7 +392,7 @@ export default function HackIIIT() {
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="md:w-1/2 flex justify-center"
+                        className="flex justify-center"
                     >
                         <Image src={hackathonGraphic} alt="HackIIIT &apos;'25" className="max-w-full" />
                     </motion.div>
@@ -531,7 +532,7 @@ export default function HackIIIT() {
                             <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-400 via-indigo-500 to-blue-600 rounded-full"></div>
 
                             {/* Timeline items */}
-                            <div className="space-y-0">
+                            <div>
                                 <TimelineItem
                                     time="March 15, 2PM - 3PM"
                                     title="Introductions"
