@@ -293,7 +293,7 @@ const ParticipationCard = ({ isSolo }: { isSolo: boolean }) => {
 };
 
 // Sponsor Card Component
-const SponsorCard = ({ name, logo, description, tier }: { name: string; logo?: string; description: string; tier: string }) => {
+const SponsorCard = ({ name, logo, description, tier }: { name: string; logo?: string; description?: string; tier: string }) => {
     const { ref, isInView } = useOneTimeAnimation();
 
     return (
@@ -439,7 +439,7 @@ export default function HackIIIT() {
             </section>
 
             {/* Tracks Section */}
-            {/* <section className="py-20 bg-[#11101f] text-white">
+            <section className="py-20 bg-[#11101f] text-white">
                 <div className="container mx-auto px-4">
                     <AnimatedSection>
                         <h2 className="text-4xl font-bold text-center mb-4">Event Tracks</h2>
@@ -496,7 +496,7 @@ export default function HackIIIT() {
                         </AnimatedSection>
                     </div>
 
-                    <AnimatedSection delay={0.5}>
+                    {/* <AnimatedSection delay={0.5}>
                         <div className="max-w-3xl mx-auto mt-12 p-6 bg-[#1a1930] bg-opacity-80 rounded-lg shadow-lg">
                             <div className="flex items-center mb-4">
                                 <FontAwesomeIcon icon={faCoffee} className="text-2xl text-yellow-400 mr-3" />
@@ -506,9 +506,9 @@ export default function HackIIIT() {
                                 All participants who submit their plan of action will receive complimentary refreshments including energy drinks, soft drinks, chips, and biscuits to fuel your coding marathon! These will be available from Vindya Canteen on campus.
                             </p>
                         </div>
-                    </AnimatedSection>
+                    </AnimatedSection> */}
                 </div>
-            </section> */}
+            </section>
 
             {/* Timeline Section */}
             <section className="py-20 bg-white text-gray-800 relative overflow-hidden">
@@ -580,7 +580,7 @@ export default function HackIIIT() {
             </section>
 
             {/* Prizes Section */}
-            {/* <section className="py-20 bg-[#11101f] text-white">
+            <section className="py-20 bg-[#11101f] text-white">
                 <div className="container mx-auto px-4">
                     <AnimatedSection>
                         <h2 className="text-4xl font-bold text-center mb-4">Prizes & Rewards</h2>
@@ -652,10 +652,10 @@ export default function HackIIIT() {
                         </div>
                     </AnimatedSection>
                 </div>
-            </section> */}
+            </section>
 
             {/* Food Section */}
-            {/* <section className="py-16 bg-white text-gray-800">
+            <section className="py-16 bg-white text-gray-800">
                 <div className="container mx-auto px-4">
                     <AnimatedSection>
                         <h2 className="text-4xl font-bold text-center mb-4">Food & Refreshments</h2>
@@ -675,7 +675,7 @@ export default function HackIIIT() {
                                 </div>
                                 <h3 className="text-xl font-bold text-center mb-4">Complimentary Refreshments</h3>
                                 <p className="text-gray-600 text-center">
-                                    All participants who submit their plan of action will receive complimentary refreshments (like energy/soft drinks, chips, and biscuits) from Vindya Canteen.
+                                    All participants who submit their plan of action will receive complimentary refreshments (like energy/soft drinks, chips, and biscuits).
                                 </p>
                             </motion.div>
                         </AnimatedSection>
@@ -698,10 +698,10 @@ export default function HackIIIT() {
                         </AnimatedSection>
                     </div>
                 </div>
-            </section> */}
+            </section>
 
             {/* Sponsors Section */}
-            {/* <section className="py-20 bg-[#11101f] text-white">
+            <section className="py-20 bg-[#11101f] text-white">
                 <div className="container mx-auto px-4">
                     <AnimatedSection>
                         <h2 className="text-4xl font-bold text-center mb-4">Our Sponsors</h2>
@@ -713,7 +713,7 @@ export default function HackIIIT() {
                             <SponsorCard
                                 name="MontyCloud"
                                 logo="/mcLogo.webp"
-                                description="Regular track sponsor with a contribution of ₹40,000 towards prizes, marketing, and logistics. Offering internship opportunities to top performers."
+                                // description="Regular track sponsor with a contribution of ₹40,000 towards prizes, marketing, and logistics. Offering internship opportunities to top performers."
                                 tier="gold"
                             />
                         </AnimatedSection>
@@ -722,13 +722,13 @@ export default function HackIIIT() {
                             <SponsorCard
                                 name="IIIT Hyderabad"
                                 logo="/iiithlogo.jpg"
-                                description="Supporting the Beginners track with ₹13,000 for prizes and ₹15,000 for refreshments. Providing venue support and infrastructure for the event."
+                                // description="Supporting the Beginners track with ₹13,000 for prizes and ₹15,000 for refreshments. Providing venue support and infrastructure for the event."
                                 tier="silver"
                             />
                         </AnimatedSection>
                     </div>
 
-                    <AnimatedSection delay={0.5}>
+                    {/* <AnimatedSection delay={0.5}>
                         <div className="max-w-3xl mx-auto mt-16 p-6 bg-[#1a1930] bg-opacity-80 rounded-lg shadow-md text-center">
                             <h3 className="text-xl font-bold mb-4">Interested in Sponsoring?</h3>
                             <p className="text-gray-300 mb-6">
@@ -742,9 +742,9 @@ export default function HackIIIT() {
                                 Contact Us for Sponsorship
                             </motion.button>
                         </div>
-                    </AnimatedSection>
+                    </AnimatedSection> */}
                 </div>
-            </section> */}
+            </section>
 
             {/* Add styles for animations */}
             <style jsx global>{`
