@@ -50,7 +50,7 @@ const CountdownTimer = () => {
     });
 
     useEffect(() => {
-        const hackathonDate = new Date("March 15, 2025 14:00:00 GMT+0530");
+        const hackathonDate = new Date("March 15, 2025 17:00:00 GMT+0530");
         const timer = setInterval(() => {
             const now = new Date();
             const difference = hackathonDate.getTime() - now.getTime();
@@ -365,7 +365,7 @@ export default function HackIIIT() {
                                 className="flex items-center bg-blue-900 bg-opacity-30 px-3 py-2 rounded-full text-sm sm:text-base"
                             >
                                 <FontAwesomeIcon icon={faClock} className="mr-2 text-blue-400" />
-                                <span>2:00 PM Onwards</span>
+                                <span>5:00 PM Onwards</span>
                             </motion.div>
                             <motion.div
                                 whileHover={{ scale: 1.1 }}
@@ -534,28 +534,28 @@ export default function HackIIIT() {
                             {/* Timeline items */}
                             <div>
                                 <TimelineItem
-                                    time="March 15, 2PM - 3PM"
+                                    time="March 15, 3PM - 5PM"
                                     title="Introductions"
                                     description="Meet the organizers and fellow participants. Get ready for an exciting hackathon experience!"
                                     isLeft={true}
                                 />
 
                                 <TimelineItem
-                                    time="March 15, 3PM - 4PM"
+                                    time="March 15, 5PM - 6PM"
                                     title="Problem Statements Revealed"
                                     description="Detailed presentation of hackathon challenges and objectives. Choose your track and start brainstorming solutions."
                                     isLeft={false}
                                 />
 
                                 <TimelineItem
-                                    time="March 15, 4PM"
+                                    time="March 15, 6PM"
                                     title="Hackathon Begins"
                                     description="Start coding! Teams begin working on their projects."
                                     isLeft={true}
                                 />
 
                                 <TimelineItem
-                                    time="March 15, 6PM"
+                                    time="March 15, 8PM"
                                     title="Plan of Action Submission"
                                     description="Teams document initial ideas, preliminary work, and plans for the remainder of the event. This serves as a guiding document for your team."
                                     isLeft={false}
@@ -570,8 +570,8 @@ export default function HackIIIT() {
 
                                 <TimelineItem
                                     time="March 16, 4PM - 6PM"
-                                    title="Closing Notes & Networking"
-                                    description="Feedback session, and opportunities to connect with fellow participants. Celebrate your achievements!"
+                                    title="Closing Notes, Networking and Evaluations"
+                                    description="Evaluations and feedback session, and opportunities to connect with fellow participants. Celebrate your achievements!"
                                     isLeft={false}
                                 />
                             </div>
@@ -605,7 +605,7 @@ export default function HackIIIT() {
                                     transition={{ duration: 0.5, delay: 0.3 }}
                                     className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-200"
                                 >
-                                    Total Prize Pool: ₹50,000
+                                    Total Prize Pool: ₹53,000
                                 </motion.p>
                             </div>
 
@@ -618,9 +618,9 @@ export default function HackIIIT() {
                                 >
                                     <h3 className="text-2xl font-bold text-center mb-6 text-blue-300">Regular Track</h3>
                                     <div className="space-y-4">
-                                        <PrizeItem position="1st Place" amount="₹18,000" />
-                                        <PrizeItem position="2nd Place" amount="₹12,000" />
-                                        <PrizeItem position="3rd Place" amount="₹7,000" />
+                                        <PrizeItem position="1st Place" amount="₹19,000" />
+                                        <PrizeItem position="2nd Place" amount="₹13,000" />
+                                        <PrizeItem position="3rd Place" amount="₹8,000" />
                                     </div>
                                     <div className="mt-6 p-4 bg-blue-900 bg-opacity-40 rounded-lg">
                                         <p className="text-center text-sm text-blue-200">
@@ -714,7 +714,7 @@ export default function HackIIIT() {
                             <SponsorCard
                                 name="MontyCloud"
                                 logo="/mcLogo.webp"
-                                // description="Regular track sponsor with a contribution of ₹40,000 towards prizes, marketing, and logistics. Offering internship opportunities to top performers."
+                                description="MontyCloud is a Seattle, WA based No-Code CloudOps Company, dedicated to helping their customers achieve Excellence in Cloud Operations, in just a few clicks. They are supporting the Regular track of the hackathon."
                                 tier="gold"
                             />
                         </AnimatedSection>
@@ -723,7 +723,7 @@ export default function HackIIIT() {
                             <SponsorCard
                                 name="IIIT Hyderabad"
                                 logo="/iiithlogo.jpg"
-                                // description="Supporting the Beginners track with ₹13,000 for prizes and ₹15,000 for refreshments. Providing venue support and infrastructure for the event."
+                                description="Supporting the Beginners track, providing venue support and infrastructure for the event. Sponsoring complimentary refreshments for all participants."
                                 tier="silver"
                             />
                         </AnimatedSection>
