@@ -372,7 +372,7 @@ export default function HackIIIT() {
                                 className="flex items-center bg-blue-900 bg-opacity-30 px-3 py-2 rounded-full text-sm sm:text-base"
                             >
                                 <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-blue-400" />
-                                <span>IIIT Hyderabad Campus</span>
+                                <span>H-105, IIIT Hyderabad Campus</span>
                             </motion.div>
                         </div>
 
