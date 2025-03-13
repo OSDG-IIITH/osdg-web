@@ -372,19 +372,33 @@ export default function HackIIIT() {
                                 className="flex items-center bg-blue-900 bg-opacity-30 px-3 py-2 rounded-full text-sm sm:text-base"
                             >
                                 <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-blue-400" />
-                                <span>H-105, IIIT Hyderabad Campus</span>
+                                <span>H-205, IIIT Hyderabad Campus</span>
                             </motion.div>
                         </div>
 
                         <CountdownTimer />
+                        <motion.div className="flex space-x-6">
+                            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                                <a
+                                    href="https://forms.office.com/r/nj8LbyVg5W"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-block px-6 sm:px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold rounded-lg transition-all text-sm sm:text-base"
+                                >
+                                    Register Now
+                                </a>
+                            </motion.div>
 
-                        <motion.div className="mt-6" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                            <a
-                                href="https://forms.office.com/r/nj8LbyVg5W"
-                                className="inline-block px-6 sm:px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold rounded-lg transition-all text-sm sm:text-base"
-                            >
-                                Register Now
-                            </a>
+                            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                                <a
+                                    href="https://iiithydstudents-my.sharepoint.com/:w:/g/personal/osdg_students_iiit_ac_in/EWuuuGbnqJxPkUKpufX4gUgBd7KWr0HbnRc1Vud2QVpAHw?e=nzISG4"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-block px-6 sm:px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold rounded-lg transition-all text-sm sm:text-base"
+                                >
+                                    Resources Document
+                                </a>
+                            </motion.div>
                         </motion.div>
                     </motion.div>
 
