@@ -380,12 +380,12 @@ export default function HackIIIT() {
                         <motion.div className="flex space-x-6">
                             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                                 <a
-                                    href="https://forms.office.com/r/nj8LbyVg5W"
+                                    href="https://forms.office.com/r/SHfn2vBKFh"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-block px-6 sm:px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold rounded-lg transition-all text-sm sm:text-base"
                                 >
-                                    Register Now
+                                    Plan of Action submission
                                 </a>
                             </motion.div>
 
@@ -619,22 +619,30 @@ export default function HackIIIT() {
                                     transition={{ duration: 0.5, delay: 0.3 }}
                                     className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-200"
                                 >
-                                    Total Prize Pool: ₹53,000
+                                    Total Prize Pool: ₹73,000
                                 </motion.p>
                             </div>
 
-                            <div className="grid md:grid-cols-2 gap-10">
+                            <div className="grid md:grid-cols-2 gap-10 items-stretch">
                                 <motion.div
                                     initial={{ opacity: 0, x: -50 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 0.6 }}
-                                    className="bg-gradient-to-br from-blue-900 to-[#1a1930] p-8 rounded-lg shadow-xl"
+                                    className="bg-gradient-to-br from-blue-900 to-[#1a1930] p-8 rounded-lg shadow-xl flex flex-col h-full"
                                 >
                                     <h3 className="text-2xl font-bold text-center mb-6 text-blue-300">Regular Track</h3>
                                     <div className="space-y-4">
                                         <PrizeItem position="1st Place" amount="₹19,000" />
                                         <PrizeItem position="2nd Place" amount="₹13,000" />
                                         <PrizeItem position="3rd Place" amount="₹8,000" />
+                                    </div>
+                                    <div className="mt-6 p-4 bg-green-900 bg-opacity-40 rounded-lg">
+                                        <h4 className="text-lg font-bold text-center text-green-300">Additional Prize Pool</h4>
+                                        <div className="space-y-2 mt-4">
+                                            <PrizeItem position="MOYA Framework Contribution" amount="₹10,000" />
+                                            <PrizeItem position="Outcomes-Based Solution" amount="₹5,000" />
+                                            <PrizeItem position="Fun/Quirky Solution" amount="₹5,000" />
+                                        </div>
                                     </div>
                                     <div className="mt-6 p-4 bg-blue-900 bg-opacity-40 rounded-lg">
                                         <p className="text-center text-sm text-blue-200">
@@ -648,7 +656,7 @@ export default function HackIIIT() {
                                     initial={{ opacity: 0, x: 50 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 0.6 }}
-                                    className="bg-gradient-to-br from-emerald-900 to-[#1a1930] p-8 rounded-lg shadow-xl"
+                                    className="bg-gradient-to-br from-emerald-900 to-[#1a1930] p-8 rounded-lg shadow-xl flex flex-col h-full justify-center"
                                 >
                                     <h3 className="text-2xl font-bold text-center mb-6 text-emerald-300">Beginners Track</h3>
                                     <div className="space-y-4">
