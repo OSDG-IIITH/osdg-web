@@ -259,8 +259,11 @@ export default function Projects({ searchParams }: { searchParams: any }) {
                 }}
               ></div>
               <div
-                className={`flex flex-col justify-center items-center p-5 absolute top-0 left-0 h-full w-full fd-sh hover:opacity-100 transition-all bg-black bg-opacity-40 rounded-3xl ${index === carouselIndex ? "opacity-100" : "opacity-0"
-                  }`}
+                className={`flex flex-col justify-center items-center p-5 absolute top-0 left-0 h-full w-full transition-all bg-black rounded-3xl ${
+                  index === carouselIndex 
+                    ? "bg-opacity-60" 
+                    : "bg-opacity-30 hover:bg-opacity-50"
+                }`}
               >
                 <h2 className="text-xl font-semibold text-white text-center shadow-text">
                   {project.projectName}
