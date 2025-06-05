@@ -1,36 +1,37 @@
 {
-  "name": "osdg-web",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
-    "@fortawesome/free-brands-svg-icons": "^6.5.1",
-    "@fortawesome/free-solid-svg-icons": "^6.5.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "framer-motion": "^10.16.4",
-    "next": "^14.1.4",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-photo-album": "^2.3.1",
-    "react-transition-group": "^4.4.5",
-    "sharp": "^0.33.3"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "@types/react-transition-group": "^4.4.10",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.0",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5"
-  }
+    "name": "@onlook/next-template",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "format": "prettier --write ."
+    },
+    "dependencies": {
+        "@radix-ui/react-slot": "^1.1.0",
+        "@types/three": "^0.177.0",
+        "class-variance-authority": "^0.7.0",
+        "clsx": "^2.1.1",
+        "framer-motion": "^12.16.0",
+        "lucide-react": "^0.438.0",
+        "next": "14.2.23",
+        "react": "^18",
+        "react-dom": "^18",
+        "tailwind-merge": "^2.5.2",
+        "tailwindcss-animate": "^1.0.7",
+        "three": "^0.177.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "eslint": "^8",
+        "eslint-config-next": "^15.1.6",
+        "postcss": "^8",
+        "prettier": "^3.3.3",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5"
+    }
 }
