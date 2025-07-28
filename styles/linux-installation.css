@@ -146,3 +146,8 @@ main {
         padding-right: 1rem;
     }
 }
+
+
+ .container {
+       max-width : 1000px ; 
+    }
