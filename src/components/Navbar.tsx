@@ -47,7 +47,7 @@ export default function Navbar() {
             </Link>
             <Link
               className={linkClass}
-              href="https://clubs.iiit.ac.in/clubs/osdg/members"
+              href="/team"
             >
               Team
             </Link>
@@ -134,7 +134,7 @@ export default function Navbar() {
               Linux Installation Guide
             </Link>
             <Link
-              href="https://clubs.iiit.ac.in/clubs/osdg/members"
+              href="/team"
               className="block px-3 py-2 text-base font-medium rounded-md hover:bg-[#3E4050] transition duration-300"
             >
               Team
