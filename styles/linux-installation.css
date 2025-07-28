@@ -1,0 +1,148 @@
+/* General styling for the markdown content container */
+.prose {
+    color: #d1d5db; /* Light gray text for readability on dark backgrounds */
+}
+
+/* Headings */
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.prose h1 {
+    font-size: 2.5em;
+    border-bottom: 2px solid #4f46e5; /* Indigo border */
+    padding-bottom: 0.3em;
+    margin-bottom: 0.8em;
+    margin-top: 1.5em; /* Added top margin */
+}
+
+.prose h2 {
+    font-size: 2em;
+    border-bottom: 1px solid #374151; /* Gray border for separation */
+    padding-bottom: 0.2em;
+    margin-top: 2em; /* Added more top margin for major sections */
+    margin-bottom: 0.6em;
+}
+
+.prose h3 {
+    margin-top: 1.8em; /* Added top margin */
+}
+
+/* Links */
+.prose a {
+    color: #818cf8; /* A bright indigo for links */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.prose a:hover {
+    color: #a78bfa; /* Lighter purple on hover */
+    text-decoration: underline;
+}
+
+/* Paragraphs and Lists */
+.prose p,
+.prose ul,
+.prose ol,
+.prose li {
+    line-height: 1.7;
+}
+
+/* Code Blocks */
+.prose pre {
+    background-color: #1e1e2e; /* Darker background for code blocks */
+    color: #cdd6f4;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+/* Inline Code */
+.prose code {
+    background-color: #45475a;
+    color: #cdd6f4;
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    border-radius: 0.3rem;
+}
+
+.prose pre code {
+    background-color: transparent;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    border-radius: 0;
+}
+
+/* Blockquotes */
+.prose blockquote {
+    border-left: 4px solid #6366f1; /* Indigo left border */
+    padding-left: 1rem;
+    color: #9ca3af; /* Muted text color for quotes */
+    font-style: italic;
+}
+
+/* Horizontal Rule */
+.prose hr {
+    border-color: #374151; /* Dark gray border */
+}
+
+/* --- NEW: Responsive Table Styling --- */
+.prose table {
+    display: block; /* Allows the table to be contained */
+    max-width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.prose th,
+.prose td {
+    white-space: nowrap; /* Prevents content from wrapping, forcing scroll */
+    padding: 0.75rem 1rem;
+    border: 1px solid #374151;
+}
+
+.prose thead {
+    background-color: #313244; /* Darker header background */
+}
+
+.prose th {
+    font-weight: bold;
+    text-align: left;
+}
+/* --- End of Table Styling --- */
+
+/* Change the main component background to match */
+main {
+    background-color: #1c1e26; /* OSDG main dark background */
+}
+
+/* --- NEW: Responsive Design for Mobile --- */
+@media (max-width: 768px) {
+    .prose {
+        font-size: 1rem; /* Adjust base font size for mobile */
+    }
+
+    .prose h1 {
+        font-size: 2em;
+    }
+
+    .prose h2 {
+        font-size: 1.75em;
+    }
+
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

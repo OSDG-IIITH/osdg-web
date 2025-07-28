@@ -36,8 +36,15 @@ export default function Navbar() {
             <Link className={linkClass} href="/">
               Home
             </Link>
-            {/* <Link className={linkClass} href="/projects">Projects</Link> */}
-            {/* <Link className={linkClass} href="/events">Events</Link> */}
+            {/* <Link className={linkClass} href="/projects">
+              Projects
+            </Link>
+            <Link className={linkClass} href="/events">
+              Events
+            </Link> */}
+            <Link className={linkClass} href="/linux-installation">
+              Linux Installation Guide
+            </Link>
             <Link
               className={linkClass}
               href="https://clubs.iiit.ac.in/clubs/osdg/members"
@@ -97,11 +104,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className="max-w-3 flex justify-center mx-auto px-4 sm:px-6 lg:px-8 max-w-xs">
-        <span className="text-sm font-medium text-center">
-          ⚠️ Website under maintenance ⚠️
-        </span>
-      </div>
 
       {/* Mobile menu, show/hide based on menu state */}
       {isOpen && (
@@ -118,13 +120,19 @@ export default function Navbar() {
               className="block px-3 py-2 text-base font-medium rounded-md hover:bg-[#3E4050] transition duration-300"
             >
               Projects
-            </Link> */}
+            </Link>{" "} */}
             {/* <Link
               href="/events"
               className="block px-3 py-2 text-base font-medium rounded-md hover:bg-[#3E4050] transition duration-300"
             >
               Events
             </Link> */}
+            <Link
+              href="/linux-installation"
+              className="block px-3 py-2 text-base font-medium rounded-md hover:bg-[#3E4050] transition duration-300"
+            >
+              Linux Installation Guide
+            </Link>
             <Link
               href="https://clubs.iiit.ac.in/clubs/osdg/members"
               className="block px-3 py-2 text-base font-medium rounded-md hover:bg-[#3E4050] transition duration-300"
