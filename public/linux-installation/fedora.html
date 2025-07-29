@@ -1,0 +1,628 @@
+<div data-align="center">
+<h1>Fedora KDE dual-boot guide</h1>
+
+</div>
+<p>This guide shows you how to dual-boot Fedora KDE (or any other Fedora
+edition of your choice) with Windows 10/11. There are some extra
+resources linked at the end that can help you if you get stuck.</p>
+<p>As of the time of writing, the latest version of Fedora is 42. We
+recommend that you download the latest version of Fedora that is
+available, instead of using the version this guide uses.</p>
+<p>Please follow this guide from top to bottom step-by-step if you’re a
+beginner to Linux. Do <strong>not</strong> attempt to use an LLM to
+summarize this document. LLMs make mistakes.</p>
+<p>If you want a video to follow, I recommend KSK Royal’s excellent
+Fedora Dual-boot guide available at the below link. Please come back and
+follow the <a href="#ais">After-install Steps</a> once you’re done
+following this video guide.</p>
+<p><a
+href="https://youtu.be/eHQJMy8Q7Zk">https://youtu.be/eHQJMy8Q7Zk</a></p>
+<h2>Table of Contents</h2>
+
+<h2>Things you need</h2>
+<ul>
+<li><p>An internet connection</p></li>
+<li><p>A 4 GiB (gigabyte) or larger pendrive to flash Fedora on to.</p>
+<ul>
+<li><p>8GiB+ is recommended.</p></li>
+<li><p>This pendrive will be <strong>WIPED</strong>, so please back up
+any existing data on it.</p></li>
+</ul></li>
+<li><p>A back-up of your computer’s data in case anything goes wrong
+(which you should be taking anyway)</p></li>
+<li><p>At least 100GiB of free space on your hard drive to install
+Fedora on to.</p></li>
+</ul>
+<h2>Downloading the installer ISO</h2>
+<p>To install Fedora KDE, you must download the “live” “ISO” file. An
+ISO file is a file that contains a bunch of files (i.e. an archive of
+files) which can be flashed onto a pendrive or CD.</p>
+<p>A live system is an operating system that can directly be booted off
+of a pendrive or CD without installing it to the hard disk. This system
+is ephemeral in nature, meaning that it loses any file/disk changes you
+make when you reboot. It is a great way to test out an operating system
+and see if it is compatible with your machine’s hardware without
+installing it on your machine’s hard drive. Most Linux distros
+(including Fedora) provide a Live system ISO that you can use to boot
+into a flashed pen-drive and run the installer from within the live
+system.</p>
+<p>This ISO can be downloaded from the <a
+href="https://fedoraproject.org">Fedora Website</a>. I recommend you try
+finding the download link to the latest version of “Fedora KDE Plasma
+Desktop” (the latest version is 42, as of time of writing) yourself, but
+if you are unable to, here’s a link to that page:</p>
+<p>- Download page for Fedora KDE: <a
+href="https://fedoraproject.org/kde/download">https://fedoraproject.org/kde/download</a><br />
+- Learn more about Fedora KDE: <a
+href="https://fedoraproject.org/kde/">https://fedoraproject.org/kde/</a><br />
+</p>
+<ul>
+<li><p>KDE main homepage (for optional reading): <a
+href="https://kde.org">https://kde.org</a></p></li>
+</ul>
+<div>
+<h3>What is the difference between Fedora, Fedora KDE, and Plasma
+Desktop?</h3>
+<p><strong>Fedora</strong> is the distribution of Linux that we’re going
+to be using. A Linux distribution is (in layman’s terms) a collection of
+packages that come with your operating system to make using it easier.
+This can include low-level things like the bootloader (Fedora uses GRUB)
+, kernel (Fedora 42 uses Linux 6.15), to high level things like the
+Desktop Environment (the GUI you see, depends on the Fedora Edition ),
+the Web Browser (Fedora uses Firefox), and much more.</p>
+<p>All of these components can be swapped for other things, which makes
+a Linux install one of the most customizable and powerful systems out
+there! Linux runs on computers, phones (Android), toasters, Raspberry
+Pis, and even on the Mars Rover!</p>
+<p><strong>KDE</strong> e.V. is a German non-profit organisation that
+develops free and open-source software for everyone to use. One of them
+is the <strong>Plasma Desktop Environment</strong> (which many people
+call “KDE“), a highly customisable and user-friendly desktop-environment
+for Linux and some other OSes. Plasma also comes with its own suite of
+applications, like a file manager (Dolphin), a PDF Viewer (Okular), an
+Image Viewer (Gwenview ), some games like Solitaire and Minesweeper, and
+much more!</p>
+<p>There are also other desktop environments that are available on
+Linux, an example being GNOME, a simple and user-friendly DE. GNOME has
+its own suite of applications (like Nautilus, Papers, Loupe for the
+GNOME equivalents of applications mentioned above).</p>
+<p>The choice of a DE depends on your use-case and preference. We
+recommend KDE because it looks familiar to Windows users, is more
+customisable, and has better support for newer technologies like HDR and
+VRR. But it’s entirely up to you to choose which DE to use, since it’s
+your computer and Linux lets you choose.</p>
+<p><strong>Links to GNOME</strong></p>
+<p>Learn more about Fedora GNOME: <a
+href="https://fedoraproject.org/workstation">https://fedoraproject.org/workstation</a><br />
+Fedora GNOME download: <a
+href="https://fedoraproject.org/workstation/download">https://fedoraproject.org/workstation/download</a><br />
+GNOME homepage (for optional reading): <a
+href="https://gnome.org">https://gnome.org</a></p>
+</div>
+<h3 id="dli">Downloading the ISO</h3>
+<p>Click on the download button next to the ISO you want. If you have an
+Intel/AMD CPU (most of you will), download the x86_64 ISO. If you have
+an ARM CPU (Snapdragon X-Elite), download the aarch64 ISO. Click the
+little green download icon to begin downloading. <strong>Make sure you
+download the Live ISO</strong>, and not anything else.</p>
+<figure>
+<p><img src="/linux-installation/assets/KDE-Download.png" style="height:8cm" /></p>
+<figcaption><p>A screenshot of the Fedora KDE download
+page</p></figcaption>
+</figure>
+<h4>Download using a Torrent Client (for advanced users)</h4>
+<p><em>Note: This section is only for advanced users who have torrented
+before. You may safely skip this section if you wish.</em></p>
+<p>Downloading a large file ( 2.5 GiB) through a browser may have issues
+if you’re on a slow/unreliable connection. You can use a torrent client
+like <a href="https://qbittorrent.org">https://qbittorrent.org</a> to
+download Fedora (and most other Linux ISOs), which is faster, more
+reliable, and contributes back to the open-source community if you seed
+(you should (I’m watching you)).</p>
+<p>You can get the torrent file for Fedora ISOs from <a
+href="https://torrent.fedoraproject.org.">https://torrent.fedoraproject.org.</a></p>
+<p>Again, we recommend finding the download links yourself, but here are
+some direct download links in case you weren’t able to.</p>
+<p>Fedora KDE x86_64 (for Intel and AMD) torrent: <a
+href="https://torrent.fedoraproject.org/torrents/Fedora-KDE-Desktop-Live-x86_64-42.torrent">https://torrent.fedoraproject.org/torrents/Fedora-KDE-Desktop-Live-x86_64-42.torrent</a><br />
+Fedora KDE aarch64 (for ARM computers) torrent: <a
+href="https://torrent.fedoraproject.org/torrents/Fedora-KDE-Desktop-Live-aarch64-42.torrent">https://torrent.fedoraproject.org/torrents/Fedora-KDE-Desktop-Live-aarch64-42.torrent</a></p>
+<p>Fedora GNOME x86_64 (for Intel and AMD) torrent: <a
+href="https://torrent.fedoraproject.org/torrents/Fedora-Workstation-Live-aarch64-42.torrent">https://torrent.fedoraproject.org/torrents/Fedora-Workstation-Live-aarch64-42.torrent</a><br />
+Fedora GNOME aarch64 (for ARM computers) torrent: <a
+href="https://torrent.fedoraproject.org/torrents/Fedora-Workstation-Live-x86_64-42.torrent">https://torrent.fedoraproject.org/torrents/Fedora-Workstation-Live-x86_64-42.torrent</a></p>
+<h4>Download using Fedora Media Writer</h4>
+<p>You can also download the ISO using Fedora Media Writer, an
+application made by the Fedora team to flash ISOs to a pendrive. Skip to
+the <a href="#fmw">Fedora Media Writer</a> section to see
+instructions.</p>
+<h3>Checking the ISO’s hash</h3>
+<p>Please refer to the instructions given <a
+href="https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media/#sect-verifying-images">here</a>
+to verify the integrity of the downloaded ISO file.</p>
+<h2>Flashing the Pendrive</h2>
+<p>Let’s flash the pendrive with the ISO so we can boot into it. There
+are tools made specifically for this purpose, we’ll dive into two of
+those here, Rufus (for Windows computers), and Fedora Media Writer (for
+all computers, intended as a backup option if Rufus doesn’t work for
+some reason).</p>
+<p>Make sure you’ve inserted your pendrive into the computer. <strong>A
+final warning: This step removes all the data on your pendrive. Make
+sure you have backed it up (i.e. copied it to another
+location)</strong>.</p>
+<p>To avoid flashing the wrong drive, please disconnect any other
+external storage devices you may have connected (such as other
+pendrives, SSDs, CDs, etc).</p>
+<p>During the flashing process, Windows may show some notifications
+about “something being wrong with the drive” or to “choose options” for
+it. Please ignore these notifications.</p>
+<h3>Using Rufus</h3>
+<p>Rufus is a tool that helps you flash an ISO file onto a pendrive.</p>
+<p>It is a tool specifically built <strong>for Windows
+computers</strong>. If you’re using something else, you should use
+Fedora Media Writer (described in the next section).</p>
+<p>Download Rufus from <a href="https://rufus.ie.">https://rufus.ie.</a>
+For Intel and AMD computers, download the x64 version. For ARM
+computers, download the ARM64 version. You can download the “Portable”
+version if you like (i.e. it does not have an installer, but the direct
+executable file is downloaded instead). The Portable version is easier
+to remove from your computer (you don’t have to go to Settings and
+manually remove it, just delete the downloaded file).</p>
+<figure>
+<p><img src="/linux-installation/assets/Rufus_Download_Page.jpeg" style="height:6cm" /></p>
+<figcaption><p>A screenshot of the Rufus download page</p></figcaption>
+</figure>
+<p>Next, open Rufus (you may click “No” on the update confirmation
+dialog that appears), it should look like this:</p>
+<figure>
+<p><img src="/linux-installation/assets/Rufus_Start.jpeg" style="height:6cm" /></p>
+<figcaption><p>A screenshot of the start menu of Rufus</p></figcaption>
+</figure>
+<p>Follow these steps:</p>
+<ol>
+<li><p>Select your pendrive from the dropdown list.</p></li>
+<li><p>Press the SELECT button (make sure the dropdown next to it says
+Disk or ISO image).</p></li>
+<li><p>Select the ISO you downloaded in the file picker that
+appears.</p></li>
+<li><p>Do not make any changes to any other settings.</p></li>
+</ol>
+<p>Rufus should look similar to the below image:</p>
+<figure>
+<p><img src="/linux-installation/assets/Rufus_Flashing.jpeg" style="height:6cm" /></p>
+<figcaption><p>A screenshot of an example of the options to be
+selected</p></figcaption>
+</figure>
+<p>Next, click the “START” button to flash the pendrive. Use the ISO
+Image mode as recommended. If this pendrive doesn’t boot during the boot
+process described later, re-flash using DD mode.</p>
+<p>If a warning about the GRUB version comes up, select the option to
+download the latest GRUB from the internet (usually “Yes”).</p>
+<p>Say “OK” to the warning about disk data erasure popup to begin
+flashing your pendrive!</p>
+<p>After it’s done, Rufus should give you a notification/sound and say
+its status is READY again. You may close Rufus when this is done.</p>
+<figure>
+<p><img src="/linux-installation/assets/Rufus_Starts.jpeg" style="height:6cm" /></p>
+<figcaption><p>A screenshot of the last step</p></figcaption>
+</figure>
+<h3>Using Ventoy</h3>
+<p>Ventoy is a tool that helps you flash and boot ISO files from a
+pendrive.</p>
+<p>It is a tool that works on multiple platforms, including Linux,
+Windows and MacOS.</p>
+<p>Download Ventoy from <a
+href="https://www.ventoy.net.">https://www.ventoy.net.</a> On the
+Download page, select the appropriate version for your system. For
+windows, download the <code>.zip</code> file, extract it, and run
+<code>Ventoy2Disk.exe</code>.</p>
+<figure>
+<p><img src="/linux-installation/assets/Ventoy_Page.png" style="height:6cm" /></p>
+<figcaption><p>A screenshot of the Ventoy download page</p></figcaption>
+</figure>
+<p>Once you open Ventoy, it should look like this:</p>
+<figure>
+<p><img src="/linux-installation/assets/Ventoy_Install_1.jpeg" style="height:6cm" /></p>
+<figcaption><p>A screenshot of Ventoy once downloaded</p></figcaption>
+</figure>
+<p>Follow the following steps:</p>
+<ol>
+<li><p>Select your pendrive from the dropdown list</p></li>
+<li><p>Click the <code>Install</code> button to install Ventoy to the
+selected USB drive.</p></li>
+<li><p>Confirm the warning prompts that appear (ensure you have backed
+up the data in the disk before)</p></li>
+<li><p>Once the installation is complete, the USB drive will can be used
+for ISO files</p></li>
+</ol>
+<figure>
+<p><img src="/linux-installation/assets/Ventoy_Install_2.jpeg" style="height:6cm" /></p>
+<figcaption><p>A screenshot of Ventoy while flashing the
+ISO</p></figcaption>
+</figure>
+<p>Next, copy the ISO file downloaded to the Ventoy-formatted USB drive.
+You can use the drive for booting once done. During boot, Ventoy will
+show the list of available ISO files to select from.</p>
+<h3 id="fmw">Using Fedora Media Writer</h3>
+<p>Fedora Media Writer is a pendrive flashing tool developed by the same
+team as the Fedora Linux distribution. We keep this option as a backup
+because Rufus generally has more success with bespoke computer
+configurations. Fedora Media Writer only supports x86_64 devices.</p>
+<p>Please refer to the instructions given <a
+href="https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media">here</a>
+to download and use Fedora Media Writer.</p>
+<p>Note that while writing the ISO image to the USB device, you may
+choose the “Download automatically” option and select the “Fedora KDE
+Plasma Desktop” option from the dropdown instead of “Fedora
+Workstation”. Once you click “Next”, make sure to select version 42, and
+choose the correct hardware architecture. See <a href="#dli">this</a>
+section to determine your hardware architecture.</p>
+<h2>Creating space for Fedora</h2>
+<p>Now, we need to partition the computer’s hard drive into two to give
+some space for Fedora. For most college-work and daily tasks, giving
+80-128GiB of space to fedora should be enough.</p>
+<p>If you plan on using Fedora/Linux more faithfully and want to install
+lots of software and games on it, try giving as much space to fedora as
+you can, leaving windows with about 40GiB of <em>free space</em>
+left.</p>
+<p>Files on your Windows computer can be viewed under Fedora, so you
+don’t have to worry about moving important stuff onto another drive to
+copy it over to Fedora.</p>
+<p>Your computer’s drives may already be partitioned into some units
+(called partitions/volumes) by Windows, and you may have multiple drives
+in your computer. This section comes down to your preference of which
+partition of your drive to shrink to make space for the new Fedora
+volume that will be created. Fedora will be installed onto this
+partition of your drive.</p>
+<p>To partition your drive, open Windows Disk management by following
+<strong>one</strong> of these two methods listed below:</p>
+<ul>
+<li><p>Right-click the start button and choose Disk Management</p></li>
+<li><p>Type “Disk Management” and choose “Create and format hard disk
+partitions” in the start menu</p></li>
+</ul>
+<p>The window that opened should look like this:</p>
+<figure>
+<p><img src="/linux-installation/assets/Disk_Management_1.jpeg" style="height:6cm" /></p>
+<figcaption><p>A screenshot of the disk management
+window</p></figcaption>
+</figure>
+<p>It might look different for you — you may have more/less drives with
+more/less partitions.</p>
+<p>Find the drive with the “Windows C:” partition. If you have a D:
+drive or an E: drive, you may have multiple partitions listed, in which
+case, find the largest partition which is NOT an EFI or recovery
+partition to shrink to give space to Fedora. You can use your file
+explorer’s This PC page to see which drives map to which partitions if
+it isn’t clearly obvious from just this program’s screen.</p>
+<p>Once you’ve selected the partition to shrink (I choose the Windows C:
+partition), right-click it and click the “Shrink Volume option”.</p>
+<p>This dialog should appear.</p>
+<figure>
+<p><img src="/linux-installation/assets/Shrink_Volume.jpeg" style="height:6cm" /></p>
+<figcaption><p>A screenshot of the Shrink Volume Window</p></figcaption>
+</figure>
+<p>In the input, enter the amount of space to give to Fedora <strong>in
+MiB</strong> (Windows displays MiB as MB, the difference between MiB and
+MB is left as an exercise to the reader). 1 GiB is 1024 MiB, so use your
+computer’s calculator to find the equivalent amount in MiB.</p>
+<p>For example, if I wanted to give Fedora 128 gigabytes of space, I’d
+type <code>131072</code> (128*1024) in the input box.</p>
+<p>Do choose wisely, as changing this number in the future will require
+you to <strong>remove and re-install Fedora</strong>.</p>
+<p>Click “Shrink” to shrink the partition.</p>
+<p>You should now have a fresh unallocated volume show up.</p>
+<figure>
+<p><img src="/linux-installation/assets/Disk_Parted.jpeg" style="height:6cm" /></p>
+<figcaption><p>A screenshot of the disk information after
+partition</p></figcaption>
+</figure>
+<p>You may close Disk Management.</p>
+<h2>Disabling BitLocker Encryption (only for Win10 Pro / Win 11)</h2>
+<p><em>Note: This step is only necessary for Windows 10 Pro and Windows
+11 (all editions) devices. You can skip this section if you have Win 10
+Home or an older edition of Windows.</em></p>
+<p>BitLocker is Windows” solution for full-disk encryption, i.e. it
+encrypts the contents of your hard drive. It is a nice feature, but
+unfortunately, it prevents dual-booting with Linux in an easy way.</p>
+<p>There is a way of keeping BitLocker enabled while having Linux
+dualbooted, but that process is very advanced. Also, keeping BitLocker
+enabled will prevent you from accessing your Windows files from
+Linux.</p>
+<p>For now, we will have to disable this feature to proceed with the
+installation.</p>
+<p><strong>Please note that if you forget to disable BitLocker
+encryption, it may render your Windows installation in a partially or
+fully bricked state.</strong></p>
+<p>To disable BitLocker encryption:</p>
+<ol>
+<li><p>Search for “disable encryption” in the start menu.</p></li>
+<li><p>Click the first option that appears (should be the Settings app
+or the Control Panel).</p></li>
+</ol>
+<figure>
+<p><img src="/linux-installation/assets/BitLocker_Page.jpeg" style="height:6cm" /></p>
+<figcaption><p>A screenshot of the BitLocker settings
+page</p></figcaption>
+</figure>
+<ol start="3">
+<li><p>Select the disk you want to disable BitLocker on (usually the C:
+drive).</p></li>
+<li><p>Backup the BitLocker key if you wish to keep it
+(optional).</p></li>
+</ol>
+<figure>
+<p><img src="/linux-installation/assets/Bitlocker_Save.jpeg" style="height:6cm" /></p>
+<figcaption><p>A screenshot of saving the BitLocker encryption
+key</p></figcaption>
+</figure>
+<ol start="5">
+<li><p>Click the “Turn off BitLocker” option.</p></li>
+</ol>
+<figure>
+<p><img src="/linux-installation/assets/Bitlocker_Disable.jpeg" style="height:6cm" /></p>
+<figcaption><p>A screenshot of disabling BitLocker</p></figcaption>
+</figure>
+<p>This process will take a bit of time (depending on the size of your
+drive) to complete.</p>
+<h2>Boot into your computer’s UEFI Settings</h2>
+<p><strong>Before proceeding into the UEFI, please make sure you have
+your pendrive plugged in.</strong> This is to allow the UEFI to show you
+the pendrive’s entry in the boot order selection page (covered
+later).</p>
+<p>Now you have to boot into your computer’s UEFI (Unified Extensible
+Firmware Interface) settings. A computer’s UEFI is (in layman’s terms )
+the part of the computer that is responsible for starting the operating
+system and is generally the first thing that starts up when you boot
+your computer.</p>
+<p>Your computer’s UEFI has some settings that you have to change to
+allow you to boot into your Fedora pendrive.</p>
+<p><em>Note: The UEFI Settings may also be (incorrectly) referred to as
+the BIOS settings by some manufacturers and websites. Other names for it
+are Boot Options, Firmware Settings, etc.</em></p>
+<p>You can boot into the UEFI settings from Windows by following any
+<strong>one</strong> of these two steps:</p>
+<h3>Method 1: Advanced Startup</h3>
+<p>Windows has a feature called Advanced Startup that allows you to,
+among other things, boot into the UEFI Settings.</p>
+<p>To get into advanced startup mode, follow any <strong>one</strong> of
+these two steps:</p>
+<ul>
+<li><p>Open Command Prompt, and type the below command in it and press
+enter.</p></li>
+</ul>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode cmd"><code class="sourceCode dosbat"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>shutdown <span class="at">/r</span> <span class="at">/o</span> <span class="at">/f</span> <span class="at">/t</span> 00</span></code></pre></div>
+<p>OR</p>
+<ul>
+<li><p>Open the start menu as if you were going to restart your
+computer, but <em>hold down Shift on your keyboard</em> while you press
+the Restart button.</p></li>
+</ul>
+<p><strong>Boot into the UEFI Settings:</strong></p>
+<p>When you’re in advanced startup, press Troubleshoot, then Advanced
+Options, then click UEFI Firmware Settings, and finally click Restart to
+boot into the UEFI settings.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><p><img src="/linux-installation/assets/AS-1.jpg" style="height:6cm" /></p></td>
+<td><p><img src="/linux-installation/assets/AS-2.jpg" style="height:6cm" /></p></td>
+</tr>
+<tr class="even">
+<td><p><img src="/linux-installation/assets/AS-3.jpg" style="height:6cm" /></p></td>
+<td><p><img src="/linux-installation/assets/AS-4.jpg" style="height:6cm" /></p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="keyb">Method 2: Keyboard smashing</h3>
+<p>You can open the UEFI settings by repeatedly pressing a specific key
+on your keyboard as soon as the machine starts up. The specific key
+depends from manufacturer to manufacturer and laptop to laptop.</p>
+<p>It’s usually one of F2, F7, F12, Delete, Enter, etc. Here’s a list of
+the keys for some common manufacturers:</p>
+<pre><code>Acer: F2 or DEL
+  ASUS: F2 or DEL
+  Dell: F2 or F12
+  HP: ESC or F10
+  Lenovo: F2 or Fn + F2
+  MSI: DEL
+</code></pre>
+<p>If these do not work, you’ll need to find the key for your device, by
+searching the internet. Search for “How to open BIOS on &lt;laptop
+brand&gt;”, replacing &lt;laptop brand&gt; with your laptop’s name and
+model (for example Framework 13, Lenovo Thinkpad, etc.).</p>
+<p>Once you find the key, restart your computer, and press that key up
+and down rapidly. You should directly be dropped into the BIOS.</p>
+<h2>Change Boot Order and Disable UEFI</h2>
+<p>UEFI firmware settings look different from computer to computer.
+Older laptops will have a screen that is only controllable using keys on
+your keyboard, while newer ones have mouse support. I will not be
+providing screenshots here since UEFIs are different from computer to
+computer.</p>
+<p>Please feel free to use an internet search engine to get help with
+this step. Stick to your manufacturer’s official website if they have
+instructions there. Popular YouTube videos may also be consulted.</p>
+<p>Get familiar with your UEFI’s control scheme. If it’s keyboard only,
+it’s usually listed at the bottom of the screen.</p>
+<p>Next, you have to find the “Boot Order” listing. It’s usually present
+in the “Boot” category. It looks like a changeable list of “bootable”
+secondary storage media like Hard Drives, CDs, pendrives, etc. You must
+move your pendrive to the top of the list, if it isn’t there already.
+Please look at the control scheme to know how to do so. Usually to move
+entries, it’s the F5/F6 or +/- keys on your keyboard, but please check
+instead of blindly trusting this guide. If you find multiple USB
+entries, move them all to the top.</p>
+<p>After that’s done, you can “Save and Exit” from the BIOS (usually the
+F10 key, but please check). The computer should now boot into Fedora
+from the pendrive.</p>
+<p>You’ll see a GNU GRUB boot menu, don’t worry about that, either wait
+for it to automatically select, or choose “Test this media and start
+Fedora 42” from the list. Booting may take a few minutes.</p>
+<p>Note that if you do not see the GRUB boot menu, or the computer
+reboots into Windows, you will need to disable Secure Boot. Re-boot into
+the BIOS/UEFI menu, and find an option called “Secure Boot” and
+<strong>disable</strong> it. It’s usually present in the “Security”
+category of your UEFI.</p>
+<h3>Using the boot menu</h3>
+<p>If the boot order page in the UEFI didn’t work, most laptops allow
+you to choose a boot device. You can find the Boot Menu key using the
+same instructions as finding the BIOS key as outlined <a
+href="#keyb">here</a>.</p>
+<p>You can also choose the boot device from the Advanced Startup part of
+Windows too.</p>
+<h2>Explore the Live System</h2>
+<p><em>Note: The following screenshots are of Fedora KDE.</em></p>
+<p>Welcome to the Fedora KDE Live System! This is what you should be
+seeing.</p>
+<p><img src="/linux-installation/assets/Fedora-1.png" style="height:10cm" /></p>
+<p>Please note that the version of KDE Plasma which is installed on the
+pendrive is <em>older</em> than the version that’ll be installed once
+you install Fedora. Expect some visual differences.</p>
+<p>You can now look around the environment, see what apps are present,
+see how KDE works, and explore as much as you wish! Do remember that
+whatever files you create, apps you install, or settings you modify will
+be <strong>lost</strong> on the next reboot.</p>
+<p>Also do remember that any changes you make to <strong>other
+drives</strong> on your computer (such as the one with Windows) in the
+live system <strong>WILL</strong> persist, so don’t go deleting System32
+thinking it’ll magically revert back!</p>
+<p>The Welcome application that opens up when you start the distro is
+quite helpful. Please take a look at what it says. If you missed it, it
+can be opened by opening the “Welcome Center” application from the
+“Start Menu“-like equivalent (called Application Launcher on KDE).</p>
+<p>Once you’re done exploring, open the Fedora Installer application
+(called Install to Hard Drive) by clicking the shortcut on the Desktop,
+or from the Start Menu.</p>
+<p>This will open a full-screen Anaconda installer.</p>
+<h2>Install Fedora</h2>
+<p>Welcome to the Fedora Installer!</p>
+<p><img src="/linux-installation/assets/Installer-1.png" style="height:8cm" /></p>
+<p>Choose your desired language, and click next. You should be seeing
+this screen (henceforth dubbed the “Main menu”).</p>
+<p><img src="/linux-installation/assets/Installer-2.png" style="height:8cm" /></p>
+<p>We shall now go step-by-step through the installer</p>
+<h3>Keyboard</h3>
+<p>Click “Keyboard” in the main menu. English (US) is the keyboard
+layout that most QWERTY keyboards in India use.</p>
+<p><img src="/linux-installation/assets/Installer-3.png" style="height:8cm" /></p>
+<p>If you’ve purchased your computer from outside the country, e.g.
+Dubai or Germany, you may have a different keyboard layout. Add one by
+pressing the “+” button. Select your keyboard’s layout and click “Add”.
+You can remove the existing “English (US)” layout by selecting it and
+clicking the “-” button. You may also add additional keyboard layouts
+for different languages if you wish.</p>
+<p>Test out your keyboard layout and make sure it’s correct (by checking
+all the keys on your keyboard and seeing if they map correctly) using
+the input box in the top right.</p>
+<p>After you’re done, click the “Done” button that’s present on the
+<strong>top-left</strong> of the screen.</p>
+<h3>Time &amp; Date</h3>
+<p>Choose “Time &amp; Date” from the main menu, and select Region “Asia”
+and city “Kolkata”. Leave date-time as automatic, don’t change anything
+else.</p>
+<p><img src="/linux-installation/assets/Installer-4.png" style="height:8cm" /></p>
+<h3>Network &amp; Host Name</h3>
+<p>Let’s give your computer a name. Select “Network &amp; Host Name”
+from the main menu, and type a name for your computer. This is your
+computer’s name, NOT your username. It will be visible when anyone tries
+to connect to your computer.</p>
+<p>Click apply and then click done to change the host name.</p>
+<p>You may choose to connect to the Internet using the WiFi icon in the
+“Taskbar” (called Panel in KDE), but that’s optional. If you do decide
+to connect, KDE might ask you to create a new “Wallet” (a place where
+passwords are stored). You can choose a simple blowfish wallet with a
+simple password since it’s a live environment. The wallet will
+automatically be set up for you in the actual install.</p>
+<h3>User Creation</h3>
+<p>Choose “User Creation” from the main menu. Here you’ll create a user
+for this machine. Enter your details and make sure the “wheel group
+membership” option is checked.</p>
+<p><img src="/linux-installation/assets/Installer-5.png" style="height:8cm" /></p>
+<p>Please enter a password, do not uncheck the “Require a password”
+option. It only creates headaches for you later.</p>
+<p>Click “Done” to go back.</p>
+<p>In the main menu, the root account should automatically be disabled.
+There’s nothing for us to do there.</p>
+<h3>Installation Destination</h3>
+<p>Here’s the main (and most important) part! We shall now select the
+drive to install Fedora to! Please be careful here. You must choose the
+drive that you gave space to in the Disk Management step.</p>
+<p><img src="/linux-installation/assets/Installer-6.png" style="height:8cm" /></p>
+<p>Notice how I have only one disk and how there is a checkmark on that
+disk? Fedora has automatically selected that disk and decided on an
+automatic partition layout.</p>
+<p>If you want to select another disk, click it until the checkmark
+appears on it. Click a checkmarked disk to unselect it (the check
+disappears). A disk being blue does not mean it’s selected, that’s just
+visual feedback because you clicked it. Selected disks are
+checkmarked.</p>
+<p>For dualbooting, we have to create partitions ourselves.
+<strong>Select “Custom” in the storage configuration</strong> and click
+done.</p>
+<p>You should see this page:</p>
+<p><img src="/linux-installation/assets/Installer-7.png" style="height:8cm" /></p>
+<p>Notice how Fedora has automatically detected 128GiB of free space
+that I had created using Disk Management on Windows earlier.</p>
+<p>The Fedora installer offers to automatically create partitions for
+us. You may choose to Encrypt your Data using a password (which achieves
+the same effect as BitLocker, but requiring a password to decrypt the
+drive, instead of being seamless) if you wish.</p>
+<p>Click the “Click here to create them automatically” button. This
+creates a partition layout using btrfs, a filesystem that lets you do
+cool things like take snapshots of your data (which is outside the scope
+of this guide).</p>
+<p><img src="/linux-installation/assets/Installer-8.png" style="height:8cm" /></p>
+<p>Notice that the available space jumped down to 1.3MiB. The partitions
+have been made to be created, let’s press “Done” and accept our changes
+to go back! Please note that there should not be any “Delete” entries in
+the changes list.</p>
+<p><img src="/linux-installation/assets/Installer-9.png" style="height:8cm" /></p>
+<h3>Install!</h3>
+<p><strong>This is the last time you can turn back and make a backup of
+your system if you haven’t already.</strong> Clicking the “Begin
+Installation” button will perform changes to your hard drive. If you’ve
+followed all the steps as above, you can continue without fear.</p>
+<p>Click Begin Installation to partition your disks and start the
+installation!</p>
+<p><img src="/linux-installation/assets/Installer-10.png" style="height:8cm" /></p>
+<p>After the installation is done, click “Finish Installation” to close
+the installer. You have installed Fedora on your hard drive! You can now
+restart your computer to exit the live environment, or continue looking
+around if you like.</p>
+<p>To restart your computer, open the application launcher and press the
+“Restart” button and confirm to restart your computer.</p>
+<div>
+<p>That’s right! KDE asks for confirmations for restarts and shut downs,
+so you don’t have to worry about accidentally restarting your computer
+instead of shutting it down!</p>
+</div>
+<p>You should now reboot into Fedora. The GRUB menu that appears should
+let you pick between booting into Fedora or Windows. Congratulations!
+You’ve successfully dual-booted your computer.</p>
+<div>
+<p>If you aren’t booted into Fedora, but into windows directly, you’ll
+have to open your UEFI settings and update the boot order to move the
+Fedora entry to the top.</p>
+</div>
+<h2 id="ais">After-install Steps</h2>
+<h3>Connect to the Internet</h3>
+<p>TODO</p>
+<h4>Connect to IIIT WiFI</h4>
+<p>TODO</p>
+<h4>Connect to IIIT LAN</h4>
+<p>TODO</p>
+<h4>Connect to IIIT VPN</h4>
+<p>TODO</p>
+<h3>Update your system</h3>
+<p>TODO</p>
+<ul>
+<li><p>update system (sudo dnf upgrade –refresh)</p></li>
+</ul>
+<h3>Install Media Codecs</h3>
+<p>TODO</p>
+<h3>Change KDE settings</h3>
+<p>TODO</p>
+<h3>Install Applications</h3>
+<p>TODO</p>
+<h3>Browse files from Windows</h3>

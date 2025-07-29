@@ -39,3 +39,6 @@ next-env.d.ts
 # Python
 Pipfile
 Pipfile.lock
+
+## team-members.json
+src/data/teams.json

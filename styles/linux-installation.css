@@ -1,6 +1,12 @@
-/* General styling for the markdown content container */
+/* General styling for the content container */
 .prose {
-    color: #d1d5db; /* Light gray text for readability on dark backgrounds */
+    color: #d1d5db;
+    /* Light gray text for readability on dark backgrounds */
+}
+
+/* --- OPTIMIZATION: Center-aligned elements --- */
+.prose div[data-align="center"] {
+    text-align: center;
 }
 
 /* Headings */
@@ -16,52 +22,124 @@
 
 .prose h1 {
     font-size: 2.5em;
-    border-bottom: 2px solid #4f46e5; /* Indigo border */
+    border-bottom: 2px solid #4f46e5;
+    /* Indigo border */
     padding-bottom: 0.3em;
-    margin-bottom: 0.8em;
-    margin-top: 1.5em; /* Added top margin */
+    margin-bottom: 1em;
+    /* Increased bottom margin */
+    margin-top: 1.5em;
 }
 
 .prose h2 {
     font-size: 2em;
-    border-bottom: 1px solid #374151; /* Gray border for separation */
+    border-bottom: 1px solid #374151;
+    /* Gray border for separation */
     padding-bottom: 0.2em;
-    margin-top: 2em; /* Added more top margin for major sections */
-    margin-bottom: 0.6em;
+    margin-top: 2.5em;
+    /* Added more top margin for major sections */
+    margin-bottom: 1em;
+    /* Increased bottom margin */
 }
 
 .prose h3 {
-    margin-top: 1.8em; /* Added top margin */
+    font-size: 1.5em;
+    /* Slightly larger h3 for better hierarchy */
+    margin-top: 2em;
+    /* Added top margin */
+    margin-bottom: 0.8em;
 }
 
 /* Links */
 .prose a {
-    color: #818cf8; /* A bright indigo for links */
+    color: #818cf8;
+    /* A bright indigo for links */
     text-decoration: none;
     transition: color 0.2s ease-in-out;
+    font-weight: 500;
+    /* Make links slightly bolder */
 }
 
 .prose a:hover {
-    color: #a78bfa; /* Lighter purple on hover */
+    color: #a78bfa;
+    /* Lighter purple on hover */
     text-decoration: underline;
 }
 
-/* Paragraphs and Lists */
-.prose p,
-.prose ul,
-.prose ol,
-.prose li {
-    line-height: 1.7;
+/* --- OPTIMIZATION: Make emphasized text stand out --- */
+.prose strong {
+    color: #f9e2af;
+    /* A soft yellow for emphasis */
+    font-weight: 700;
 }
+
+/* Paragraphs and Lists */
+.prose p {
+    line-height: 1.7;
+    margin-bottom: 1.25em;
+    /* Consistent paragraph spacing */
+}
+
+/* --- OPTIMIZATION: Improved List Styling --- */
+.prose ul,
+.prose ol {
+    line-height: 1.7;
+    padding-left: 1.5rem;
+    /* Indentation for the list markers */
+}
+
+/* Remove top margin if a list follows a heading directly */
+.prose h2+ul,
+.prose h3+ul,
+.prose h2+ol,
+.prose h3+ol {
+    margin-top: 0;
+}
+
+.prose ul {
+    list-style-type: disc;
+}
+
+.prose ol {
+    list-style-type: decimal;
+}
+
+.prose li {
+    padding-left: 0.5rem;
+    margin-bottom: 0.75rem;
+    /* Space between list items */
+}
+
+/* Style for nested lists to indent them properly */
+.prose ul ul,
+.prose ol ol,
+.prose ul ol,
+.prose ol ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    /* Deeper indentation for nested lists */
+}
+
+.prose ul ul {
+    list-style-type: circle;
+    /* Use a different bullet for nested unordered lists */
+}
+
 
 /* Code Blocks */
 .prose pre {
-    background-color: #1e1e2e; /* Darker background for code blocks */
+    background-color: #1e1e2e;
+    /* Darker background for code blocks */
     color: #cdd6f4;
+    border: 1px solid #374151;
+    /* Subtle border */
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 1.25rem;
+    /* More padding */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow-x: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 
 /* Inline Code */
@@ -69,7 +147,7 @@
     background-color: #45475a;
     color: #cdd6f4;
     padding: 0.2em 0.4em;
-    margin: 0;
+    margin: 0 0.1em;
     font-size: 85%;
     border-radius: 0.3rem;
 }
@@ -77,60 +155,113 @@
 .prose pre code {
     background-color: transparent;
     padding: 0;
+    margin: 0;
     font-size: inherit;
     color: inherit;
     border-radius: 0;
+    border: none;
 }
+
+/* --- OPTIMIZATION: Styling for Images and Captions --- */
+.prose figure {
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.prose figure img {
+    border-radius: 0.5rem;
+    border: 1px solid #374151;
+    max-width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.prose figcaption {
+    margin-top: 0.8em;
+    font-size: 0.9em;
+    color: #9ca3af;
+    /* Muted color for captions */
+    font-style: italic;
+}
+
+/* --- End of Image Styling --- */
+
 
 /* Blockquotes */
 .prose blockquote {
-    border-left: 4px solid #6366f1; /* Indigo left border */
+    border-left: 4px solid #6366f1;
+    /* Indigo left border */
     padding-left: 1rem;
-    color: #9ca3af; /* Muted text color for quotes */
+    margin: 1.5em 0;
+    color: #9ca3af;
+    /* Muted text color for quotes */
     font-style: italic;
+}
+
+.prose blockquote p {
+    margin-bottom: 0;
+    /* Remove extra paragraph margin inside a blockquote */
 }
 
 /* Horizontal Rule */
 .prose hr {
-    border-color: #374151; /* Dark gray border */
+    margin: 3em 0;
+    border-color: #374151;
+    /* Dark gray border */
 }
 
-/* --- NEW: Responsive Table Styling --- */
+/* Responsive Table Styling */
 .prose table {
-    display: block; /* Allows the table to be contained */
+    display: block;
     max-width: 100%;
-    overflow-x: auto; /* Enables horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     border-collapse: collapse;
     width: 100%;
+    margin: 2em 0;
+    border: 1px solid #374151;
 }
 
 .prose th,
 .prose td {
-    white-space: nowrap; /* Prevents content from wrapping, forcing scroll */
+    white-space: nowrap;
     padding: 0.75rem 1rem;
     border: 1px solid #374151;
 }
 
 .prose thead {
-    background-color: #313244; /* Darker header background */
+    background-color: #313244;
 }
 
 .prose th {
     font-weight: bold;
     text-align: left;
 }
-/* --- End of Table Styling --- */
 
 /* Change the main component background to match */
 main {
-    background-color: #1c1e26; /* OSDG main dark background */
+    background-color: #1c1e26;
 }
 
-/* --- NEW: Responsive Design for Mobile --- */
+/* --- OPTIMIZATION: Style for TODO items --- */
+.prose p:has(strong:contains('TODO')),
+.prose p:contains('TODO'),
+.prose li:contains('TODO') {
+    background-color: rgba(251, 191, 36, 0.1);
+    border-left: 4px solid #fbbF24;
+    padding: 1em 1.5em;
+    border-radius: 0.25rem;
+    color: #fef08a;
+}
+
+
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
     .prose {
-        font-size: 1rem; /* Adjust base font size for mobile */
+        font-size: 1rem;
     }
 
     .prose h1 {
@@ -141,6 +272,10 @@ main {
         font-size: 1.75em;
     }
 
+    .prose h3 {
+        font-size: 1.4em;
+    }
+
     .container {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -148,6 +283,6 @@ main {
 }
 
 
- .container {
-       max-width : 1000px ; 
-    }
+.container {
+    max-width: 1000px;
+}

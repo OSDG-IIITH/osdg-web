@@ -67,7 +67,7 @@ const TeamCard = ({ name, role, tenure, imageUrl, extra, index }: TeamMember & {
   );
 };
 
-const categories = ['All', 'Tech', 'Events', 'Corporate', 'Design', 'Advisor', 'Coordinator'];
+const categories = ['Coordinator', 'Tech', 'Events', 'Corporate', 'Design', 'Advisor', 'All'];
 
 const TeamPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
