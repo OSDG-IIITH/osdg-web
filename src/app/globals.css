@@ -7,3 +7,30 @@
     text-wrap: balance;
   }
 }
+
+/* Oxanium font classes */
+.font-oxanium {
+  font-family: var(--font-oxanium), sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.font-weight-regular {
+  font-weight: 400;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-semibold {
+  font-weight: 600;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
