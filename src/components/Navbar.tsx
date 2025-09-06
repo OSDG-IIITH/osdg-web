@@ -13,10 +13,10 @@ export default function Navbar() {
   };
 
   const linkClass =
-    "relative py-2 px-3 rounded-md font-medium text-lg transition-all duration-300 hover:text-white hover:scale-105 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-white after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full";
+    "py-2 px-3 rounded-md font-medium text-lg transition-all duration-300 ease-in-out hover:bg-white/5 focus:bg-white/5 outline-none";
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-md bg-[#2E303E]/90 text-gray-200 shadow-lg">
+  <nav className="sticky top-0 z-50 bg-transparent backdrop-blur-lg text-gray-200 pt-4" style={{boxShadow: '0 4px 32px 0 rgba(0,0,0,0.1)', WebkitBackdropFilter: 'blur(16px)', backdropFilter: 'blur(16px)'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
