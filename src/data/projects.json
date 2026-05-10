@@ -2,11 +2,11 @@
 	{
 		"slug": "formsiiit",
 		"name": "formsiiit",
-		"blurb": "Self-hosted forms platform for IIIT clubs and admins. Drop-in replacement for Google Forms with SSO.",
+		"blurb": "Opinionated forms platform for and by the IIIT Hyderabad community.",
 		"glyph": "F",
 		"tags": ["go", "svelte", "web"],
 		"github": "https://github.com/OSDG-IIITH/formsiiit",
-		"deploy": "https://forms.iiit.ac.in",
+		"deploy": "https://osdg.iiit.ac.in/forms/",
 		"stars": 142
 	},
 	{
@@ -16,7 +16,7 @@
 		"glyph": "C",
 		"tags": ["rust", "svelte", "web"],
 		"github": "https://github.com/nuxshed/cwdb",
-		"deploy": "https://cwdb.iiit.ac.in",
+		"deploy": "https://osdg.iiit.ac.in/cwdb/",
 		"stars": 89
 	},
 	{
@@ -26,7 +26,7 @@
 		"glyph": "G",
 		"tags": ["rust", "svelte", "web"],
 		"github": "https://github.com/OSDG-IIITH/grapevine",
-		"deploy": "https://grapevine.iiit.ac.in",
+		"deploy": "https://osdg.iiit.ac.in/grapevine/",
 		"stars": 211
 	},
 	{
