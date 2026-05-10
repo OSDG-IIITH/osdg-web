@@ -5,6 +5,12 @@
 	let { data }: { data: PageData } = $props();
 
 	let PostContent = $derived(data.component as Component);
+
+	function fmt(date: string) {
+		return new Date(date)
+			.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
+			.toLowerCase();
+	}
 </script>
 
 <main class="max-w-[760px] mx-auto px-6 lg:px-10 pt-16 pb-12">
@@ -30,7 +36,7 @@
 	>
 		<span>{data.meta.author}</span>
 		<span class="text-mute">·</span>
-		<span>{data.meta.date}</span>
+		<span>{fmt(data.meta.date)}</span>
 		<span class="text-mute">·</span>
 		<span>{data.meta.readingTime} min read</span>
 		<span class="text-mute">·</span>
