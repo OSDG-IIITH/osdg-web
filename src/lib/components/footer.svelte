@@ -1,7 +1,7 @@
 <script lang="ts">
 	const socials = [
 		{ kind: 'github', href: 'https://github.com/OSDG-IIITH' },
-		{ kind: 'twitter', href: 'https://twitter.com/osdg' },
+		{ kind: 'twitter', href: 'https://twitter.com/osdg_iiithyd' },
 		{ kind: 'linkedin', href: 'https://linkedin.com/company/osdg' },
 		{ kind: 'rss', href: '/rss.xml' }
 	];
