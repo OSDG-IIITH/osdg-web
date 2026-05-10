@@ -16,10 +16,10 @@
 			</p>
 		</div>
 		<a
-			href="/events"
+			href="/projects"
 			class="font-mono text-[13px] px-5 py-3 rounded bg-accent text-bg font-semibold hover:bg-[#bcd3ff] transition-colors flex-none inline-flex items-center gap-2"
 		>
-			see upcoming events <span>→</span>
+			explore projects <span>→</span>
 		</a>
 	</div>
 </section>

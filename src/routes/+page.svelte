@@ -71,9 +71,9 @@
 			<div>
 				<div class="font-mono text-[13px] text-fg-dim mb-2">
 					<span class="text-accent">$</span>
-					<span class="text-fg"> tail -n 3 blog/</span>
+					<span class="text-fg"> head -n 3 blog/index.md</span>
 				</div>
-				<h2 class="font-mono text-fg text-[28px] md:text-[32px] tracking-tight">recent writing</h2>
+				<h2 class="font-mono text-fg text-[28px] md:text-[32px] tracking-tight">recent writings</h2>
 			</div>
 			<a
 				href="/blog"
