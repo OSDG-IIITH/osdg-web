@@ -1,0 +1,74 @@
+[
+	{
+		"slug": "why-we-rewrote-formsiiit-in-go",
+		"title": "Why we rewrote formsiiit in Go",
+		"author": "anika.r",
+		"date": "2026-04-22",
+		"readingTime": 7,
+		"tags": ["go", "infra", "retro"],
+		"excerpt": "Three years, two rewrites, and a lot of stack traces later — here's what we learned about choosing boring technology when half your contributors graduate every year."
+	},
+	{
+		"slug": "building-cwdb-without-a-spec",
+		"title": "Building cwdb without a spec",
+		"author": "rohan.v",
+		"date": "2026-03-15",
+		"readingTime": 5,
+		"tags": ["rust", "svelte", "process"],
+		"excerpt": "We shipped a campus directory in six weeks. No spec, no designer, no manager. Here's how that went, and what we'd do differently."
+	},
+	{
+		"slug": "the-kernel-reading-group",
+		"title": "The kernel reading group",
+		"author": "priya.k",
+		"date": "2026-02-08",
+		"readingTime": 4,
+		"tags": ["systems", "community"],
+		"excerpt": "We started reading the Linux kernel source together every Thursday. This is what we've learned so far, and why you should join us."
+	},
+	{
+		"slug": "open-source-in-a-closed-campus",
+		"title": "Open source in a closed campus",
+		"author": "dev.m",
+		"date": "2026-01-20",
+		"readingTime": 6,
+		"tags": ["culture", "iiit"],
+		"excerpt": "IIIT Hyderabad has a lot of great infrastructure. Most of it is closed source, undocumented, and breaks every semester. We're trying to fix that."
+	},
+	{
+		"slug": "foss-meet-2026-recap",
+		"title": "FOSS Meet 2026 recap",
+		"author": "siddharth.a",
+		"date": "2025-12-10",
+		"readingTime": 3,
+		"tags": ["events", "community"],
+		"excerpt": "Four hundred people, twelve talks, and one very chaotic open-mic session. Here's what happened at this year's FOSS Meet."
+	},
+	{
+		"slug": "writing-a-static-site-generator-in-rust",
+		"title": "Writing a static site generator in Rust",
+		"author": "kartik.b",
+		"date": "2025-11-05",
+		"readingTime": 9,
+		"tags": ["rust", "ssg"],
+		"excerpt": "monorail started as a weekend project and became something we actually use. Here's the journey from 'how hard can it be' to a tool with real users."
+	},
+	{
+		"slug": "good-first-issues-that-are-actually-good",
+		"title": "Good first issues that are actually good",
+		"author": "anika.r",
+		"date": "2025-10-18",
+		"readingTime": 4,
+		"tags": ["community", "process"],
+		"excerpt": "We've been tagging issues for newcomers for two years. Here's what we learned about what makes an issue genuinely accessible, and what just looks like it is."
+	},
+	{
+		"slug": "grapevine-and-the-problem-of-anonymous-speech",
+		"title": "Grapevine and the problem of anonymous speech",
+		"author": "rohan.v",
+		"date": "2025-09-30",
+		"readingTime": 8,
+		"tags": ["grapevine", "design", "ethics"],
+		"excerpt": "We built an anonymous message board. Then we had to decide what 'anonymous-but-accountable' actually means in practice. This is that story."
+	}
+]

@@ -1,0 +1,62 @@
+[
+	{
+		"slug": "open-source-open-space",
+		"name": "Open Source Open Space",
+		"date": "2026-04-10",
+		"time": "9:00 PM - 11:00 PM",
+		"venue": "KRB Auditorium",
+		"type": "meetup",
+		"status": "past",
+		"blurb": "An open-space session for discussing open source projects, ideas, and collaboration."
+	},
+	{
+		"slug": "thinking-beyond-code-devops-mindset",
+		"name": "Thinking Beyond Code: The DevOps Mindset",
+		"date": "2026-02-01",
+		"time": "9:00 PM - 11:00 PM",
+		"venue": "H105",
+		"type": "talk",
+		"status": "past",
+		"blurb": "A talk on systems thinking, deployment practices, and how DevOps shapes team workflow."
+	},
+	{
+		"slug": "hackiiit",
+		"name": "HackIIIT",
+		"date": "2026-01-24",
+		"time": "24 Jan, 12:00 PM - 25 Jan, 3:00 PM",
+		"venue": "H105",
+		"type": "hackathon",
+		"status": "past",
+		"blurb": "A two-day build sprint for shipping ideas fast with peers and mentors."
+	},
+	{
+		"slug": "frieday-ricing",
+		"name": "Frieday Ricing",
+		"date": "2025-11-07",
+		"time": "7 Nov 2025, 9:00 PM IST - 7 Nov 2025, 11:59 PM IST",
+		"venue": "H103",
+		"type": "meetup",
+		"status": "past",
+		"blurb": "An informal Friday night session for tinkering, sharing setups, and hanging out."
+	},
+	{
+		"slug": "hydpy-x-nvidia-workshop",
+		"name": "HydPy x NVIDIA Workshop",
+		"date": "2026-05-16",
+		"time": "9:00 AM - 5:00 PM",
+		"venue": "Himalaya 105",
+		"type": "workshop",
+		"status": "upcoming",
+		"blurb": "A collaborative workshop with HydPy and NVIDIA on Nemotron."
+	},
+	{
+		"slug": "imdug-hackathon",
+		"name": "IMDUG Hackathon",
+		"date": "2026-07-01",
+		"time": "TBD",
+		"venue": "TBD",
+		"type": "hackathon",
+		"status": "upcoming",
+		"blurb": "Indic MediaWiki Developers Group hackathon. Contribute to MediaWiki and related projects."
+	}
+]

@@ -1,0 +1,62 @@
+[
+	{
+		"slug": "formsiiit",
+		"name": "formsiiit",
+		"blurb": "Self-hosted forms platform for IIIT clubs and admins. Drop-in replacement for Google Forms with SSO.",
+		"glyph": "F",
+		"tags": ["go", "svelte", "web"],
+		"github": "https://github.com/OSDG-IIITH/formsiiit",
+		"deploy": "https://forms.iiit.ac.in",
+		"stars": 142
+	},
+	{
+		"slug": "cwdb",
+		"name": "cwdb",
+		"blurb": "Course work database. Searchable index of past years' exams, assignements, and lecture notes.",
+		"glyph": "C",
+		"tags": ["rust", "svelte", "web"],
+		"github": "https://github.com/nuxshed/cwdb",
+		"deploy": "https://cwdb.iiit.ac.in",
+		"stars": 89
+	},
+	{
+		"slug": "grapevine",
+		"name": "grapevine",
+		"blurb": "Course, Lab and Advisor review platform, to help students make informed decisions about their academics and research.",
+		"glyph": "G",
+		"tags": ["rust", "svelte", "web"],
+		"github": "https://github.com/OSDG-IIITH/grapevine",
+		"deploy": "https://grapevine.iiit.ac.in",
+		"stars": 211
+	},
+	{
+		"slug": "osdg-web",
+		"name": "osdg-web",
+		"blurb": "The website you're on right now.",
+		"glyph": "O",
+		"tags": ["svelte", "web"],
+		"github": "https://github.com/OSDG-IIITH/osdg-web",
+		"deploy": "https://osdg.iiit.ac.in",
+		"stars": 156
+	},
+	{
+		"slug": "almanac",
+		"name": "almanac",
+		"blurb": "An almanac for everything at IIIT Hyderabad. Classes, Events, and more.",
+		"glyph": "A",
+		"tags": ["rust", "svelte", "web"],
+		"github": "https://gitlab.iiit.ac.in/vedant.kulkarni/almanac",
+		"deploy": "https://almanac.iiit.ac.in",
+		"stars": 64
+	},
+	{
+		"slug": "isitopen",
+		"name": "isitopen",
+		"blurb": "Ever wanted to know if a canteen is open without going there?",
+		"glyph": "I",
+		"tags": ["esp32", "iot"],
+		"github": "",
+		"deploy": null,
+		"stars": 12
+	}
+]

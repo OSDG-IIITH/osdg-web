@@ -1,0 +1,86 @@
+[
+	{
+		"id": "coordinators",
+		"label": "Coordinators",
+		"members": [
+			{ "name": "Advait Dintakurti", "handle": "advait.dintakurti", "isHead": false },
+			{ "name": "Abhinav PV", "handle": "abhinav.pv", "isHead": false }
+		]
+	},
+	{
+		"id": "projects",
+		"label": "Projects Team",
+		"members": [
+			{ "name": "Vedant Kulkarni", "handle": "vedant.kulkarni", "isHead": true },
+			{ "name": "Aarnav Pai", "handle": "aarnav.pai", "isHead": true },
+			{ "name": "Likith Kanigolla", "handle": "likith.kanigolla", "isHead": false },
+			{ "name": "Teja Pudi", "handle": "teja.pudi", "isHead": false },
+			{ "name": "Sanyam Asthana", "handle": "sanyam.asthana", "isHead": false },
+			{ "name": "Sian Shinjo", "handle": "sian.shinjo", "isHead": false },
+			{ "name": "Soham Chakraborty", "handle": "soham.chakraborty", "isHead": false },
+			{ "name": "Tejas Agarwal", "handle": "tejas.agarwal", "isHead": false },
+			{ "name": "Vikesh Kansal", "handle": "vikesh.kansal", "isHead": false }
+		]
+	},
+	{
+		"id": "events",
+		"label": "Events Team",
+		"members": [
+			{ "name": "Kaushik Yadala", "handle": "kaushik.yadala", "isHead": true },
+			{ "name": "Anya Jain", "handle": "anya.jain", "isHead": false },
+			{ "name": "Akshit Singla", "handle": "akshit.singla", "isHead": false },
+			{ "name": "Ashwin Hari", "handle": "ashwin.hari", "isHead": false },
+			{ "name": "Aryan Kulkarni", "handle": "aryan.kulkarni", "isHead": false },
+			{ "name": "Shambhavi Jha", "handle": "shambhavi.jha", "isHead": false }
+		]
+	},
+	{
+		"id": "social",
+		"label": "Social Media & Outreach",
+		"members": [
+			{ "name": "Pragati Prasad", "handle": "pragati.prasad", "isHead": true },
+			{ "name": "Snigdha Adimulam", "handle": "snigdha.adimulam", "isHead": false },
+			{ "name": "Hansika Grover", "handle": "hansika.grover", "isHead": false },
+			{ "name": "Shaurya Bansal", "handle": "shaurya.bansal", "isHead": false }
+		]
+	},
+	{
+		"id": "corporate",
+		"label": "Corporate Team",
+		"members": [
+			{ "name": "Aryan Bansal", "handle": "aryan.bansal", "isHead": false },
+			{ "name": "Balasubramanian K", "handle": "balasubramanian.k", "isHead": false },
+			{ "name": "Daniel Vincent", "handle": "daniel.vincent", "isHead": false }
+		]
+	},
+	{
+		"id": "design",
+		"label": "Design Team",
+		"members": [
+			{ "name": "Aman Jayesh", "handle": "aman.jayesh", "isHead": true },
+			{ "name": "Anushka Sinha", "handle": "anushka.sinha", "isHead": true },
+			{ "name": "Aryan Patel", "handle": "aryan.patel", "isHead": true },
+			{ "name": "Ambika S", "handle": "ambika.s", "isHead": false },
+			{ "name": "Anivarth Penumetcha", "handle": "anivarth.penumetcha", "isHead": false },
+			{ "name": "Kshitij Patkar", "handle": "kshitij.patkar", "isHead": false },
+			{ "name": "Saraswathy MK", "handle": "saraswathy.mk", "isHead": false }
+		]
+	},
+	{
+		"id": "advisors",
+		"label": "Advisors",
+		"members": [
+			{ "name": "Arihant Tripathy", "handle": "arihant.tripathy", "isHead": false },
+			{ "name": "Gopal Kataria", "handle": "gopal.kataria", "isHead": false },
+			{ "name": "Haris Jamal", "handle": "haris.jamal", "isHead": false },
+			{ "name": "Yajat Rangnekar", "handle": "yajat.rangnekar", "isHead": false }
+		]
+	},
+	{
+		"id": "faculty",
+		"label": "Faculty Advisor",
+		"members": [
+			{ "name": "Prof. Karthik Vaidhyanathan", "handle": "karthik.vaidhyanathan", "isHead": false }
+		]
+	}
+]
