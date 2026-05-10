@@ -13,9 +13,10 @@
 	};
 
 	function day(date: string) {
-		return new Date(date).getDate();
+		return date.split('-').length === 3 ? new Date(date).getDate() : 'TBD';
 	}
 	function monyr(date: string) {
+		if (date.split('-').length === 1) return new Date(date).getFullYear().toString();
 		return new Date(date)
 			.toLocaleString('en-US', { month: 'short', year: 'numeric' })
 			.toLowerCase();

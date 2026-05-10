@@ -1,9 +1,17 @@
 <script lang="ts">
+	import events from '../../data/events.json';
+	import projects from '../../data/projects.json';
+	import team from '../../data/team.json';
+
+	const activemembers = team
+		.filter((group) => group.id !== 'advisors' && group.id !== 'faculty')
+		.reduce((total, group) => total + group.members.length, 0);
+
 	const stats = [
-		{ n: '0', l: 'live projects' },
-		{ n: '32', l: 'active members' },
-		{ n: '12+ yrs', l: 'been here a while' },
-		{ n: '₹1L', l: 'jane street money' }
+		{ n: String(projects.length), l: 'live projects' },
+		{ n: String(activemembers), l: 'active members' },
+		{ n: '11+ yrs', l: 'been here a while' },
+		{ n: String(events.filter((event) => event.status === 'upcoming').length), l: 'events upcoming' }
 	];
 </script>
 
@@ -47,7 +55,7 @@
 			</a>
 			<a
 				href="/team"
-				class="inline-flex items-center gap-2 font-mono text-[13px] px-4 py-2.5 rounded border border-border-2 text-fg hover:border-accent hover:text-accent transition-colors"
+				class="inline-flex items-center gap-2 font-mono text-[13px] px-4 py-2.5 rounded border border-border-2 text-fg bg-transparent hover:bg-accent/8 hover:text-fg transition-colors duration-200"
 			>
 				meet the team
 			</a>

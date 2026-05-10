@@ -27,17 +27,17 @@
 		"venue": "H105",
 		"type": "hackathon",
 		"status": "past",
-		"blurb": "A two-day build sprint for shipping ideas fast with peers and mentors."
+		"blurb": "Build projects that benefit the community."
 	},
 	{
 		"slug": "frieday-ricing",
 		"name": "Frieday Ricing",
 		"date": "2025-11-07",
-		"time": "7 Nov 2025, 9:00 PM IST - 7 Nov 2025, 11:59 PM IST",
+		"time": "9:00 PM - 11:59 PM",
 		"venue": "H103",
 		"type": "meetup",
 		"status": "past",
-		"blurb": "An informal Friday night session for tinkering, sharing setups, and hanging out."
+		"blurb": "An introductory session on ricing your linux setup."
 	},
 	{
 		"slug": "hydpy-x-nvidia-workshop",
@@ -52,7 +52,7 @@
 	{
 		"slug": "imdug-hackathon",
 		"name": "IMDUG Hackathon",
-		"date": "2026-07-01",
+		"date": "2026-07",
 		"time": "TBD",
 		"venue": "TBD",
 		"type": "hackathon",

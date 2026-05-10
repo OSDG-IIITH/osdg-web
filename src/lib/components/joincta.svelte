@@ -12,7 +12,7 @@
 			<p class="font-mono text-[13px] text-fg-dim max-w-[60ch] leading-relaxed">
 				We recruit every spring. Until then, the issues are tagged <code
 					class="text-accent bg-accent-bg/40 px-1 rounded">good-first-issue</code
-				> and (TODO: think of smth).
+				> and we are always open for ideas and suggestions.
 			</p>
 		</div>
 		<a
