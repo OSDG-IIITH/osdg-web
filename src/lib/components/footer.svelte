@@ -13,7 +13,7 @@
 	>
 		<div class="text-fg-dim">
 			<span class="text-mute">$</span> echo "made with
-			<span class="text-accent" style="font-family:'Source Serif 4',serif">♥</span>
+			<span class="text-accent" style="font-family:'Source Serif 4',serif">♥︎</span>
 			by OSDG"
 		</div>
 
