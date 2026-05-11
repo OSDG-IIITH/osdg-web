@@ -3,6 +3,7 @@
 	import WhatWeDo from '$lib/components/whatwedo.svelte';
 	import JoinCta from '$lib/components/joincta.svelte';
 	import ProjectCard from '$lib/components/projectcard.svelte';
+	import projects from '$lib/../data/projects.json';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
@@ -68,7 +69,7 @@
 			onmouseleave={() => (hovering = false)}
 		>
 			<div bind:this={track} class="marquee-track flex gap-5 py-2 pr-5" style="width:max-content">
-				{#each [...data.projects, ...data.projects] as p, i (`${p.slug}-${i}`)}
+				{#each [...projects, ...projects] as p, i (`${p.slug}-${i}`)}
 					<div class="w-[340px] flex-none" style="height:220px">
 						<ProjectCard {p} compact />
 					</div>
