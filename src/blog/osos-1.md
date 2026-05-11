@@ -1,8 +1,7 @@
 ---
 title: Introduction to Free and Open Source Software
-author: OSDG
+author: "OS² #1"
 date: 2026-04-10
-readingTime: 15
 tags: [osos]
 excerpt: What FOSS is, why it matters, how licenses work, and how to make your first contribution to an open source project.
 ---

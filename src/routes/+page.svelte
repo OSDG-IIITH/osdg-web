@@ -116,7 +116,7 @@
 					<div class="font-mono text-[11px] text-mute mb-3 flex items-center gap-2">
 						<span>{fmt(p.meta.date)}</span>
 						<span>·</span>
-						<span>{p.meta.readingTime} min</span>
+						<span>{p.readtime} min</span>
 					</div>
 					<h3
 						class="font-serif text-fg text-[19px] leading-snug font-semibold mb-2 group-hover:text-accent transition-colors"

@@ -2,7 +2,6 @@
 title: To Goodbyes and New Beginnings
 author: Gopal, Arihant, Yajat
 date: 2026-03-19
-readingTime: 8
 tags: [club]
 excerpt: A note of thanks to the OSDG community, current team, and new coordinators.
 ---

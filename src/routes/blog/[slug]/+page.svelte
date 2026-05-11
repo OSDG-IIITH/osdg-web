@@ -38,7 +38,7 @@
 		<span class="text-mute">·</span>
 		<span>{fmt(data.meta.date)}</span>
 		<span class="text-mute">·</span>
-		<span>{data.meta.readingTime} min read</span>
+		<span>{data.readtime} min read</span>
 		<span class="text-mute">·</span>
 		<span class="flex gap-1.5">
 			{#each data.meta.tags as t (t)}

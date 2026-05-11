@@ -36,7 +36,7 @@
 					<div class="font-mono text-[11px] text-mute mb-3 flex items-center gap-2.5 flex-wrap">
 						<span>{fmt(p.meta.date)}</span>
 						<span class="text-border-2">·</span>
-						<span>{p.meta.readingTime} min read</span>
+						<span>{p.readtime} min read</span>
 						<span class="text-border-2">·</span>
 						<span>{p.meta.author}</span>
 					</div>
