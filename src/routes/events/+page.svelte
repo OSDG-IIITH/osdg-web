@@ -1,8 +1,13 @@
 <script lang="ts">
 	import events from '$lib/../data/events.json';
 
-	const upcoming = events.filter((e) => e.status === 'upcoming');
-	const past = events.filter((e) => e.status === 'past');
+	const today = new Date('2026-05-11');
+	const upcoming = [...events.filter((e) => new Date(e.date) >= today)].sort(
+		(a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
+	);
+	const past = [...events.filter((e) => new Date(e.date) < today)].sort(
+		(a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+	);
 
 	const badgeclass: Record<string, string> = {
 		conference: 'bg-accent-bg/60 text-accent border-accent/30',

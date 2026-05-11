@@ -1,33 +1,48 @@
 [
 	{
-		"slug": "open-source-open-space",
-		"name": "Open Source Open Space",
-		"date": "2026-04-10",
-		"time": "9:00 PM - 11:00 PM",
-		"venue": "KRB Auditorium",
-		"type": "meetup",
-		"status": "past",
-		"blurb": "An open-space session for discussing open source projects, ideas, and collaboration."
+		"slug": "intro-to-linux",
+		"name": "Intro to Linux",
+		"date": "2025-08-24",
+		"time": "5:00 PM - 7:00 PM",
+		"venue": "H105",
+		"type": "workshop",
+		"blurb": "An introductory workshop to Linux fundamentals."
 	},
 	{
-		"slug": "thinking-beyond-code-devops-mindset",
-		"name": "Thinking Beyond Code: The DevOps Mindset",
-		"date": "2026-02-01",
+		"slug": "worst-ui-contest",
+		"name": "Worst UI Contest",
+		"date": "2025-09-13",
+		"time": "13 Sept, 12:00 AM - 19 Sept, 11:59 PM",
+		"venue": "Online",
+		"type": "contest",
+		"blurb": "A fun contest celebrating intentionally bad UI design."
+	},
+	{
+		"slug": "intro-to-git-github",
+		"name": "Intro to Git/GitHub",
+		"date": "2025-09-16",
 		"time": "9:00 PM - 11:00 PM",
 		"venue": "H105",
-		"type": "talk",
-		"status": "past",
-		"blurb": "A talk on systems thinking, deployment practices, and how DevOps shapes team workflow."
+		"type": "workshop",
+		"blurb": "Learn version control with Git and GitHub."
 	},
 	{
-		"slug": "hackiiit",
-		"name": "HackIIIT",
-		"date": "2026-01-24",
-		"time": "24 Jan, 12:00 PM - 25 Jan, 3:00 PM",
+		"slug": "intro-to-gsoc",
+		"name": "Intro to GSoC",
+		"date": "2025-09-27",
+		"time": "9:00 PM - 11:00 PM",
+		"venue": "H105",
+		"type": "workshop",
+		"blurb": "An introductory session on Google Summer of Code."
+	},
+	{
+		"slug": "build2break",
+		"name": "Build2Break",
+		"date": "2025-10-04",
+		"time": "4 Oct, 1:00 PM - 5 Oct, 7:30 AM",
 		"venue": "H105",
 		"type": "hackathon",
-		"status": "past",
-		"blurb": "Build projects that benefit the community."
+		"blurb": "A hackathon event to build and break projects."
 	},
 	{
 		"slug": "frieday-ricing",
@@ -36,8 +51,34 @@
 		"time": "9:00 PM - 11:59 PM",
 		"venue": "H103",
 		"type": "meetup",
-		"status": "past",
 		"blurb": "An introductory session on ricing your linux setup."
+	},
+	{
+		"slug": "hackiiit",
+		"name": "HackIIIT",
+		"date": "2026-01-24",
+		"time": "24 Jan, 12:00 PM - 25 Jan, 3:00 PM",
+		"venue": "H105",
+		"type": "hackathon",
+		"blurb": "Build projects that benefit the community."
+	},
+	{
+		"slug": "thinking-beyond-code-devops-mindset",
+		"name": "Thinking Beyond Code: The DevOps Mindset",
+		"date": "2026-02-01",
+		"time": "9:00 PM - 11:00 PM",
+		"venue": "H105",
+		"type": "talk",
+		"blurb": "A talk on systems thinking, deployment practices, and how DevOps shapes team workflow."
+	},
+	{
+		"slug": "open-source-open-space",
+		"name": "Open Source Open Space",
+		"date": "2026-04-10",
+		"time": "9:00 PM - 11:00 PM",
+		"venue": "KRB Auditorium",
+		"type": "meetup",
+		"blurb": "An open-space session for discussing open source projects, ideas, and collaboration."
 	},
 	{
 		"slug": "hydpy-x-nvidia-workshop",
@@ -46,7 +87,6 @@
 		"time": "9:00 AM - 5:00 PM",
 		"venue": "Himalaya 105",
 		"type": "workshop",
-		"status": "upcoming",
 		"blurb": "A collaborative workshop with HydPy and NVIDIA on Nemotron."
 	},
 	{
@@ -56,7 +96,6 @@
 		"time": "TBD",
 		"venue": "TBD",
 		"type": "hackathon",
-		"status": "upcoming",
 		"blurb": "Indic MediaWiki Developers Group hackathon. Contribute to MediaWiki and related projects."
 	}
 ]
