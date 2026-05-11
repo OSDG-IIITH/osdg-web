@@ -1,21 +1,23 @@
 <script lang="ts">
 	import TagChip from '$lib/components/tagchip.svelte';
 	import ProjectCard from '$lib/components/projectcard.svelte';
-	import allprojects from '$lib/../data/projects.json';
+	import type { PageData } from './$types';
+
+	let { data }: { data: PageData } = $props();
 
 	let query = $state('');
 	let activetags = $state<string[]>([]);
 
 	const tagcounts = $derived.by(() => {
 		const c: Record<string, number> = {};
-		for (const p of allprojects) {
+		for (const p of data.projects) {
 			for (const t of p.tags) c[t] = (c[t] || 0) + 1;
 		}
 		return c;
 	});
 
 	const filtered = $derived(
-		allprojects.filter((p) => {
+		data.projects.filter((p) => {
 			const q = query.trim().toLowerCase();
 			const matchq = !q || p.name.toLowerCase().includes(q) || p.blurb.toLowerCase().includes(q);
 			const matcht = activetags.length === 0 || activetags.every((t) => p.tags.includes(t));
@@ -83,7 +85,7 @@
 		</div>
 
 		<div class="font-mono text-[12px] text-mute">
-			→ showing <span class="text-fg">{filtered.length}</span> of {allprojects.length}
+			→ showing <span class="text-fg">{filtered.length}</span> of {data.projects.length}
 		</div>
 	</div>
 

@@ -3,10 +3,30 @@
 	import WhatWeDo from '$lib/components/whatwedo.svelte';
 	import JoinCta from '$lib/components/joincta.svelte';
 	import ProjectCard from '$lib/components/projectcard.svelte';
-	import projects from '$lib/../data/projects.json';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
+
+	let track: HTMLElement;
+	let container: HTMLElement;
+	let hovering = false;
+
+	function handlewheel(e: WheelEvent) {
+		if (!hovering) return;
+		e.preventDefault();
+		const anim = track.getAnimations()[0];
+		if (!anim) return;
+		const duration = 50000;
+		const pxToMs = duration / (track.offsetWidth / 2);
+		const delta = (e.deltaX || e.deltaY) * pxToMs * 0.3;
+		const current = (anim.currentTime as number) % duration;
+		anim.currentTime = ((current + delta) % duration + duration) % duration;
+	}
+
+	$effect(() => {
+		container.addEventListener('wheel', handlewheel, { passive: false });
+		return () => container.removeEventListener('wheel', handlewheel);
+	});
 
 	function fmt(date: string) {
 		return new Date(date)
@@ -41,11 +61,14 @@
 		</div>
 
 		<div
+			bind:this={container}
 			class="relative marquee-pause overflow-hidden"
 			style="mask-image:linear-gradient(to right,transparent 0,black 6%,black 94%,transparent 100%);-webkit-mask-image:linear-gradient(to right,transparent 0,black 6%,black 94%,transparent 100%)"
+			onmouseenter={() => (hovering = true)}
+			onmouseleave={() => (hovering = false)}
 		>
-			<div class="marquee-track flex gap-5 py-2 pr-5" style="width:max-content">
-				{#each [...projects, ...projects] as p, i (`${p.slug}-${i}`)}
+			<div bind:this={track} class="marquee-track flex gap-5 py-2 pr-5" style="width:max-content">
+				{#each [...data.projects, ...data.projects] as p, i (`${p.slug}-${i}`)}
 					<div class="w-[340px] flex-none" style="height:220px">
 						<ProjectCard {p} compact />
 					</div>
