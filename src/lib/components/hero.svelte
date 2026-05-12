@@ -7,11 +7,14 @@
 		.filter((group) => group.id !== 'advisors' && group.id !== 'faculty')
 		.reduce((total, group) => total + group.members.length, 0);
 
+	const today = new Date();
+	const upcomingCount = events.filter((e) => new Date(e.date) >= today).length;
+
 	const stats = [
 		{ n: String(projects.length), l: 'live projects' },
 		{ n: String(activemembers), l: 'active members' },
 		{ n: '11+ yrs', l: 'been here a while' },
-		{ n: String(events.filter((event) => event.status === 'upcoming').length), l: 'events upcoming' }
+		{ n: String(upcomingCount), l: 'events upcoming' }
 	];
 </script>
 
