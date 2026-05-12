@@ -29,7 +29,7 @@
 			{#each team as g (g.id)}
 				<button
 					onclick={() => scrollto(`team-${g.id}`)}
-					class="text-fg-dim hover:text-accent text-left"
+					class="text-fg-dim hover:text-accent text-left cursor-pointer"
 				>
 					<span class="text-accent">{g.id}/</span>
 				</button>
