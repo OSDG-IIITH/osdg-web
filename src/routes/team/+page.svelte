@@ -4,9 +4,26 @@
 
 	const total = team.reduce((n, g) => n + g.members.length, 0);
 
+	let windowWidth = $state(0);
+	let avatarSize = $derived.by(() => {
+		if (windowWidth < 450) {
+			return Math.round(180 * (windowWidth / 450));
+		}
+		return 180;
+	});
+
 	function scrollto(id: string) {
 		document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 	}
+
+	$effect(() => {
+		windowWidth = typeof window !== 'undefined' ? window.innerWidth : 0;
+		const handleResize = () => {
+			windowWidth = window.innerWidth;
+		};
+		window.addEventListener('resize', handleResize);
+		return () => window.removeEventListener('resize', handleResize);
+	});
 </script>
 
 <main class="max-w-[1200px] mx-auto px-6 lg:px-10 pt-16 pb-12">
@@ -53,7 +70,7 @@
 				{#each g.members as m (m.handle)}
 					<div class="flex flex-col items-start gap-2">
 						<div class="relative">
-							<Avatar name={m.name} handle={m.handle} size={180} />
+							<Avatar name={m.name} handle={m.handle} size={avatarSize} />
 							{#if m.isHead}
 								<span class="absolute -top-1.5 -right-1.5 bg-accent text-bg text-[9px] font-mono font-bold uppercase tracking-[0.1em] px-1.5 py-0.5 rounded">
 									head
