@@ -7,7 +7,7 @@
 		"tags": ["go", "svelte", "web"],
 		"github": "https://github.com/OSDG-IIITH/formsiiit",
 		"deploy": "https://osdg.iiit.ac.in/forms/",
-		"stars": 142
+		"stars": 7
 	},
 	{
 		"slug": "cwdb",
@@ -17,17 +17,7 @@
 		"tags": ["rust", "svelte", "web"],
 		"github": "https://github.com/nuxshed/cwdb",
 		"deploy": "https://osdg.iiit.ac.in/cwdb/",
-		"stars": 89
-	},
-	{
-		"slug": "grapevine",
-		"name": "grapevine",
-		"blurb": "Course, Lab and Advisor review platform, to help students make informed decisions about their academics and research.",
-		"glyph": "G",
-		"tags": ["rust", "svelte", "web"],
-		"github": "https://github.com/OSDG-IIITH/grapevine",
-		"deploy": "https://osdg.iiit.ac.in/grapevine/",
-		"stars": 211
+		"stars": 5
 	},
 	{
 		"slug": "osdg-web",
@@ -37,7 +27,7 @@
 		"tags": ["svelte", "web"],
 		"github": "https://github.com/OSDG-IIITH/osdg-web",
 		"deploy": "https://osdg.iiit.ac.in",
-		"stars": 156
+		"stars": 1
 	},
 	{
 		"slug": "almanac",
@@ -47,7 +37,7 @@
 		"tags": ["rust", "svelte", "web"],
 		"github": "https://gitlab.iiit.ac.in/vedant.kulkarni/almanac",
 		"deploy": "https://almanac.iiit.ac.in",
-		"stars": 64
+		"stars": 0
 	},
 	{
 		"slug": "isitopen",
@@ -57,6 +47,6 @@
 		"tags": ["esp32", "iot"],
 		"github": "",
 		"deploy": null,
-		"stars": 12
+		"stars": 0
 	}
 ]
