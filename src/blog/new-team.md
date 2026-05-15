@@ -14,7 +14,7 @@ Through HackIIIT, Build2Break at Infinium, Worst UI Hackathon, Build With AI, Fr
 
 And none of it would have been remotely possible without the help of our members. So, in no particular order, we would like to thank the current team:
 
-@Shaikh Haris Jamal, @Venkata Naga Sai Kaushik Yadala, @Advait Dintakurti - For ensuring our events go from being ideas to reality. And for being there at all times whenever we needed them.
+@Shaikh Haris Jamal, @Venkata Naga Sai Kaushik Yadala, @Advait Dintakurti, @Madhur Kankane, @Mehrish Khan - For ensuring our events go from being ideas to reality. And for being there at all times whenever we needed them.
 
 @Vedant Rahul Kulkarni - For keeping up on top of all his academics and other numerous responsibilities while still being one of the most active members and speakers of the club.
 
@@ -22,7 +22,7 @@ And none of it would have been remotely possible without the help of our members
 
 @Pragati Prasad - For being active on social media and ensuring people heard about our latest developments, and somehow make OSDG look cool to the general audience.
 
-@Aman Jayesh, @Ananya Kasavajhala, @Anushka Sharma, @Ananya Sinha, and @Aryan Patel - For getting designs ready in the nick of time, and listening to our completely wrong opinions on what good designs should look like.
+@Aman Jayesh, @Ananya Kasavajhala, @Anushka Sinha, @Ananya Sinha, and @Aryan Patel - For getting designs ready in the nick of time, and listening to our completely wrong opinions on what good designs should look like.
 
 @Adithya Kishor, @Aarnav Pai - For ensuring hundreds of UG1 smoothly installed GNU/Linux on their laptops without a hitch.
 
