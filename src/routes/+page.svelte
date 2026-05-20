@@ -19,7 +19,7 @@
 		if (!anim) return;
 		const duration = 50000;
 		const pxToMs = duration / (track.offsetWidth / 2);
-		const delta = (e.deltaX || e.deltaY) * pxToMs * 0.3;
+		const delta = (e.deltaX || e.deltaY) * pxToMs * 0.8;
 		const current = (anim.currentTime as number) % duration;
 		anim.currentTime = ((current + delta) % duration + duration) % duration;
 	}
