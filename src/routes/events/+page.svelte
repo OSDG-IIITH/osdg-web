@@ -12,7 +12,7 @@
 	const badgeclass: Record<string, string> = {
 		conference: 'bg-accent-bg/60 text-accent border-accent/30',
 		workshop: 'bg-panel border-border-2 text-fg',
-		hackathon: 'bg-[#3a2a1f]/40 border-[#5a3a25]/50 text-warn',
+		hackathon: 'bg-panel border-border-2 text-fg',
 		talk: 'bg-panel border-border-2 text-fg-dim',
 		program: 'bg-[#1f3a2c]/40 border-[#2a5a3e]/50 text-ok'
 	};
