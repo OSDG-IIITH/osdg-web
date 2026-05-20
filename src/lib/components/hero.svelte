@@ -11,10 +11,10 @@
 	const upcomingCount = events.filter((e) => new Date(e.date) >= today).length;
 
 	const stats = [
-		{ n: String(projects.length), l: 'live projects' },
-		{ n: String(activemembers), l: 'active members' },
-		{ n: '11+ yrs', l: 'been here a while' },
-		{ n: String(upcomingCount), l: 'events upcoming' }
+		{ n: String(projects.length), l: 'live projects', href: '/projects' },
+		{ n: String(activemembers), l: 'active members', href: '/team' },
+		{ n: '11+ yrs', l: 'been here a while', href: null },
+		{ n: String(upcomingCount), l: 'events upcoming', href: '/events' }
 	];
 </script>
 
@@ -91,10 +91,17 @@
 			style="animation-delay:500ms"
 		>
 			{#each stats as s (s.l)}
-				<div class="bg-bg px-5 py-5">
-					<div class="font-mono text-fg text-[24px] font-semibold tracking-tight">{s.n}</div>
-					<div class="font-mono text-mute text-[11px] mt-1 uppercase tracking-[0.14em]">{s.l}</div>
-				</div>
+				{#if s.href}
+					<a href={s.href} class="bg-bg px-5 py-5 hover:bg-stat-hover transition-colors duration-150">
+						<div class="font-mono text-fg text-[24px] font-semibold tracking-tight">{s.n}</div>
+						<div class="font-mono text-mute text-[11px] mt-1 uppercase tracking-[0.14em]">{s.l}</div>
+					</a>
+				{:else}
+					<div class="bg-bg px-5 py-5 hover:bg-stat-hover transition-colors duration-150">
+						<div class="font-mono text-fg text-[24px] font-semibold tracking-tight">{s.n}</div>
+						<div class="font-mono text-mute text-[11px] mt-1 uppercase tracking-[0.14em]">{s.l}</div>
+					</div>
+				{/if}
 			{/each}
 		</div>
 	</div>
