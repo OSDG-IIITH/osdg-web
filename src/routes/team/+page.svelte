@@ -26,27 +26,29 @@
 	});
 </script>
 
-<main class="max-w-[1200px] mx-auto px-6 lg:px-10 pt-16 pb-12">
-	<div class="font-mono mb-10">
+<main class="mx-auto max-w-[1200px] px-6 pt-16 pb-12 lg:px-10">
+	<div class="mb-10 font-mono">
 		<div class="flex items-baseline gap-2">
 			<span class="text-accent select-none">$</span>
-			<h1 class="text-fg text-[28px] md:text-[34px] font-medium tracking-tight leading-none">
+			<h1 class="text-[28px] leading-none font-medium tracking-tight text-fg md:text-[34px]">
 				ls team/
 			</h1>
 		</div>
-		<p class="text-fg-dim text-[14px] mt-3 max-w-2xl leading-relaxed">
+		<p class="mt-3 max-w-2xl text-[14px] leading-relaxed text-fg-dim">
 			These <span class="text-accent">{total}</span> people keep everything running.
 		</p>
 	</div>
 
 	<!-- TOC -->
-	<nav class="max-w-[800px] mb-14 bg-panel/40 border border-border rounded-lg p-5 font-mono text-[13px] leading-[1.9]">
+	<nav
+		class="mb-14 max-w-[800px] rounded-lg border border-border bg-panel/40 p-5 font-mono text-[13px] leading-[1.9]"
+	>
 		<!--<div class="text-mute text-[11px] uppercase tracking-[0.16em] mb-3">$ ls team/</div>-->
-		<div class="grid grid-cols-2 md:grid-cols-5 gap-x-6 gap-y-1">
+		<div class="grid grid-cols-2 gap-x-6 gap-y-1 md:grid-cols-5">
 			{#each team as g (g.id)}
 				<button
 					onclick={() => scrollto(`team-${g.id}`)}
-					class="text-fg-dim hover:text-accent text-left cursor-pointer"
+					class="cursor-pointer text-left text-fg-dim hover:text-accent"
 				>
 					<span class="text-accent">{g.id}/</span>
 				</button>
@@ -57,27 +59,29 @@
 	<!-- sections -->
 	{#each team as g (g.id)}
 		<section id="team-{g.id}" class="mb-18" style="scroll-margin-top:5rem">
-			<div class="font-mono mb-6 flex items-baseline gap-2 flex-wrap pb-3 border-b border-border">
-				<span class="text-accent text-[12px]">$</span>
-				<span class="text-fg-dim text-[12px]">ls team/{g.id}/</span>
-				<span class="ml-auto text-mute text-[11px]">
+			<div class="mb-6 flex flex-wrap items-baseline gap-2 border-b border-border pb-3 font-mono">
+				<span class="text-[12px] text-accent">$</span>
+				<span class="text-[12px] text-fg-dim">ls team/{g.id}/</span>
+				<span class="ml-auto text-[11px] text-mute">
 					{g.members.length}
 					{g.members.length === 1 ? 'person' : 'people'}
 				</span>
 			</div>
-			<h2 class="font-mono text-fg text-[20px] font-medium tracking-tight mb-6">{g.label}</h2>
-			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-3 gap-y-8">
+			<h2 class="mb-6 font-mono text-[20px] font-medium tracking-tight text-fg">{g.label}</h2>
+			<div class="grid grid-cols-2 gap-x-3 gap-y-8 sm:grid-cols-3 md:grid-cols-5">
 				{#each g.members as m (m.handle)}
 					<div class="flex flex-col items-start gap-2">
 						<div class="relative w-full">
 							<Avatar name={m.name} handle={m.handle} size={avatarSize} image={m.image} />
 							{#if m.isHead}
-								<span class="absolute -top-1.5 -right-1.5 bg-accent text-bg text-[9px] font-mono font-bold uppercase tracking-[0.1em] px-1.5 py-0.5 rounded">
+								<span
+									class="absolute -top-3 -right-3 rounded bg-accent px-2 py-0.5 font-mono text-[9px] font-bold tracking-[0.1em] text-bg uppercase"
+								>
 									head
 								</span>
 							{/if}
 						</div>
-						<div class="font-mono text-fg text-[13px] font-medium leading-tight">{m.name}</div>
+						<div class="font-mono text-[13px] leading-tight font-medium text-fg">{m.name}</div>
 					</div>
 				{/each}
 			</div>
