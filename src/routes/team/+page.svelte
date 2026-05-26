@@ -69,8 +69,8 @@
 			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-3 gap-y-8">
 				{#each g.members as m (m.handle)}
 					<div class="flex flex-col items-start gap-2">
-						<div class="relative">
-							<Avatar name={m.name} handle={m.handle} size={avatarSize} />
+						<div class="relative w-full">
+							<Avatar name={m.name} handle={m.handle} size={avatarSize} image={m.image} />
 							{#if m.isHead}
 								<span class="absolute -top-1.5 -right-1.5 bg-accent text-bg text-[9px] font-mono font-bold uppercase tracking-[0.1em] px-1.5 py-0.5 rounded">
 									head

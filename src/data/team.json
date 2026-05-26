@@ -3,8 +3,8 @@
 		"id": "coordinators",
 		"label": "Coordinators",
 		"members": [
-			{ "name": "Advait Dintakurti", "handle": "advait.dintakurti", "isHead": false },
-			{ "name": "Abhinav PV", "handle": "abhinav.pv", "isHead": false }
+			{ "name": "Advait Dintakurti", "handle": "advait.dintakurti", "isHead": false, "image": "/team/advait.jpeg" },
+			{ "name": "Abhinav PV", "handle": "abhinav.pv", "isHead": false, "image": "/team/Abhinav_img.jpg" }
 		]
 	},
 	{
@@ -13,12 +13,12 @@
 		"members": [
 			{ "name": "Vedant Kulkarni", "handle": "vedant.kulkarni", "isHead": true },
 			{ "name": "Aarnav Pai", "handle": "aarnav.pai", "isHead": true },
-			{ "name": "Likith Kanigolla", "handle": "likith.kanigolla", "isHead": false },
-			{ "name": "Teja Pudi", "handle": "teja.pudi", "isHead": false },
+			{ "name": "Likith Kanigolla", "handle": "likith.kanigolla", "isHead": false, "image": "/team/Likhith_Kanigolla.jpg" },
+			{ "name": "Teja Pudi", "handle": "teja.pudi", "isHead": false, "image": "/team/pudi.jpg" },
 			{ "name": "Sanyam Asthana", "handle": "sanyam.asthana", "isHead": false },
-			{ "name": "Sian Shinjo", "handle": "sian.shinjo", "isHead": false },
-			{ "name": "Soham Chakraborty", "handle": "soham.chakraborty", "isHead": false },
-			{ "name": "Tejas Agarwal", "handle": "tejas.agarwal", "isHead": false },
+			{ "name": "Sian Shinjo", "handle": "sian.shinjo", "isHead": false, "image": "/team/sian.jpg" },
+			{ "name": "Soham Chakraborty", "handle": "soham.chakraborty", "isHead": false, "image": "/team/soham.jpg" },
+			{ "name": "Tejas Agarwal", "handle": "tejas.agarwal", "isHead": false, "image": "/team/tejasag.jpg" },
 			{ "name": "Vikesh Kansal", "handle": "vikesh.kansal", "isHead": false }
 		]
 	},
@@ -26,8 +26,8 @@
 		"id": "events",
 		"label": "Events Team",
 		"members": [
-			{ "name": "Kaushik Yadala", "handle": "kaushik.yadala", "isHead": true },
-			{ "name": "Anya Jain", "handle": "anya.jain", "isHead": false },
+			{ "name": "Kaushik Yadala", "handle": "kaushik.yadala", "isHead": true, "image": "/team/kaushik.jpg" },
+			{ "name": "Anya Jain", "handle": "anya.jain", "isHead": false, "image": "/team/anya.jpg" },
 			{ "name": "Akshit Singla", "handle": "akshit.singla", "isHead": false },
 			{ "name": "Ashwin Hari", "handle": "ashwin.hari", "isHead": false },
 			{ "name": "Aryan Kulkarni", "handle": "aryan.kulkarni", "isHead": false },
@@ -38,10 +38,10 @@
 		"id": "social",
 		"label": "Social Media & Outreach",
 		"members": [
-			{ "name": "Pragati Prasad", "handle": "pragati.prasad", "isHead": true },
+			{ "name": "Pragati Prasad", "handle": "pragati.prasad", "isHead": true, "image": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DKdAxhnLmApjGgSsinVwGmJ_profile_pragati.prasad.png&w=1080&q=75" },
 			{ "name": "Snigdha Adimulam", "handle": "snigdha.adimulam", "isHead": false },
 			{ "name": "Hansika Grover", "handle": "hansika.grover", "isHead": false },
-			{ "name": "Shaurya Bansal", "handle": "shaurya.bansal", "isHead": false }
+			{ "name": "Shaurya Bansal", "handle": "shaurya.bansal", "isHead": false, "image": "/team/shaurya_bansal.JPG" }
 		]
 	},
 	{
@@ -57,30 +57,30 @@
 		"id": "design",
 		"label": "Design Team",
 		"members": [
-			{ "name": "Aman Jayesh", "handle": "aman.jayesh", "isHead": true },
-			{ "name": "Anushka Sinha", "handle": "anushka.sinha", "isHead": true },
+			{ "name": "Aman Jayesh", "handle": "aman.jayesh", "isHead": true, "image": "/team/aman.jpg" },
+			{ "name": "Anushka Sinha", "handle": "anushka.sinha", "isHead": true, "image": "/team/anushka.jpg" },
 			{ "name": "Aryan Patel", "handle": "aryan.patel", "isHead": true },
-			{ "name": "Ambika S", "handle": "ambika.s", "isHead": false },
-			{ "name": "Anivarth Penumetcha", "handle": "anivarth.penumetcha", "isHead": false },
+			{ "name": "Ambika S", "handle": "ambika.s", "isHead": false, "image": "/team/Ambika.jpg" },
+			{ "name": "Anivarth Penumetcha", "handle": "anivarth.penumetcha", "isHead": false, "image": "/team/anivarth_pfp(1).jpg" },
 			{ "name": "Kshitij Patkar", "handle": "kshitij.patkar", "isHead": false },
-			{ "name": "Saraswathy MK", "handle": "saraswathy.mk", "isHead": false }
+			{ "name": "Saraswathy MK", "handle": "saraswathy.mk", "isHead": false, "image": "/team/Saraswathy_MK.jpg" }
 		]
 	},
 	{
 		"id": "advisors",
 		"label": "Advisors",
 		"members": [
-			{ "name": "Arihant Tripathy", "handle": "arihant.tripathy", "isHead": false },
-			{ "name": "Gopal Kataria", "handle": "gopal.kataria", "isHead": false },
-			{ "name": "Haris Jamal", "handle": "haris.jamal", "isHead": false },
-			{ "name": "Yajat Rangnekar", "handle": "yajat.rangnekar", "isHead": false }
+			{ "name": "Arihant Tripathy", "handle": "arihant.tripathy", "isHead": false, "image": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DdVTEmvribGSMpBtSVucaNe_me.JPG&w=1080&q=75" },
+			{ "name": "Gopal Kataria", "handle": "gopal.kataria", "isHead": false, "image": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DDSiwff79QvEH4d8NSxgEiG_pfp.jpg&w=1080&q=75" },
+			{ "name": "Haris Jamal", "handle": "haris.jamal", "isHead": false, "image": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DAF3CdFktzgukBYYYhfZrUm_IMG_3057.jpeg&w=1080&q=75" },
+			{ "name": "Yajat Rangnekar", "handle": "yajat.rangnekar", "isHead": false, "image": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DFGVWanTfnRuyadWzEbNsnv_ProfileImage.png&w=1080&q=75" }
 		]
 	},
 	{
 		"id": "faculty",
 		"label": "Faculty Advisor",
 		"members": [
-			{ "name": "Prof. Karthik Vaidhyanathan", "handle": "karthik.vaidhyanathan", "isHead": false }
+			{ "name": "Prof. Karthik Vaidhyanathan", "handle": "karthik.vaidhyanathan", "isHead": false, "image": "" }
 		]
 	}
 ]
