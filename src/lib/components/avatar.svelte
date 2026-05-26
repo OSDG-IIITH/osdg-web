@@ -31,7 +31,7 @@
 		return `linear-gradient(135deg,${bg1} 0%,${bg2} 100%)`;
 	});
 
-	const fs = $derived(Math.round(size * 0.08));
+	const fs = $derived(Math.round(size * 0.35));
 </script>
 
 {#if image}
@@ -43,11 +43,11 @@
 	/>
 {:else}
 	<div
-		class="relative rounded-lg overflow-hidden"
+		class="relative overflow-hidden rounded-lg"
 		style="width:100%;max-width:{size}px;aspect-ratio:1/1;height:auto;background:{gradient};color:#0a0d13;"
 	>
-		<div class="absolute inset-0 grid place-items-center text-center p-2">
-			<span style="font-size:{fs}px;letter-spacing:-0.02em;" class="break-words">Redacted due to privacy concerns</span>
+		<div class="absolute inset-0 grid place-items-center p-2 text-center">
+			<span style="font-size:{fs}px;letter-spacing:-0.02em;font-weight:600;">{initials}</span>
 		</div>
 	</div>
 {/if}
