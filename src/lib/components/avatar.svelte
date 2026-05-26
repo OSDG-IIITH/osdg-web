@@ -3,9 +3,11 @@
 		name: string;
 		handle: string;
 		size?: number;
+		image?: string;
+		isHead?: boolean;
 	}
 
-	let { name, handle, size = 56 }: Props = $props();
+	let { name, handle, size = 400, image, isHead = false }: Props = $props();
 
 	function hash(s: string) {
 		let h = 0;
@@ -30,12 +32,33 @@
 		return `linear-gradient(135deg,${bg1} 0%,${bg2} 100%)`;
 	});
 
-	const fs = $derived(Math.round(size * 0.32));
+	const fs = $derived(Math.round(size * 0.35));
 </script>
 
-<div
-	class="relative grid place-items-center font-mono font-semibold flex-none"
-	style="width:{size}px;height:{size}px;background:{gradient};color:#0a0d13;border-radius:8px;font-size:{fs}px;letter-spacing:-0.02em"
->
-	{initials}
+<div class="relative" style="width:100%;max-width:{size}px;">
+	{#if image}
+		<img
+			src={image}
+			alt="broken oops </3"
+			class="block object-cover"
+			style="width:100%;aspect-ratio:1/1;height:auto;border-radius:8px;"
+		/>
+	{:else}
+		<div
+			class="relative overflow-hidden rounded-lg"
+			style="width:100%;aspect-ratio:1/1;height:auto;background:{gradient};color:#0a0d13;"
+		>
+			<div class="absolute inset-0 grid place-items-center p-2 text-center">
+				<span style="font-size:{fs}px;letter-spacing:-0.02em;font-weight:600;">{initials}</span>
+			</div>
+		</div>
+	{/if}
+
+	{#if isHead}
+		<span
+			class="absolute -top-1.5 -right-1.5 rounded bg-accent px-2 py-0.5 font-mono text-[9px] font-bold tracking-[0.1em] text-bg uppercase"
+		>
+			head
+		</span>
+	{/if}
 </div>
