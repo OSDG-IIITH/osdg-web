@@ -28,8 +28,9 @@
 		"members": [
 			{ "name": "Kaushik Yadala", "handle": "kaushik.yadala", "isHead": true, "image": "/team/kaushik.jpg" },
 			{ "name": "Anya Jain", "handle": "anya.jain", "isHead": false, "image": "/team/anya.jpg" },
-			{ "name": "Akshit Singla", "handle": "akshit.singla", "isHead": false },
 			{ "name": "Ashwin Hari", "handle": "ashwin.hari", "isHead": false, "image": "/team/ashwin.jpeg" },
+			{ "name": "Akshit Singla", "handle": "akshit.singla", "isHead": false, "image": "/team/Akshit.jpg"},
+			{ "name": "Ashwin Hari", "handle": "ashwin.hari", "isHead": false },
 			{ "name": "Aryan Kulkarni", "handle": "aryan.kulkarni", "isHead": false },
 			{ "name": "Shambhavi Jha", "handle": "shambhavi.jha", "isHead": false }
 		]
