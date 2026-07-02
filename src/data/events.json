@@ -92,9 +92,9 @@
 	{
 		"slug": "imdug-hackathon",
 		"name": "IMDUG Hackathon",
-		"date": "2026-07",
-		"time": "TBD",
-		"venue": "TBD",
+		"date": "2026-06-26",
+		"time": "26 Jun - 28 Jun",
+		"venue": "Saranga Hall",
 		"type": "hackathon",
 		"blurb": "Indic MediaWiki Developers Group hackathon. Contribute to MediaWiki and related projects."
 	}

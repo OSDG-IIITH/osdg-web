@@ -65,9 +65,15 @@
 					<p class="font-mono text-[12.5px] text-fg-dim leading-relaxed">{e.blurb}</p>
 				</div>
 				<div class="font-mono text-[11px] text-mute pt-3 border-t border-border flex items-center gap-3 flex-wrap">
-					<span>{e.time}</span>
-					<span>·</span>
-					<span class="text-fg-dim">@ {e.venue}</span>
+					{#if e.time}
+						<span>{e.time}</span>
+						{#if e.venue}
+							<span>·</span>
+						{/if}
+					{/if}
+					{#if e.venue}
+						<span class="text-fg-dim">@ {e.venue}</span>
+					{/if}
 				</div>
 			</div>
 		{/each}
@@ -97,9 +103,15 @@
 					<p class="font-mono text-[12.5px] text-fg-dim leading-relaxed">{e.blurb}</p>
 				</div>
 				<div class="font-mono text-[11px] text-mute pt-3 border-t border-border flex items-center gap-3 flex-wrap">
-					<span>{e.time}</span>
-					<span>·</span>
-					<span class="text-fg-dim">@ {e.venue}</span>
+					{#if e.time}
+						<span>{e.time}</span>
+						{#if e.venue}
+							<span>·</span>
+						{/if}
+					{/if}
+					{#if e.venue}
+						<span class="text-fg-dim">@ {e.venue}</span>
+					{/if}
 				</div>
 			</div>
 		{/each}
