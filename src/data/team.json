@@ -15,7 +15,7 @@
 			{ "name": "Aarnav Pai", "handle": "aarnav.pai", "isHead": true },
 			{ "name": "Likith Kanigolla", "handle": "likith.kanigolla", "isHead": false, "image": "/team/Likhith_Kanigolla.jpg" },
 			{ "name": "Teja Pudi", "handle": "teja.pudi", "isHead": false, "image": "/team/pudi.jpg" },
-			{ "name": "Sanyam Asthana", "handle": "sanyam.asthana", "isHead": false },
+			{ "name": "Sanyam Asthana", "handle": "sanyam.asthana", "isHead": false, "image": "/team/Sanyam_Asthana.jpg" },
 			{ "name": "Sian Shinjo", "handle": "sian.shinjo", "isHead": false, "image": "/team/sian.jpg" },
 			{ "name": "Soham Chakraborty", "handle": "soham.chakraborty", "isHead": false, "image": "/team/soham.jpg" },
 			{ "name": "Tejas Agarwal", "handle": "tejas.agarwal", "isHead": false, "image": "/team/tejasag.jpg" },
@@ -30,9 +30,8 @@
 			{ "name": "Anya Jain", "handle": "anya.jain", "isHead": false, "image": "/team/anya.jpg" },
 			{ "name": "Ashwin Hari", "handle": "ashwin.hari", "isHead": false, "image": "/team/ashwin.jpeg" },
 			{ "name": "Akshit Singla", "handle": "akshit.singla", "isHead": false, "image": "/team/Akshit.jpg"},
-			{ "name": "Ashwin Hari", "handle": "ashwin.hari", "isHead": false },
 			{ "name": "Aryan Kulkarni", "handle": "aryan.kulkarni", "isHead": false },
-			{ "name": "Shambhavi Jha", "handle": "shambhavi.jha", "isHead": false }
+			{ "name": "Shambhavi Jha", "handle": "shambhavi.jha", "isHead": false, "image": "/team/Shambhavi.jpg" }
 		]
 	},
 	{
@@ -41,7 +40,7 @@
 		"members": [
 			{ "name": "Pragati Prasad", "handle": "pragati.prasad", "isHead": true, "image": "https://clubs.iiit.ac.in/_next/image?url=http%3A%2F%2Ffiles%2Ffiles%2Fdownload%3Ffilename%3DKdAxhnLmApjGgSsinVwGmJ_profile_pragati.prasad.png&w=1080&q=75" },
 			{ "name": "Snigdha Adimulam", "handle": "snigdha.adimulam", "isHead": false },
-			{ "name": "Hansika Grover", "handle": "hansika.grover", "isHead": false },
+			{ "name": "Hansika Grover", "handle": "hansika.grover", "isHead": false, "image": "/team/Hansika_Grover.jpg" },
 			{ "name": "Shaurya Bansal", "handle": "shaurya.bansal", "isHead": false, "image": "/team/shaurya_bansal.JPG" }
 		]
 	},
@@ -49,8 +48,8 @@
 		"id": "corporate",
 		"label": "Corporate Team",
 		"members": [
-			{ "name": "Aryan Bansal", "handle": "aryan.bansal", "isHead": false },
-			{ "name": "Balasubramanian K", "handle": "balasubramanian.k", "isHead": false },
+			{ "name": "Aryan Bansal", "handle": "aryan.bansal", "isHead": false, "image": "/team/Aryan_Bansal.jpg" },
+			{ "name": "Balasubramanian K", "handle": "balasubramanian.k", "isHead": false, "image": "/team/Bala.jpg" },
 			{ "name": "Daniel Vincent", "handle": "daniel.vincent", "isHead": false }
 		]
 	},
