@@ -1,11 +1,21 @@
 [
 	{
+		"slug": "grapevine",
+		"name": "grapevine",
+		"blurb": "course and advisor review platform for iiit hyderabad",
+		"glyph": "G",
+		"tags": ["go", "svelte", "web"],
+		"repo": "https://codeberg.org/osdg/grapevine",
+		"deploy": "https://osdg.iiit.ac.in/grapevine/",
+		"stars": 7
+	},
+	{
 		"slug": "formsiiit",
 		"name": "formsiiit",
 		"blurb": "Opinionated forms platform for and by the IIIT Hyderabad community.",
 		"glyph": "F",
 		"tags": ["go", "svelte", "web"],
-		"github": "https://github.com/OSDG-IIITH/formsiiit",
+		"repo": "https://codeberg.org/osdg/forms",
 		"deploy": "https://osdg.iiit.ac.in/forms/",
 		"stars": 7
 	},
@@ -15,7 +25,7 @@
 		"blurb": "Course work database. Searchable index of past years' exams, assignements, and lecture notes.",
 		"glyph": "C",
 		"tags": ["rust", "svelte", "web"],
-		"github": "https://github.com/nuxshed/cwdb",
+		"repo": "https://codeberg.org/osdg/cwdb",
 		"deploy": "https://osdg.iiit.ac.in/cwdb/",
 		"stars": 5
 	},
@@ -25,7 +35,7 @@
 		"blurb": "The website you're on right now.",
 		"glyph": "O",
 		"tags": ["svelte", "web"],
-		"github": "https://github.com/OSDG-IIITH/osdg-web",
+		"repo": "https://github.com/OSDG-IIITH/osdg-web",
 		"deploy": "https://osdg.iiit.ac.in",
 		"stars": 1
 	},
@@ -35,7 +45,7 @@
 		"blurb": "An almanac for everything at IIIT Hyderabad. Classes, Events, and more.",
 		"glyph": "A",
 		"tags": ["rust", "svelte", "web"],
-		"github": "https://gitlab.iiit.ac.in/vedant.kulkarni/almanac",
+		"repo": "https://codeberg.org/osdg/almanac",
 		"deploy": "https://almanac.iiit.ac.in",
 		"stars": 0
 	},
@@ -45,7 +55,7 @@
 		"blurb": "Ever wanted to know if a canteen is open without going there?",
 		"glyph": "I",
 		"tags": ["esp32", "iot"],
-		"github": "",
+		"repo": "",
 		"deploy": null,
 		"stars": 0
 	}
