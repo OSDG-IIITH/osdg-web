@@ -97,5 +97,41 @@
 		"venue": "Saranga Hall",
 		"type": "hackathon",
 		"blurb": "Indic MediaWiki Developers Group hackathon. Contribute to MediaWiki and related projects."
+	},
+	{
+		"slug": "intro-to-clubs-26",
+		"name": "Intro to Clubs",
+		"date": "2026-08-04",
+		"time": "TBD",
+		"venue": "H105",
+		"type": "induction",
+		"blurb": "Intro to Clubs event."
+	},
+	{
+		"slug": "linux-installation-26a",
+		"name": "Linux Installation A",
+		"date": "2026-08-06",
+		"time": "17:30 - 20:00",
+		"venue": "H20X",
+		"type": "induction",
+		"blurb": "Linux Installation 2026, Session A."
+	},
+	{
+		"slug": "linux-installation-26b",
+		"name": "Linux Installation B",
+		"date": "2026-08-07",
+		"time": "20:30 - 23:00",
+		"venue": "H20X",
+		"type": "induction",
+		"blurb": "Linux Installation 2026, Session B."
+	},
+	{
+		"slug": "intro-to-linux-26",
+		"name": "Introduction to Linux",
+		"date": "2026-08-16",
+		"time": "TBD",
+		"venue": "TBD",
+		"type": "induction",
+		"blurb": "Learn how to use your fresh Linux installation."
 	}
 ]
