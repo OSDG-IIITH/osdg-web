@@ -1,6 +1,6 @@
 ---
 title: Fedora KDE Dual-boot Guide
-author: Vedant Kulkarni
+author: Aarnav, Vedant
 date: 2025-07-30
 tags: [fedora, linux, guide, kde]
 excerpt: A step-by-step installation and post-install configuration guide for dual-booting Fedora KDE with Windows.
