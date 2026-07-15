@@ -1,3 +1,13 @@
+/**
+ * compile-guide.js — LOCAL DEVELOPMENT TOOL ONLY
+ *
+ * Run this manually after editing static/fedora-install-guide/fedora.typ:
+ *   bun run compile-guide
+ *
+ * The compiled output (content.html) is committed to the repo so that
+ * the VPS / CI build does NOT need pandoc or typst as dependencies.
+ * Just `bun run build` on the server — no extra tooling required.
+ */
 import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
