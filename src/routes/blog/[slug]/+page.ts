@@ -1,4 +1,4 @@
-import { error } from '@sveltejs/kit';
+import { error, redirect } from '@sveltejs/kit';
 import type { PostMeta } from '$lib/posts';
 
 const modules = import.meta.glob('/src/blog/*.md');
@@ -21,5 +21,8 @@ export async function load({ params }) {
 	if (!modules[path]) error(404, 'not found');
 	const [mod, raw] = await Promise.all([modules[path](), raws[path]()]);
 	const { default: component, metadata: meta } = mod as { default: unknown; metadata: PostMeta };
+	if (meta.link) {
+		redirect(307, meta.link);
+	}
 	return { component, meta, slug: params.slug, readtime: calcreadtime(raw as string) };
 }

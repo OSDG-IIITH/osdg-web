@@ -11,7 +11,7 @@ export function GET() {
 			(p) => `
     <item>
       <title>${p.meta.title}</title>
-      <link>${base}/blog/${p.slug}</link>
+      <link>${p.meta.link ? (p.meta.link.startsWith('http') ? p.meta.link : base + p.meta.link) : `${base}/blog/${p.slug}`}</link>
       <pubDate>${new Date(p.meta.date).toUTCString()}</pubDate>
       <description>${p.meta.excerpt}</description>
     </item>`

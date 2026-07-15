@@ -4,6 +4,7 @@ export interface PostMeta {
 	date: string;
 	tags: string[];
 	excerpt: string;
+	link?: string;
 }
 
 export interface Post {

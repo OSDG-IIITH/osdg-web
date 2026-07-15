@@ -32,7 +32,7 @@
 	<ol class="flex flex-col">
 		{#each slice as p (p.slug)}
 			<li class="border-t border-border first:border-t-0">
-				<a href="/blog/{p.slug}" class="group block py-7">
+				<a href={p.meta.link || `/blog/${p.slug}`} class="group block py-7">
 					<div class="font-mono text-[11px] text-mute mb-3 flex items-center gap-2.5 flex-wrap">
 						<span>{fmt(p.meta.date)}</span>
 						<span class="text-border-2">·</span>

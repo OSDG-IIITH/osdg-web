@@ -110,7 +110,7 @@
 		<div class="grid md:grid-cols-3 gap-5">
 			{#each data.recent as p (p.slug)}
 				<a
-					href="/blog/{p.slug}"
+					href={p.meta.link || `/blog/${p.slug}`}
 					class="card-hover group flex flex-col bg-panel/40 border border-border rounded-lg p-5"
 				>
 					<div class="font-mono text-[11px] text-mute mb-3 flex items-center gap-2">
