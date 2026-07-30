@@ -111,7 +111,7 @@
 		"slug": "linux-installation-26a",
 		"name": "Linux Installation A",
 		"date": "2026-08-06",
-		"time": "17:30 - 20:00",
+		"time": "18:30 - 20:30",
 		"venue": "H20X",
 		"type": "induction",
 		"blurb": "Linux Installation 2026, Session A."
@@ -128,10 +128,10 @@
 	{
 		"slug": "intro-to-linux-26",
 		"name": "Introduction to Linux",
-		"date": "2026-08-16",
-		"time": "TBD",
-		"venue": "TBD",
+		"date": "2026-08-17",
+		"time": "9PM-11PM",
+		"venue": "H105",
 		"type": "induction",
-		"blurb": "Learn how to use your fresh Linux installation."
+		"blurb": "Learn how to make the best of your fresh Linux installation."
 	}
 ]
