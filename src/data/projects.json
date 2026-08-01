@@ -30,6 +30,16 @@
 		"stars": 5
 	},
 	{
+		"slug": "pickmeup",
+		"name": "pickmeup",
+		"blurb": "Idea bank where you can post ideas, discuss, like, take them up.",
+		"glyph": "P",
+		"tags": ["web"],
+		"repo": "https://codeberg.org/osdg/pickmeup",
+		"deploy": "https://osdg.iiit.ac.in/pickmeup",
+		"stars": 0
+	},
+	{
 		"slug": "osdg-web",
 		"name": "osdg-web",
 		"blurb": "The website you're on right now.",
