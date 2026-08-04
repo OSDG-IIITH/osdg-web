@@ -27,7 +27,7 @@ This guide shows you how to dual-boot Fedora KDE (or any other Fedora
 edition of your choice) with Windows 10/11. There are some extra
 resources linked at the end that can help you if you get stuck.
 
-As of the time of writing, the latest version of Fedora is 42. We
+As of the time of writing, the latest version of Fedora is 44. We
 recommend that you download the latest version of Fedora that is
 available, instead of using the version this guide uses.
 
@@ -40,7 +40,10 @@ Fedora Dual-boot guide available at the below link. Please come back
 and follow the #link(<ais>)[After-install Steps] once you're done
 following this video guide.
 
-https://youtu.be/eHQJMy8Q7Zk
+https://www.youtube.com/watch?v=UZFI9Bx83Fs (You can skip the system
+restore step, and PLEASE give more than 100GiB of space (ideally
+half of your drive or more) to fedora, you cannot change this later
+(easily, at least))
 
 #pagebreak()
 
@@ -89,7 +92,7 @@ within the live system.
 This ISO can be downloaded from the
 #link("https://fedoraproject.org")[Fedora Website].
 I recommend you try finding the download link to the latest version of
-"Fedora KDE Plasma Desktop" (the latest version is 42, as of time of
+"Fedora KDE Plasma Desktop" (the latest version is 44, as of time of
 writing) yourself, but if you are unable to, here's a link to that page:
 
 - Download page for Fedora KDE: https://fedoraproject.org/kde/download \
@@ -160,7 +163,7 @@ download the Live ISO*, and not anything else.
 _Note: This section is only for advanced users who have torrented
 before. You may safely skip this section if you wish._
 
-Downloading a large file (~2.5 GiB) through a browser may have issues
+Downloading a large file (\~3.2 GiB) through a browser may have issues
 if you're on a slow/unreliable connection. You can use a torrent
 client like https://qbittorrent.org to download Fedora (and most
 other Linux ISOs), which is faster, more reliable, and contributes
@@ -173,11 +176,11 @@ https://torrent.fedoraproject.org.
 Again, we recommend finding the download links yourself, but here
 are some direct download links in case you weren't able to.
 
-Fedora KDE x86_64 (for Intel and AMD) torrent: https://torrent.fedoraproject.org/torrents/Fedora-KDE-Desktop-Live-x86_64-42.torrent \
-Fedora KDE aarch64 (for ARM computers) torrent: https://torrent.fedoraproject.org/torrents/Fedora-KDE-Desktop-Live-aarch64-42.torrent
+Fedora KDE x86_64 (for Intel and AMD) torrent: https://torrent.fedoraproject.org/torrents/Fedora-KDE-Desktop-Live-x86_64-44.torrent \
+Fedora KDE aarch64 (for ARM computers) torrent: https://torrent.fedoraproject.org/torrents/Fedora-KDE-Desktop-Live-aarch64-44.torrent
 
-Fedora GNOME x86_64 (for Intel and AMD) torrent: https://torrent.fedoraproject.org/torrents/Fedora-Workstation-Live-aarch64-42.torrent \
-Fedora GNOME aarch64 (for ARM computers) torrent: https://torrent.fedoraproject.org/torrents/Fedora-Workstation-Live-x86_64-42.torrent
+Fedora GNOME x86_64 (for Intel and AMD) torrent: https://torrent.fedoraproject.org/torrents/Fedora-Workstation-Live-aarch64-44.torrent \
+Fedora GNOME aarch64 (for ARM computers) torrent: https://torrent.fedoraproject.org/torrents/Fedora-Workstation-Live-x86_64-44.torrent
 
 ==== Download using Fedora Media Writer
 
@@ -188,6 +191,11 @@ to the #link(<fmw>)[Fedora Media Writer] section to see instructions.
 === Checking the ISO's hash
 
 Please refer to the instructions given #link("https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media/#sect-verifying-images")[here] to verify the integrity of the downloaded ISO file.
+
+This process verifies that the ISO file you downloaded is properly
+downloaded to your computer and not corrupted, and is highly
+recommended. It only takes a few seconds, but may end up saving lots
+of troubleshooting time later on!
 
 == Flashing the Pendrive
 
@@ -322,7 +330,7 @@ Note that while writing the ISO image to the USB device, you may
 choose the "Download automatically" option and select the
 "Fedora KDE Plasma Desktop" option from the dropdown instead of
 "Fedora Workstation". Once you click "Next", make sure to select
-version 42, and choose the correct hardware architecture. See
+version 44, and choose the correct hardware architecture. See
 #link(<dli>)[this] section to determine your hardware architecture.
 
 == Creating space for Fedora
@@ -636,9 +644,10 @@ it can be opened by opening the "Welcome Center" application from the
 
 Once you're done exploring, open the Fedora Installer application
 (called Install to Hard Drive) by clicking the shortcut on the
-Desktop, or from the Start Menu.
+Desktop, or from the Start Menu, or in the Welcome Center (pictured
+above).
 
-This will open a full-screen Anaconda installer.
+This will open the Fedora installer in full-screen.
 
 == Install Fedora
 
@@ -646,162 +655,87 @@ Welcome to the Fedora Installer!
 
 #image("assets/Installer-1.png", height: 8cm)
 
-Choose your desired language, and click next. You should be seeing
-this screen (henceforth dubbed the "Main menu").
+Choose your desired language and keyboard layout, and click next. If
+you bought this laptop in India (or the US, for that matter), you'll
+have a regular `us` layout. If not, you should choose your keyboard
+layout in this step (you can guess your layout based on where you
+bought your laptop from). Be sure to test your layout!
+
+You should then see this screen: (note that some things, such as
+the drive name and size, will be different)
 
 #image("assets/Installer-2.png", height: 8cm)
 
-We shall now go step-by-step through the installer
+Choose share disk with other operating systems. This will tell the
+fedora installer to install itself alongside Windows. *Do not select
+reclaim additional space*. Once you click next, you may see a
+warning about the size of your EFI partition (that fedora recommends
+at least 500 MiB). You may ignore this warning. To fix it, you'll
+need to create a separate EFI partition and not use the one that
+Windows is installed on (this is just for your information, and is
+out of scope for this guide, but adventurous tinkerers can try
+doing this!).
 
-=== Keyboard
+*Triple-check that you have selected the correct drive. It should be
+your main drive with Windows on it, not a pen drive or some other
+storage drive.* Then, click next.
 
-Click "Keyboard" in the main menu. English (US) is the keyboard
-layout that most QWERTY keyboards in India use.
+Then, you'll be asked to encrypt your drive if you wish. Drive
+Encryption stores the data on your drive encrypted when you shut
+down Fedora. This option requires you to enter a password every time
+you start up your computer, but ensures that nobody can get access
+to your data if your computer is stolen. I recommend it, but do
+remember that if you lose your drive password, you lose your data.
+
+This is the last chance you have to double-check everything in the
+installer before making changes to your computer that may destroy
+data on it (if the installer is configured improperly). You will be
+shown a summary page with the list of changes that the installer is
+going to make to your drives. Review it carefully. You should see a
+boot partition being created, a root and home btrfs subvolume being
+created, and your windows bootloader being mounted at /boot/efi.
+Notably, you should *not* be seeing any text that says something
+along the lines of so and so partition is being used by windows
+already.
+
+You can begin the installation once you've made sure you've
+configured the installer properly. Sit back and relax, it should
+take about five minutes.
 
 #image("assets/Installer-3.png", height: 8cm)
 
-If you've purchased your computer from outside the country, e.g.
-Dubai or Germany, you may have a different keyboard layout. Add one
-by pressing the "+" button. Select your keyboard's layout and click
-"Add". You can remove the existing "English (US)" layout by selecting
-it and clicking the "-" button. You may also add additional keyboard
-layouts for different languages if you wish.
+=== After installation
 
-Test out your keyboard layout and make sure it's correct (by checking
-all the keys on your keyboard and seeing if they map correctly) using
-the input box in the top right.
+Once the installation completes, you will be prompted to exit the
+installer and return to the live system. Do so, and then reboot your
+computer (this can be done by pressing the restart button in the
+application launcher (i.e. start menu)). When your computer turns
+off, remove your USB stick before the computer starts up again.
 
-After you're done, click the "Done" button that's present on the
-*top-left* of the screen.
-
-=== Time & Date
-
-Choose "Time & Date" from the main menu, and select Region "Asia" and
-city "Kolkata". Leave date-time as automatic, don't change anything
-else.
-
-#image("assets/Installer-4.png", height: 8cm)
-
-=== Network & Host Name
-
-Let's give your computer a name. Select "Network & Host Name" from
-the main menu, and type a name for your computer. This is your
-computer's name, NOT your username. It will be visible when anyone
-tries to connect to your computer.
-
-Click apply and then click done to change the host name.
-
-You may choose to connect to the Internet using the WiFi icon in the
-"Taskbar" (called Panel in KDE), but that's optional. If you do
-decide to connect, KDE might ask you to create a new "Wallet" (a
-place where passwords are stored). You can choose a simple blowfish
-wallet with a simple password since it's a live environment. The
-wallet will automatically be set up for you in the actual install.
-
-=== User Creation
-
-Choose "User Creation" from the main menu. Here you'll create a user
-for this machine. Enter your details and make sure the "wheel group
-membership" option is checked.
-
-#image("assets/Installer-5.png", height: 8cm)
-
-Please enter a password, do not uncheck the "Require a password"
-option. It only creates headaches for you later.
-
-Click "Done" to go back.
-
-In the main menu, the root account should automatically be disabled.
-There's nothing for us to do there.
-
-=== Installation Destination
-
-Here's the main (and most important) part! We shall now select the
-drive to install Fedora to! Please be careful here. You must choose
-the drive that you gave space to in the Disk Management step.
-
-#image("assets/Installer-6.png", height: 8cm)
-
-Notice how I have only one disk and how there is a checkmark on that
-disk? Fedora has automatically selected that disk and decided on an
-automatic partition layout.
-
-If you want to select another disk, click it until the checkmark
-appears on it. Click a checkmarked disk to unselect it (the check
-disappears). A disk being blue does not mean it's selected, that's
-just visual feedback because you clicked it. Selected disks are
-checkmarked.
-
-For dualbooting, we have to create partitions ourselves. *Select
-"Custom" in the storage configuration* and click done.
-
-You should see this page:
-
-#image("assets/Installer-7.png", height: 8cm)
-
-Notice how Fedora has automatically detected 128GiB of free space
-that I had created using Disk Management on Windows earlier.
-
-The Fedora installer offers to automatically create partitions for
-us. You may choose to Encrypt your Data using a password (which
-achieves the same effect as BitLocker, but requiring a password to
-decrypt the drive, instead of being seamless) if you wish.
-
-Click the "Click here to create them automatically" button. This
-creates a partition layout using btrfs, a filesystem that lets you do
-cool things like take snapshots of your data (which is outside the
-scope of this guide).
-
-#image("assets/Installer-8.png", height: 8cm)
-
-Notice that the available space jumped down to 1.3MiB. The partitions
-have been made to be created, let's press "Done" and accept our
-changes to go back! Please note that there should not be any "Delete"
-entries in the changes list.
-
-#image("assets/Installer-9.png", height: 8cm)
-
-=== Install!
-
-*This is the last time you can turn back and make a backup of your
-system if you haven't already.* Clicking the "Begin Installation"
-button will perform changes to your hard drive. If you've followed
-all the steps as above, you can continue without fear.
-
-Click Begin Installation to partition your disks and start the
-installation!
-
-#image("assets/Installer-10.png", height: 8cm)
-
-After the installation is done, click "Finish Installation" to close
-the installer. You have installed Fedora on your hard drive! You can
-now restart your computer to exit the live environment, or continue
-looking around if you like.
-
-To restart your computer, open the application launcher and press the
-"Restart" button and confirm to restart your computer. After the
-computer shuts down, remove your USB before it begins booting up.
+You should now be booted into a GNU GRUB menu! This is a
+_bootloader_, the piece of software responsible for loading the
+operating system. You can pick fedora from here, or pick windows
+(using your arrow keys and then enter). Congratulations, you've
+successfully dual-booted your system!
 
 #block(fill: luma(230), inset: 8pt, radius: 4pt, width: 100%)[
-  Make sure you remove the USB before the computer boots up, otherwise
-  it will boot back into the live environment again. If it does so,
-  please restart again and remove the USB this time!
+  If you aren’t booted into Fedora, but into windows directly,
+  you’ll have to open your UEFI settings and update the boot order
+  to move the Fedora entry to the top.
 ]
 
-You should now reboot into Fedora. The GRUB menu that appears should
-let you pick between booting into Fedora or Windows. Congratulations!
-You've successfully dual-booted your computer.
+There are still a few steps left to do. You still need to create a
+user account, set a time zone, and do a few other things.
+Thankfully, Fedora guides you through that with a great onboarding
+setup screen. You just need to follow it, it's really
+self-explanatory! We hope you have fun using fedora!
 
-#block(fill: luma(230), inset: 8pt, radius: 4pt, width: 100%)[
-  If you aren't booted into Fedora, but into windows directly, you'll
-  have to open your UEFI settings and update the boot order to move
-  the Fedora entry to the top.
-]
-
-== After-install Steps <ais>
+== Configure your system <ais>
 
 These are some things you should do after installing Fedora. Please
 follow this section from top-to-bottom for the best results.
+
+At least, do *not skip @updatesys and @rpmfusion*
 
 === Connect to the Internet
 
@@ -817,8 +751,11 @@ IIIT WiFi/LAN/VPN.
 1. Click on the WiFi button in the System Tray (present in the bottom-right of the panel/taskbar). This opens the Network Applet.
 2. Click the Connect button next to the `wifi@iiith` listing
 #align(center, image("assets/WiFi-1.png", height: 9cm))
-3. In the window that appears, enter your email and 802.1x password in the WiFi security tab. Make sure the other fields are left as shown.
-#align(center, image("assets/WiFi-2.png", height: 9cm))
+3. In the window that appears, enter your email and 802.1x password in the WiFi security tab. Make sure the other fields are left blank as shown.
+#align(
+  center,
+  block[#image("assets/WiFi-2.png", height: 9cm) \ Please enter your credentials in the inputs, don't blindly copy!],
+)
 4. Click the Save button and you should now be connected!
 
 ==== Connect to IIIT LAN
@@ -844,7 +781,7 @@ IIIT WiFi/LAN/VPN.
 Please note that the VPN will not work on IIIT WiFi or LAN. You must
 be connected to a network not managed by IIIT to use the VPN.
 
-=== Update your system
+=== Update your system <updatesys>
 
 The Fedora installer copies files from the live system, and live
 system ISOs are not refreshed with new versions of packages, so you
@@ -890,7 +827,7 @@ sudo dnf upgrade --refresh
 You'll be asked for confirmation. Press "Y" and then enter to confirm
 the update. You should restart your computer after updating.
 
-=== Install Proprietary Media Codecs
+=== Install Proprietary Media Codecs <rpmfusion>
 
 Fedora is free and open-source software. The Fedora team only puts
 packages that are free and open-source in their "repositories".
