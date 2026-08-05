@@ -1,5 +1,6 @@
 <script lang="ts">
 	import content from './content.html?raw';
+	import Checklist from '$lib/components/checklist.svelte';
 </script>
 
 <main class="max-w-[900px] mx-auto px-6 lg:px-10 pt-16 pb-12">
@@ -24,6 +25,8 @@
 		{@html content}
 	</article>
 </main>
+
+<Checklist />
 
 <style>
 	@font-face {

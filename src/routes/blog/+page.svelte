@@ -35,8 +35,10 @@
 				<a href={p.meta.link || `/blog/${p.slug}`} class="group block py-7">
 					<div class="font-mono text-[11px] text-mute mb-3 flex items-center gap-2.5 flex-wrap">
 						<span>{fmt(p.meta.date)}</span>
-						<span class="text-border-2">·</span>
-						<span>{p.readtime} min read</span>
+						{#if !p.meta.link}
+							<span class="text-border-2">·</span>
+							<span>{p.readtime} min read</span>
+						{/if}
 						<span class="text-border-2">·</span>
 						<span>{p.meta.author}</span>
 					</div>

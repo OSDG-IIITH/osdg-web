@@ -21,7 +21,18 @@
 <section class="relative">
 	<div class="absolute inset-0 bg-grid bg-grid-fade pointer-events-none"></div>
 
-	<div class="relative max-w-[1200px] mx-auto px-6 lg:px-10 pt-20 md:pt-28 pb-20">
+	<div class="relative flex justify-center pt-5 md:pt-7">
+		<a
+			href="/fedora-install-guide"
+			class="rise group inline-flex items-center gap-2 font-mono text-[12.5px] bg-accent/15 hover:bg-accent/22 border border-accent/40 hover:border-accent/60 rounded-full px-4 py-1.5 text-accent transition-colors"
+			style="animation-delay:0ms"
+		>
+			<span>linux install? you can find the guide here</span>
+			<span class="opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all inline-block">→</span>
+		</a>
+	</div>
+
+	<div class="relative max-w-[1200px] mx-auto px-6 lg:px-10 pt-14 md:pt-20 pb-20">
 		<div class="rise" style="animation-delay:0ms">
 			<div class="font-mono text-[13px] text-fg-dim mb-3">
 				<span class="text-accent">$</span>
