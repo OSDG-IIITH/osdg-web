@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 
+	const enabled = false; // set to true to show checklist
+
 	const items = [
 		'disable bitlocker encryption',
 		'setup password login for windows and disable pin',
@@ -50,6 +52,7 @@
 	}
 </script>
 
+{#if enabled}
 <!-- trigger -->
 <button
 	onclick={() => (open = !open)}
@@ -108,4 +111,5 @@
 			{/each}
 		</ol>
 	</div>
+{/if}
 {/if}
