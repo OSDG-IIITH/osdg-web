@@ -158,7 +158,7 @@ download the Live ISO*, and not anything else.
   ),
 )
 
-==== Download using a Torrent Client (for advanced users)
+==== ALTERNATIVE: Download using a Torrent Client (for advanced users)
 
 _Note: This section is only for advanced users who have torrented
 before. You may safely skip this section if you wish._
@@ -182,7 +182,7 @@ Fedora KDE aarch64 (for ARM computers) torrent: https://torrent.fedoraproject.or
 Fedora GNOME x86_64 (for Intel and AMD) torrent: https://torrent.fedoraproject.org/torrents/Fedora-Workstation-Live-aarch64-44.torrent \
 Fedora GNOME aarch64 (for ARM computers) torrent: https://torrent.fedoraproject.org/torrents/Fedora-Workstation-Live-x86_64-44.torrent
 
-==== Download using Fedora Media Writer
+==== ALTERNATIVE: Download using Fedora Media Writer
 
 You can also download the ISO using Fedora Media Writer, an
 application made by the Fedora team to flash ISOs to a pendrive. Skip
@@ -196,6 +196,8 @@ This process verifies that the ISO file you downloaded is properly
 downloaded to your computer and not corrupted, and is highly
 recommended. It only takes a few seconds, but may end up saving lots
 of troubleshooting time later on!
+
+#pagebreak()
 
 == Flashing the Pendrive
 
@@ -217,7 +219,11 @@ During the flashing process, Windows may show some notifications
 about "something being wrong with the drive" or to "choose options"
 for it. Please ignore these notifications.
 
-=== Using Rufus
+There are three ways to do this, we recommend rufus, you don't have
+to do all three. If Rufus doesn't work, try Fedora Media Writer. If
+that doesn't work, try Ventoy.
+
+=== METHOD 1: Using Rufus
 
 Rufus is a tool that helps you flash an ISO file onto a pendrive.
 
@@ -281,7 +287,23 @@ its status is READY again. You may close Rufus when this is done.
   height: 6cm,
 ))
 
-=== Using Ventoy
+=== METHOD 2: Using Fedora Media Writer <fmw>
+
+Fedora Media Writer is a pendrive flashing tool developed by the same
+team as the Fedora Linux distribution. We keep this option as a
+backup because Rufus generally has more success with bespoke computer
+configurations. Fedora Media Writer only supports x86_64 devices.
+
+Please refer to the instructions given #link("https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media")[here] to download and use Fedora Media Writer.
+
+Note that while writing the ISO image to the USB device, you may
+choose the "Download automatically" option and select the
+"Fedora KDE Plasma Desktop" option from the dropdown instead of
+"Fedora Workstation". Once you click "Next", make sure to select
+version 44, and choose the correct hardware architecture. See
+#link(<dli>)[this] section to determine your hardware architecture.
+
+=== METHOD 3: Using Ventoy
 
 Ventoy is a tool that helps you flash and boot ISO files from a pendrive.
 
@@ -316,22 +338,6 @@ Follow the following steps:
 )
 
 Next, copy the ISO file downloaded to the Ventoy-formatted USB drive. You can use the drive for booting once done. During boot, Ventoy will show the list of available ISO files to select from.
-
-=== Using Fedora Media Writer <fmw>
-
-Fedora Media Writer is a pendrive flashing tool developed by the same
-team as the Fedora Linux distribution. We keep this option as a
-backup because Rufus generally has more success with bespoke computer
-configurations. Fedora Media Writer only supports x86_64 devices.
-
-Please refer to the instructions given #link("https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media")[here] to download and use Fedora Media Writer.
-
-Note that while writing the ISO image to the USB device, you may
-choose the "Download automatically" option and select the
-"Fedora KDE Plasma Desktop" option from the dropdown instead of
-"Fedora Workstation". Once you click "Next", make sure to select
-version 44, and choose the correct hardware architecture. See
-#link(<dli>)[this] section to determine your hardware architecture.
 
 == Creating space for Fedora
 
@@ -483,6 +489,13 @@ drive) to complete.
   If you don't find any BitLocker option, your device may not support
   BitLocker. This usually happens on Windows 10 devices.
 ]
+
+== Disable your Windows PIN
+
+If you log in to windows using a PIN rather than a password (or have
+Windows Hello set up), please turn it off. Failing to do this *may
+lock your windows account behind a microsoft sign in and internet
+access*. It's a big headache, so please ensure you do this step.
 
 == Boot into your computer's UEFI Settings
 
