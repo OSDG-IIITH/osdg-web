@@ -42,7 +42,7 @@ following this video guide.
 
 https://www.youtube.com/watch?v=UZFI9Bx83Fs (You can skip the system
 restore step, and PLEASE give more than 100GiB of space (ideally
-half of your drive or more) to fedora, you cannot change this later
+half of your drive or more) to Fedora, you cannot change this later
 (easily, at least))
 
 #pagebreak()
@@ -69,9 +69,9 @@ half of your drive or more) to fedora, you cannot change this later
 - An internet connection
 - A 4 GiB (gigabyte) or larger pendrive to flash Fedora on to.
   - 8GiB+ is recommended.
-  - This pendrive will be *WIPED*, so please back up any existing data on it.
-- A back-up of your computer's data in case anything goes wrong (which you should be taking anyway)
-- At least 100GiB of free space on your hard drive to install Fedora on to.
+  - This pendrive will be *WIPED*, so please back up any data on it.
+- A back-up of your computer's data in case anything goes wrong.
+- At least 100GiB of free space on your hard drive to install Fedora.
 
 == Downloading the installer ISO
 
@@ -90,7 +90,7 @@ can use to boot into a flashed pen-drive and run the installer from
 within the live system.
 
 This ISO can be downloaded from the
-#link("https://fedoraproject.org")[Fedora Website].
+#link("https://Fedoraproject.org")[Fedora Website].
 I recommend you try finding the download link to the latest version of
 "Fedora KDE Plasma Desktop" (the latest version is 44, as of time of
 writing) yourself, but if you are unable to, here's a link to that page:
@@ -137,8 +137,8 @@ writing) yourself, but if you are unable to, here's a link to that page:
 
   *Links to GNOME*
 
-  Learn more about Fedora GNOME: https://fedoraproject.org/workstation \
-  Fedora GNOME download: https://fedoraproject.org/workstation/download \
+  Learn more about Fedora GNOME: https://Fedoraproject.org/workstation \
+  Fedora GNOME download: https://Fedoraproject.org/workstation/download \
   GNOME homepage (for optional reading): https://gnome.org
 ]
 
@@ -171,16 +171,16 @@ back to the open-source community if you seed (you should (I'm
 watching you)).
 
 You can get the torrent file for Fedora ISOs from
-https://torrent.fedoraproject.org.
+https://torrent.Fedoraproject.org.
 
 Again, we recommend finding the download links yourself, but here
 are some direct download links in case you weren't able to.
 
-Fedora KDE x86_64 (for Intel and AMD) torrent: https://torrent.fedoraproject.org/torrents/Fedora-KDE-Desktop-Live-x86_64-44.torrent \
-Fedora KDE aarch64 (for ARM computers) torrent: https://torrent.fedoraproject.org/torrents/Fedora-KDE-Desktop-Live-aarch64-44.torrent
+Fedora KDE x86_64 (for Intel and AMD) torrent: https://torrent.Fedoraproject.org/torrents/Fedora-KDE-Desktop-Live-x86_64-44.torrent \
+Fedora KDE aarch64 (for ARM computers) torrent: https://torrent.Fedoraproject.org/torrents/Fedora-KDE-Desktop-Live-aarch64-44.torrent
 
-Fedora GNOME x86_64 (for Intel and AMD) torrent: https://torrent.fedoraproject.org/torrents/Fedora-Workstation-Live-aarch64-44.torrent \
-Fedora GNOME aarch64 (for ARM computers) torrent: https://torrent.fedoraproject.org/torrents/Fedora-Workstation-Live-x86_64-44.torrent
+Fedora GNOME x86_64 (for Intel and AMD) torrent: https://torrent.Fedoraproject.org/torrents/Fedora-Workstation-Live-aarch64-44.torrent \
+Fedora GNOME aarch64 (for ARM computers) torrent: https://torrent.Fedoraproject.org/torrents/Fedora-Workstation-Live-x86_64-44.torrent
 
 ==== ALTERNATIVE: Download using Fedora Media Writer
 
@@ -190,7 +190,7 @@ to the #link(<fmw>)[Fedora Media Writer] section to see instructions.
 
 === Checking the ISO's hash
 
-Please refer to the instructions given #link("https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media/#sect-verifying-images")[here] to verify the integrity of the downloaded ISO file.
+Please refer to the instructions given #link("https://docs.Fedoraproject.org/en-US/Fedora/latest/preparing-boot-media/#sect-verifying-images")[here] to verify the integrity of the downloaded ISO file.
 
 This process verifies that the ISO file you downloaded is properly
 downloaded to your computer and not corrupted, and is highly
@@ -220,10 +220,10 @@ about "something being wrong with the drive" or to "choose options"
 for it. Please ignore these notifications.
 
 There are three ways to do this, we recommend rufus, you don't have
-to do all three. If Rufus doesn't work, try Fedora Media Writer. If
-that doesn't work, try Ventoy.
+to do all three. If Rufus doesn't work, try Ventoy. If that doesn't
+work, try Fedora Media Writer.
 
-=== METHOD 1: Using Rufus
+=== [METHOD 1] Using Rufus
 
 Rufus is a tool that helps you flash an ISO file onto a pendrive.
 
@@ -287,23 +287,7 @@ its status is READY again. You may close Rufus when this is done.
   height: 6cm,
 ))
 
-=== METHOD 2: Using Fedora Media Writer <fmw>
-
-Fedora Media Writer is a pendrive flashing tool developed by the same
-team as the Fedora Linux distribution. We keep this option as a
-backup because Rufus generally has more success with bespoke computer
-configurations. Fedora Media Writer only supports x86_64 devices.
-
-Please refer to the instructions given #link("https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media")[here] to download and use Fedora Media Writer.
-
-Note that while writing the ISO image to the USB device, you may
-choose the "Download automatically" option and select the
-"Fedora KDE Plasma Desktop" option from the dropdown instead of
-"Fedora Workstation". Once you click "Next", make sure to select
-version 44, and choose the correct hardware architecture. See
-#link(<dli>)[this] section to determine your hardware architecture.
-
-=== METHOD 3: Using Ventoy
+=== [Alternative 2] Using Ventoy
 
 Ventoy is a tool that helps you flash and boot ISO files from a pendrive.
 
@@ -339,86 +323,23 @@ Follow the following steps:
 
 Next, copy the ISO file downloaded to the Ventoy-formatted USB drive. You can use the drive for booting once done. During boot, Ventoy will show the list of available ISO files to select from.
 
-== Creating space for Fedora
+=== [Alternative 3] Using Fedora Media Writer <fmw>
 
-Now, we need to partition the computer's hard drive into two to give
-some space for Fedora. For most college-work and daily tasks, giving
-80-128GiB of space to fedora should be enough.
+Fedora Media Writer is a pendrive flashing tool developed by the same
+team as the Fedora Linux distribution. We keep this option as a
+backup because Rufus generally has more success with bespoke computer
+configurations. Fedora Media Writer only supports x86_64 devices.
 
-If you plan on using Fedora/Linux more faithfully and want to install
-lots of software and games on it, try giving as much space to fedora
-as you can, leaving windows with about 40GiB of _free space_ left.
+Please refer to the instructions given #link("https://docs.Fedoraproject.org/en-US/Fedora/latest/preparing-boot-media")[here] to download and use Fedora Media Writer.
 
-Files on your Windows computer can be viewed under Fedora, so you
-don't have to worry about moving important stuff onto another drive
-to copy it over to Fedora.
+Note that while writing the ISO image to the USB device, you may
+choose the "Download automatically" option and select the
+"Fedora KDE Plasma Desktop" option from the dropdown instead of
+"Fedora Workstation". Once you click "Next", make sure to select
+version 44, and choose the correct hardware architecture. See
+#link(<dli>)[this] section to determine your hardware architecture.
 
-Your computer's drives may already be partitioned into some units
-(called partitions/volumes) by Windows, and you may have multiple
-drives in your computer. This section comes down to your preference
-of which partition of your drive to shrink to make space for the new
-Fedora volume that will be created. Fedora will be installed onto
-this partition of your drive.
-
-To partition your drive, open Windows Disk management by following
-*one* of these two methods listed below:
-
-- Right-click the start button and choose Disk Management
-- Type "Disk Management" and choose "Create and format hard disk partitions" in the start menu
-
-The window that opened should look like this:
-
-#figure(caption: [A screenshot of the disk management window], image(
-  "assets/Disk_Management_1.jpeg",
-  height: 6cm,
-))
-
-It might look different for you --- you may have more/less drives
-with more/less partitions.
-
-Find the drive with the "Windows C:" partition. If you have a D: drive
-or an E: drive, you may have multiple partitions listed, in which case,
-find the largest partition which is NOT an EFI or recovery partition to
-shrink to give space to Fedora. You can use your file explorer's This
-PC page to see which drives map to which partitions if it isn't clearly
-obvious from just this program's screen.
-
-Once you've selected the partition to shrink (I choose the Windows
-C: partition), right-click it and click the "Shrink Volume option".
-
-This dialog should appear.
-
-#figure(caption: [A screenshot of the Shrink Volume Window], image(
-  "assets/Shrink_Volume.jpeg",
-  height: 6cm,
-))
-
-In the input, enter the amount of space to give to Fedora *in MiB*
-(Windows displays MiB as MB, the difference between MiB and MB is
-left as an exercise to the reader). 1 GiB is 1024 MiB, so use your
-computer's calculator to find the equivalent amount in MiB.
-
-For example, if I wanted to give Fedora 128 gigabytes of space, I'd
-type `131072` (128*1024) in the input box.
-
-Do choose wisely, as changing this number in the future will require
-you to *remove and re-install Fedora*.
-
-Click "Shrink" to shrink the partition.
-
-You should now have a fresh unallocated volume show up.
-
-#figure(
-  caption: [A screenshot of the disk information after partition],
-  image(
-    "assets/Disk_Parted.jpeg",
-    height: 6cm,
-  ),
-)
-
-You may close Disk Management.
-
-== Disabling BitLocker Encryption (only for Win10 Pro / Win 11)
+== [Only Win 10 Pro / Win 11] Disabling BitLocker Encryption
 
 _Note: This step is only necessary for Windows 10 Pro and Windows 11
 (all editions) devices. You can skip this section if you have Win 10
@@ -490,12 +411,104 @@ drive) to complete.
   BitLocker. This usually happens on Windows 10 devices.
 ]
 
-== Disable your Windows PIN
+== Setting a Password <pwd>
 
-If you log in to windows using a PIN rather than a password (or have
-Windows Hello set up), please turn it off. Failing to do this *may
-lock your windows account behind a microsoft sign in and internet
-access*. It's a big headache, so please ensure you do this step.
+If you disable Secure Boot (in one of the steps below), Windows
+automatically disables any Windows Hello sign-in methods like PIN,
+Face, or Fingerprint. To be able to sign-in to your device, you must
+have the Password sign-in method enabled before you disable Secure
+Boot, if you really need to. To do so:
+
+1. Search for "windows hello" in the start menu.
+2. Click the first option that appears (should open the settings app).
+3. Click on the "Password" option under the "Ways to sign in" heading.
+4. If you are signed in to a Microsoft account, make sure you know
+  the Microsoft account password. If you do not remember it, please
+  reset the account password or sign in with a different account.
+5. If you are not signed in to a Microsoft account, create your own
+  password.
+
+== Creating space for Fedora
+
+Now, we need to partition the computer's hard drive into two to give
+some space for Fedora. For most college-work and daily tasks, giving
+128GiB of space to Fedora should be enough. We recommend giving upto
+384GiB of space if you have a total of 1TiB, 256GiB if you have a
+total of 512GiB, and at least 80-100GiB if you have a total of 256GiB
+or lesser.
+
+If you plan on using Fedora/Linux more faithfully and want to install
+lots of software and games on it, try giving as much space to Fedora
+as you can, leaving windows with about 40GiB of _free space_ left.
+
+Files on your Windows computer can be viewed under Fedora, so you
+don't have to worry about moving important stuff onto another drive
+to copy it over to Fedora.
+
+Your computer's drives may already be partitioned into some units
+(called partitions/volumes) by Windows, and you may have multiple
+drives in your computer. This section comes down to your preference
+of which partition of your drive to shrink to make space for the new
+Fedora volume that will be created. Fedora will be installed onto
+this partition of your drive.
+
+To partition your drive, open Windows Disk management by following
+*one* of these two methods listed below:
+
+- Right-click the start button and choose Disk Management
+- Type "Disk Management" and choose "Create and format hard disk partitions" in the start menu
+
+The window that opened should look like this:
+
+#figure(caption: [A screenshot of the disk management window], image(
+  "assets/Disk_Management_1.jpeg",
+  height: 6cm,
+))
+
+It might look different for you --- you may have more/less drives
+with more/less partitions.
+
+Find the drive with the "Windows C:" partition. If you have a D: drive
+or an E: drive, you may have multiple partitions listed, in which case,
+find the largest partition which is NOT an EFI or recovery partition to
+shrink to give space to Fedora. You can use your file explorer's This
+PC page to see which drives map to which partitions if it isn't clearly
+obvious from just this program's screen.
+
+Once you've selected the partition to shrink (I choose the Windows
+C: partition), right-click it and click the "Shrink Volume option".
+
+This dialog should appear.
+
+#figure(caption: [A screenshot of the Shrink Volume Window], image(
+  "assets/Shrink_Volume.jpeg",
+  height: 6cm,
+))
+
+In the input, enter the amount of space to give to Fedora *in MiB*
+(Windows displays MiB as MB, the difference between MiB and MB is
+left as an exercise to the reader). 1 GiB is 1024 MiB, so use your
+computer's calculator to find the equivalent amount in MiB.
+
+For example, if I wanted to give Fedora 128 gigabytes of space, I'd
+type `131072` (128*1024) in the input box.
+
+Do choose wisely, as changing this number in the future will require
+you to *remove and re-install Fedora*.
+
+Click "Shrink" to shrink the partition.
+
+You should now have a fresh unallocated volume show up.
+
+#figure(
+  caption: [A screenshot of the disk information after partition],
+  image(
+    "assets/Disk_Parted.jpeg",
+    height: 6cm,
+  ),
+)
+
+You may close Disk Management.
 
 == Boot into your computer's UEFI Settings
 
@@ -535,7 +548,9 @@ shutdown /r /o /f /t 00
 
 OR
 
-- Open the start menu as if you were going to restart your computer, but _hold down Shift on your keyboard_ while you press the Restart button.
+- Open the start menu as if you were going to restart your computer,
+  but _hold down Shift on your keyboard_ while you press the Restart
+  button.
 
 *Boot into the UEFI Settings:*
 
@@ -613,19 +628,48 @@ You'll see a GNU GRUB boot menu, don't worry about that, either wait
 for it to automatically select, or choose "Test this media and
 start Fedora 42" from the list. Booting may take a few minutes.
 
-Note that if you do not see the GRUB boot menu, or the computer reboots
-into Windows, you will need to disable Secure Boot. Re-boot into the
-BIOS/UEFI menu, and find an option called "Secure Boot" and *disable*
-it. It's usually present in the "Security" category of your UEFI.
+Note that if you do not see the GRUB boot menu, or the computer
+reboots into Windows, you will need to disable Secure Boot.
+Before disabling Secure Boot, please read the instructions in
+#link(<pwd>)[this] section. Then, re-boot into the BIOS/UEFI menu,
+and find an option called "Secure Boot" and *disable* it. It's
+usually present in the "Security" category of your UEFI.
 
 === Using the boot menu
 
-If the boot order page in the UEFI didn't work, most laptops allow
-you to choose a boot device. You can find the Boot Menu key using the
-same instructions as finding the BIOS key as outlined #link(<keyb>)[here].
+If the boot order page in the UEFI didn't work, most laptops
+allow you to choose a boot device. You can find the Boot Menu key
+using the same instructions as finding the BIOS key as outlined
+#link(<keyb>)[here].
 
 You can also choose the boot device from the Advanced Startup part of
 Windows too.
+
+If you haven't disabled secure boot, you might get a big blue screen
+that says something about security violation failed (like below).
+
+#image("assets/Mok-1.png", height: 10cm)
+
+Just click ok, then you will be asked to press any key to perform
+MOK management. Press any key (press 'e' if you don't have ideas),
+then select "Enroll key from disk" using your arrow keys and Enter.
+
+#image("assets/Mok-2.png", height: 10cm)
+
+Then, you'll be asked to find the key. It will be in "VTOYEFI"
+(select that with Enter), then find the key that says
+"ENROLL_THIS_KEY_IN_MOKMANAGER.cer" with arrow keys and Enter. Then
+click "Continue", then click "Yes".
+
+#table(
+  columns: (1fr, 1fr, 1fr),
+  image("assets/Mok-3.png", height: 5cm),
+  image("assets/Mok-4.png", height: 5cm),
+  align(center + horizon, image("assets/Mok-5.png", height: 3cm)),
+)
+
+Finally, you'll be back to the previous screen, click "Reboot". This
+should now boot back in.
 
 == Explore the Live System
 
@@ -666,7 +710,7 @@ This will open the Fedora installer in full-screen.
 
 Welcome to the Fedora Installer!
 
-#image("assets/Installer-1.png", height: 8cm)
+#image("assets/Installer-Language.png", height: 8cm)
 
 Choose your desired language and keyboard layout, and click next. If
 you bought this laptop in India (or the US, for that matter), you'll
@@ -677,45 +721,172 @@ bought your laptop from). Be sure to test your layout!
 You should then see this screen: (note that some things, such as
 the drive name and size, will be different)
 
-#image("assets/Installer-2.png", height: 8cm)
+#image("assets/Installer-Installation-Method.png", height: 8cm)
 
-Choose share disk with other operating systems. This will tell the
-fedora installer to install itself alongside Windows. *Do not select
-reclaim additional space*. Once you click next, you may see a
-warning about the size of your EFI partition (that fedora recommends
-at least 500 MiB). You may ignore this warning. To fix it, you'll
-need to create a separate EFI partition and not use the one that
-Windows is installed on (this is just for your information, and is
-out of scope for this guide, but adventurous tinkerers can try
-doing this!).
-
-*Triple-check that you have selected the correct drive. It should be
+*Triple-check that the correct drive has been selected. It should be
 your main drive with Windows on it, not a pen drive or some other
-storage drive.* Then, click next.
+storage drive.* You can see the selected drive in the "Destination"
+section. Select the drive by clicking "Change destination".
 
-Then, you'll be asked to encrypt your drive if you wish. Drive
-Encryption stores the data on your drive encrypted when you shut
-down Fedora. This option requires you to enter a password every time
-you start up your computer, but ensures that nobody can get access
-to your data if your computer is stolen. I recommend it, but do
-remember that if you lose your drive password, you lose your data.
+After you've verified that you've selected the correct drive, click
+the three dots in the top right corner, and select "Launch storage
+editor".
 
-This is the last chance you have to double-check everything in the
-installer before making changes to your computer that may destroy
-data on it (if the installer is configured improperly). You will be
-shown a summary page with the list of changes that the installer is
-going to make to your drives. Review it carefully. You should see a
-boot partition being created, a root and home btrfs subvolume being
-created, and your windows bootloader being mounted at /boot/efi.
-Notably, you should *not* be seeing any text that says something
-along the lines of so and so partition is being used by windows
-already.
+#image("assets/Installer-Storage-Editor.png", height: 4cm)
 
-You can begin the installation once you've made sure you've
-configured the installer properly. Sit back and relax, it should
-take about five minutes.
+Confirm the dialog box that appears, and note the warning. You will
+now be changing your disk partition layout. Deleting or updating the
+wrong partition can lead to Windows being broken or a loss of data,
+so be very careful when you follow the following steps.
 
-#image("assets/Installer-3.png", height: 8cm)
+#image(
+  "assets/Installer-Storage-Editor-Confirmation.png",
+  height: 8cm,
+)
+
+You will see a list of partitions (with names like /dev/nvme0nXpY or
+/dev/sdXY) which already exist on your drive and were put there when
+Windows was installed. You should also see a partition named Free
+Space with the size you set in Device Management back in Windows.
+Note that there may be more than one "Free Space" entry! You can
+identify the correct one based on its size. Note that the Fedora
+installer reports sizes in gigabytes (GB) while Windows reports
+sizes in gibibytes (GiB), while still calling it GB, so you will see
+that the size in the installer will be a little more (60 "GB" on
+Windows would be around 62 GB on the installer).
+
+Once you've found the free space entry, you will now need to create
+partitions. We need to create *three* partitions. One for installing
+the actual bootloader file (called `esp`), one for keeping
+bootloader data (called `boot`), and one for keeping all other data.
+You can create partitions from the menu opened by clicking the three
+dots next to the free space entry.
+
+First, let's create `esp`. It should be `549.7558 MB` (which is
+`512 MiB`, NOTE THAT THE BELOW IMAGE HAS THE WRONG NUMBER, you
+should use this one), mounted to `/boot/efi`, and the type should be
+EFI system partition. Remember that when you click "Create", it will
+get created immediately without confirmation (but it can be deleted
+if you made a mistake), so make sure you've configured the partition
+properly as shown below.
+
+#image(
+  "assets/Installer-Create-ESP.png",
+  height: 8cm,
+)
+
+Next, create `boot`. It should be `2.147484 GB` (which is `2 GiB`,
+NOTE THAT THE BELOW IMAGE HAS THE WRONG NUMBER, you should use this
+one), mounted to `/boot`, and the type should be `ext4`.
+
+#image(
+  "assets/Installer-Create-Boot.png",
+  height: 8cm,
+)
+
+Next, create `data` or `root` (name doesn't really matter). It
+should be the rest of the available free space (60.2 GB in my case,
+but it may be different for you), NOT mounted anywhere (the field
+should be blank), and the type should be `btrfs`.
+
+#image(
+  "assets/Installer-Create-BTRFS.png",
+  height: 8cm,
+)
+
+The final partition you created will house all your data. Now you
+must create two subvolumes -- one to store operating system data
+(called `root`), and one to store your user data (called `home`).
+
+Click the three-dots next to the entry that says "top-level" under
+the entry of the final partition you created, then click Create
+Subvolume.
+
+#image(
+  "assets/Installer-Create-Subvolume.png",
+  height: 3cm,
+)
+
+Create the `root` subvolume and mount it at `/`.
+
+#image(
+  "assets/Installer-Create-Root-Subvolume.png",
+  height: 3cm,
+)
+
+Then, create the `home` subvolume and mount it at `/home`.
+
+Once you've followed all these steps, you can exit the storage
+editor. If you see a warning such as below, it's fine, it's a bug
+with the installer, it can be ignored.
+
+#image(
+  "assets/Installer-Create-Confirmation.png",
+  height: 3cm,
+)
+
+If you *didn't get the storage requirements not met warning*, then
+you should see a "continue with installation" dialog. You can click
+continue on that dialog, and you should be on the page that lists
+what changes will be made to what drives. Skip to @finstall.
+
+If you *did get the warning*, then you need to manually assign the
+mountpoints, which can be done by closing the storage editor and
+selecting the assign mount points manually radio option and clicking
+next.
+
+#image(
+  "assets/Installer-Assign-Mountpoints.png",
+  height: 8cm,
+)
+
+This will take you to a section to assign mount points. You just
+need to assign the same mount points as earlier. Note that the
+`esp` and `boot` partitions will appear as /dev/abc files, but the
+subvolumes will appear as `root` and `home`. Assign mount points as
+you see in the below image. You'll need to add an extra mount point
+for /home since that's not included in the defaults.
+
+#image(
+  "assets/Installer-Map-Volumes.png",
+  height: 6cm,
+)
+
+=== Finalising the installation <finstall>
+
+Now you should see a list of changes that will be done to your disk.
+What you should see is something along the following below. What you
+should *not see* is a warning about the Windows ESP partition being
+erased or something like that.
+
+Basically, make sure this screen matches one-to-one (except maybe
+the partition labels) to the below image. Note that the note about
+`nvme0n1p8` below can be ignored since Windows' ESP will be the
+first partition usually, which is `nvme0n1p1` or `sda1` or something
+of that sort. Also, the "format as efi" line for `nvme0n1p1` can be
+ignored, it's another bug.
+
+#image(
+  "assets/Installer-Review.png",
+  height: 8cm,
+)
+
+Once you've checked that you've partitioned correctly, you can begin
+the installation. You might have to check a box like below. Just
+make sure you've partitioned properly, you should be fine.
+
+#image(
+  "assets/Installer-Final-Click.png",
+  height: 3cm,
+)
+
+Now, the installation has started. It should take about five to ten
+minutes. Sit back and relax!
+
+#image(
+  "assets/Installer-Final.png",
+  height: 6cm,
+)
 
 === After installation
 
@@ -727,7 +898,7 @@ off, remove your USB stick before the computer starts up again.
 
 You should now be booted into a GNU GRUB menu! This is a
 _bootloader_, the piece of software responsible for loading the
-operating system. You can pick fedora from here, or pick windows
+operating system. You can pick Fedora from here, or pick windows
 (using your arrow keys and then enter). Congratulations, you've
 successfully dual-booted your system!
 
@@ -741,7 +912,7 @@ There are still a few steps left to do. You still need to create a
 user account, set a time zone, and do a few other things.
 Thankfully, Fedora guides you through that with a great onboarding
 setup screen. You just need to follow it, it's really
-self-explanatory! We hope you have fun using fedora!
+self-explanatory! We hope you have fun using Fedora!
 
 == Configure your system <ais>
 
@@ -759,7 +930,10 @@ network you wish to connect to and enter its credentials to connect.
 Please look at the next section for instructions to connect to the
 IIIT WiFi/LAN/VPN.
 
-==== Connect to IIIT WiFi
+==== [Alternative 1] Connect to IIIT WiFi
+
+If you connected to IIIT WiFi during the setup process, you do not
+need to do this again.
 
 1. Click on the WiFi button in the System Tray (present in the bottom-right of the panel/taskbar). This opens the Network Applet.
 2. Click the Connect button next to the `wifi@iiith` listing
@@ -771,7 +945,7 @@ IIIT WiFi/LAN/VPN.
 )
 4. Click the Save button and you should now be connected!
 
-==== Connect to IIIT LAN
+==== [Alternative 2] Connect to IIIT LAN
 
 1. Plug in your LAN Cable.
 2. Open the System Settings application and go to the WiFi & Networking subsection in the WiFi & Internet section present in the Networking category.
@@ -780,7 +954,7 @@ IIIT WiFi/LAN/VPN.
 #align(center, image("assets/IIIT_LAN.png", height: 9cm))
 5. Click the Apply button. You may need to re-plug your LAN cable. You should now be connected!
 
-==== Connect to IIIT VPN
+==== [Alternative 3] Connect to IIIT VPN
 
 1. Go to https://vpn.iiit.ac.in and download the ovpn file for *Ubuntu and Debian*. It will be named `ubuntu_new.ovpn`.
 2. Open the System Settings application and go to the WiFi & Networking subsection in the WiFi & Internet section present in the Networking category.
@@ -805,7 +979,22 @@ This is kind of similar to performing a Windows update.
 
 You may follow any *one* of the two methods listed below.
 
-==== Method 1: Using the Discover Store
+==== [Alternative 1] Using the Terminal
+
+Fedora uses the `dnf` package manager to install packages.
+
+To update your system, run the following command in the Konsole
+application, KDE's terminal.
+
+```bash
+sudo dnf upgrade --refresh
+```
+
+You'll be asked for confirmation. Press "Y" and then enter to confirm
+the update. If you are asked to import GPG keys, please press "Y" and
+then enter to do so. You should restart your computer after updating.
+
+==== [Alternative 2] Using the Discover Store
 
 Open the "Discover" application from the Application launcher.
 Discover is KDE's app store. You install most applications from here.
@@ -825,20 +1014,6 @@ If you see such a screen, click the Restart and Install updates
 button.
 
 #align(center, image("assets/Updates-2.png", height: 8cm))
-
-==== Method 2: Using the Terminal
-
-Fedora uses the `dnf` package manager to install packages.
-
-To update your system, run the following command in the Konsole
-application, KDE's terminal.
-
-```bash
-sudo dnf upgrade --refresh
-```
-
-You'll be asked for confirmation. Press "Y" and then enter to confirm
-the update. You should restart your computer after updating.
 
 === Install Proprietary Media Codecs <rpmfusion>
 
@@ -864,7 +1039,7 @@ We want you to visit their website at https://rpmfusion.org and
 follow the instructions to "Enable RPM Fusion on your system". You
 can use the Graphical Setup method which downloads an `rpm` file that
 can be opened using Discover and enabled. *Please download the
-correct RPM file for your Fedora version*, `42` in case of this
+correct RPM file for your Fedora version*, `44` in case of this
 guide. *Do this for both the `free` and `nonfree` repositories.*
 
 We're not providing specific instructions here to let you learn how
